@@ -1,15 +1,22 @@
-![Cold outreach. Copy & hooks. More replies. More meetings. Done. — an AI skill by enso](assets/banner.svg)
+![Cold outreach. Copy & hooks. More replies. More meetings. Done. An AI skill by enso](assets/banner.svg)
 
-# Cold Outreach Playbook — Claude Plugin
+# Cold outreach playbook, as a Claude plugin
 
-A Claude plugin that turns the cold outreach playbook ("from strangers to customers") into a working AI workflow. Ask Claude for help with cold email, cold calls, DMs, or outbound sequences and it will interview you about your offer and audience, then generate a **complete, ready-to-run campaign**:
+Cold outreach fails for one reason: the person on the other end doesn't know you. This plugin teaches Claude a complete system for earning a stranger's trust, so instead of a generic "here's a cold email" answer, you get an entire campaign built around your offer and the people you actually sell to.
 
-- **Target list plan** — software scraping vs. list brokers vs. manual community sourcing, with a testing protocol before you spend money
-- **Hooks** — 5–10 tested opening lines / subject lines across proven hook types
-- **Channel copy** — cold email, social DM, phone script (with objection handling), SMS — all at a third-grade reading level with personalization slots
-- **Follow-up cadence** — a dated multi-channel sequence (default 10 touches / 21 days) with actual copy for every touch, including the breakup email
-- **Scaling plan** — manual proof → automation → VAs, plus a metrics funnel, diagnostic table, and A/B testing protocol
-- **Compliance checklist** — CAN-SPAM, GDPR, CASL, TCPA, platform ToS
+Tell Claude what you sell. It asks the questions a good outbound consultant would ask (13 of them, covering your offer, your ideal customer, what you could give away free, your channels, and where your prospects live legally), then hands you one document with everything in it:
+
+- A target list plan: where the leads come from (scraping software, list brokers, or digging through communities by hand) and how to test a source with a few hundred leads before spending real money on it.
+- A lead magnet, invented for you if you don't have one. Claude brainstorms 5 to 8 things you could give away free, scores them on a rubric, and picks the ones worth building. The bar: something so useful the prospect feels silly saying no.
+- Hooks built as grab + gift pairs. The grab is the reason to contact this person now (they just raised, they're hiring, their website is visibly broken). The gift is the free thing. You get 5 to 10 per channel, ready to A/B test.
+- The actual copy for every channel you use: cold email, social DM, a phone script with objection responses, SMS where consent allows. All of it written at a reading level a tired person can absorb in four seconds.
+- A follow-up cadence (10 touches over 21 days by default) with real copy for every single touch, down to the breakup email. Most replies come from follow-up, so this is where campaigns are won.
+- A scaling plan and a metrics table that tells you which number being low means which part is broken.
+- A compliance checklist for CAN-SPAM, GDPR, CASL, TCPA, and platform rules.
+
+Every line of copy runs through the bundled [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) skill, which writes reader-first and strips the phrases that make outreach smell like a template blast. "I hope this email finds you well" does not survive contact.
+
+The deliverable is all or nothing on purpose. Whatever your channel mix, the skill won't stop at ideas or a lone email: it delivers the whole strategy end to end, from ICP to launch checklist, in one document you can start executing the same day.
 
 ## Install
 
@@ -20,7 +27,7 @@ A Claude plugin that turns the cold outreach playbook ("from strangers to custom
 
 ## Use
 
-Just ask naturally — the skill triggers on cold outreach topics:
+Ask naturally. The skill triggers on cold outreach topics:
 
 > "Help me write a cold email sequence for my web design agency targeting dentists"
 
@@ -30,23 +37,30 @@ Or run the command for the full guided flow:
 /outreach-campaign I sell a $2k/mo SEO retainer to local law firms
 ```
 
-Claude asks the intake questions it still needs (offer, ICP, lead magnet, channels, capacity, region), then delivers the campaign as a single document you can start executing the same day.
+Claude asks whatever it still needs to know, then writes the campaign.
 
 ## What's inside
 
 ```
 ├── .claude-plugin/
-│   ├── plugin.json           # plugin manifest
-│   └── marketplace.json      # lets this repo act as a marketplace
+│   ├── plugin.json               # plugin manifest
+│   └── marketplace.json          # lets this repo act as a marketplace
+├── assets/
+│   └── banner.svg
 ├── commands/
-│   └── outreach-campaign.md  # /outreach-campaign slash command
+│   └── outreach-campaign.md      # /outreach-campaign slash command
 └── skills/
+    ├── ai-copywriter/            # bundled copy sub-skill (mikiarlo3/ai-copywriter)
+    │   ├── SKILL.md
+    │   └── references/
+    │       └── linkedin-virality.md
     └── cold-outreach-playbook/
-        ├── SKILL.md                          # workflow + intake interview
+        ├── SKILL.md                          # workflow + intake interview + definition of done
         ├── references/
-        │   ├── list-building.md              # 3 list methods + testing protocol
+        │   ├── list-building.md              # the 3 list methods + testing protocol
+        │   ├── lead-magnet-generator.md      # gift + grab: magnet ideation, scoring, attention triggers
         │   ├── hooks-and-copy.md             # hook formulas, channel templates, banned phrases
-        │   ├── follow-up-cadence.md          # cadence tables + per-touch copy angles
+        │   ├── follow-up-cadence.md          # cadence tables + copy angles per touch
         │   └── scaling-and-metrics.md        # scaling ramp, benchmarks, diagnostics, compliance
         ├── assets/
         │   └── playbook-template.md          # output document skeleton
@@ -54,10 +68,6 @@ Claude asks the intake questions it still needs (offer, ICP, lead magnet, channe
             └── evals.json                    # test prompts for skill iteration
 ```
 
-## Principles baked in
+## The method
 
-1. **Make cold feel warm** — personalization buys the seconds of attention strangers don't owe you
-2. **Give big, fast value** — deliver the gift up front; offer free what others charge for
-3. **Keep it simple** — third-grade reading level, hard length limits per channel, one CTA
-4. **Follow up relentlessly** — most conversions happen in follow-up, across multiple channels
-5. **Volume beats perfection, then the system compounds** — start manual, prove the message, automate what works
+The playbook underneath is simple, and the skill refuses to skip any of it. Make cold feel warm: research buys you the first few seconds a stranger never owes you. Give away something others charge for, up front, without teasing. Keep every message simple enough that nobody has to reread it. Then follow up more times than feels polite, across more channels than feels comfortable, because that's where the customers are. Start by hand, prove the message works, and only then automate. A script that works can run for years.

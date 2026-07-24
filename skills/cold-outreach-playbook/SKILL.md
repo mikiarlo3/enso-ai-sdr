@@ -42,7 +42,7 @@ Never generate a campaign from guesses. The difference between generic outreach 
 6. Where do these people congregate? (Communities, groups, events, platforms, newsletters.)
 
 **The value-first gift (the lead magnet)**
-7. What could you give away free that's so valuable they'd feel foolish declining? Ideally something others charge for — a free audit, teardown, sample deliverable, tool, or the first unit of your actual service.
+7. What could you give away free that's so valuable they'd feel foolish declining? Ideally something others charge for — a free audit, teardown, sample deliverable, tool, or the first unit of your actual service. (If the user doesn't know, that's fine — don't push. Phase 2 runs a generator that produces scored options for them.)
 8. Can that gift be delivered/automated at scale, or is it hand-made per prospect?
 
 **Channels and capacity**
@@ -61,14 +61,18 @@ Questions 1–7 and 9 are load-bearing — push for real answers. Questions 8 an
 From the answers, decide and briefly justify:
 - **List-building method(s)**: software scraping, list brokers, or manual "elbow grease" — usually a mix. High-ticket + niche audience → lean manual (higher-quality, less fatigued leads). High-volume + broad audience → lean software. See `references/list-building.md` for the selection logic, testing protocol, and per-method action steps.
 - **Primary channel + support channels**: pick where the audience actually pays attention, then use the other channels for follow-up variety.
-- **The lead magnet and value anchor**: what gets delivered free, and how it's framed so the recipient understands its normal price. If the best magnet is hand-made (e.g. a personal video teardown), don't discard it — tier it: hand-made for the highest-value or already-engaged leads, a templated/automated version (checklist, recorded walkthrough, auto-generated report) for everyone else. Hand-made magnets often *earn* their cost at small volume; the automated tier is what makes Phase 4 scaling possible.
+- **The hook: gift + grab.** This is the heart of the campaign, so treat it as a design step, not a copy step. Read `references/lead-magnet-generator.md` and run its process: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the five-criterion rubric, and present the table so the user picks with eyes open — then choose the attention triggers (why-now signals, observable gaps, problem signals) that will earn the first seconds for each segment. Run the generator whenever the user's intake answer for the free gift is missing, vague, or weak ("maybe an ebook?") — a mediocre magnet caps the whole campaign and no copy can rescue it. If the best magnet is hand-made (e.g. a personal video teardown), don't discard it — tier it: hand-made for the highest-value or already-engaged leads, a templated/automated version for everyone else. Where possible, feed the chosen attention triggers back into the list plan and build the list *from* the trigger, so personalization scales for free.
 - **Capacity math**: the user's daily send capacity covers *all* touches, not just first touches. With a 10-touch cadence, steady-state total sends ≈ new-leads/day × average touches consumed (usually 5–7). So "30 sends/day" supports roughly 5–6 *new* leads/day, not 30. Size the new-lead intake so follow-ups never get skipped — follow-ups convert better than first touches and get cut first when capacity is oversubscribed.
 
 ### Phase 3: Write the campaign
 
-Read `references/hooks-and-copy.md` before writing copy — it has the hook formulas, channel templates, and the banned-phrases list. Then produce, for each channel in play:
+Read `references/hooks-and-copy.md` before writing copy — it has the hook formulas, channel templates, and the banned-phrases list.
 
-- **Hooks**: 5–10 opening lines/subject lines per primary channel, spanning different hook types (personalized observation, specific claim + proof, problem callout, give-first). The user should be able to A/B test them.
+**Draft all copy with the ai-copywriter sub-skill.** This plugin bundles it at `skills/ai-copywriter/SKILL.md` (if a standalone `ai-copywriter` skill is installed, that works too). Read it and apply its copywriting mode — name the feeling of the person on the other end, simplest possible explanation — when writing subject lines, openers, and body copy, and run every finished piece through its humanizer audit. Cold outreach lives or dies on not sounding like a robot or a template blast; the sub-skill's AI-pattern checks are the quality gate before any copy ships.
+
+Then produce, for each channel in play:
+
+- **Hooks**: 5–10 per primary channel, each a **grab + gift pair** (attention trigger + free-value offer — assembled per Part 3 of `references/lead-magnet-generator.md`), spanning different hook types (personalized observation, specific claim + proof, problem callout, give-first). The user should be able to A/B test them.
 - **First-touch copy**: full message per channel, respecting hard limits — DM: 2–3 sentences; email: half a page max; phone script: 1–2 pages; SMS: 1–2 sentences. Treat SMS as a follow-up channel for leads who have already engaged or consented, never a cold first touch — cold SMS to strangers is high-risk under TCPA (details in the compliance section of `references/scaling-and-metrics.md`).
 - **Follow-up sequence**: a dated, multi-channel cadence (default: 8–12 touches over ~3 weeks) with actual copy for every touch, not just "follow up here." Most conversions happen in follow-up, so this section is not optional. See `references/follow-up-cadence.md` for cadence patterns and per-touch copy angles.
 
@@ -90,9 +94,24 @@ Close the deliverable with the operating system around the copy:
 
 Details and benchmark numbers: `references/scaling-and-metrics.md`.
 
-## Output format
+## Output format and definition of done
 
-Deliver the campaign as a single markdown document following the skeleton in `assets/playbook-template.md`. Fill every section — a section the user must "figure out later" is a section that stops the campaign from launching. If the user asked for only one piece (just hooks, just an email), deliver that piece at full quality, then offer the surrounding sequence, noting that a first touch without follow-ups leaves most replies on the table.
+Deliver the campaign as a single markdown document following the skeleton in `assets/playbook-template.md`. Fill every section — a section the user must "figure out later" is a section that stops the campaign from launching.
+
+The job is not done until the user holds the **entire lead generation strategy end-to-end** for their specific ICP, whatever the channel mix (email, LinkedIn, SMS, phone, DMs). Check every box before delivering:
+
+- [ ] ICP defined sharply enough to build a list from (titles, industry, size, geography, qualifying signals)
+- [ ] List plan with named sources and a testing protocol — the user knows where lead #1 comes from
+- [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
+- [ ] Attention triggers/segments defined, each with its personalization angle
+- [ ] 5–10 hooks as grab + gift pairs, ready to A/B test
+- [ ] Complete first-touch copy for every channel in play — no placeholders except `{{merge_fields}}` with research instructions
+- [ ] Full dated follow-up sequence with real copy for every single touch, breakup included
+- [ ] Scaling plan, metrics scorecard with benchmarks, and first three A/B tests named
+- [ ] Compliance checklist matched to region and channels
+- [ ] A launch checklist the user can start executing today
+
+Ideas, strategy, content, copy — all of it, in one document. If any box can't be filled, say why and what's needed rather than delivering a partial campaign silently. If the user asked for only one piece (just hooks, just an email), deliver that piece at full quality, then offer the surrounding sequence, noting that a first touch without follow-ups leaves most replies on the table.
 
 Write the document to a file (e.g. `cold-outreach-campaign.md`) when working in an environment with a filesystem, so the user keeps it.
 

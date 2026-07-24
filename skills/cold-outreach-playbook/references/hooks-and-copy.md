@@ -1,5 +1,7 @@
 # Hooks and Copy
 
+> Prerequisite: the gift (lead magnet) and grab (attention trigger) should already be chosen — that's `references/lead-magnet-generator.md`. This file is about wrapping them in words. If the campaign doesn't yet have a strong free-value offer, go run the generator first; copy can't rescue a weak gift.
+
 The recipient is a stranger deciding in 2–3 seconds whether to keep reading. Everything here serves that reality: personalization buys the first seconds, immediate value buys the next ten, and simplicity keeps friction from killing the reply.
 
 ## The three copy laws
