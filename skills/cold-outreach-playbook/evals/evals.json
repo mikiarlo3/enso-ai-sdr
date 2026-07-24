@@ -30,6 +30,19 @@
       ]
     },
     {
+      "id": 5,
+      "prompt": "set up cold outreach for my business, here's my site: https://example-hvac-software.com (SaaS for HVAC contractors, pricing page says $299/mo). I can do email and linkedin.",
+      "expected_output": "Fetches/researches the website to extract offer, pricing, ICP, and proof instead of asking for them; confirms the inferred facts in one-line statements; only asks about the free giveaway (channels are given); then delivers the complete campaign. In environments without web access, asks for pasted homepage text rather than re-asking questions 1-3 individually.",
+      "files": [],
+      "assertions": [
+        "Attempts to fetch or research the provided URL before asking intake questions",
+        "Presents inferred offer/ICP/proof as confirmations rather than asking the user to explain them",
+        "Does not re-ask for channels (already given: email and LinkedIn)",
+        "Asks at most the free-giveaway question (plus confirmation of inferences)",
+        "Delivers the complete end-to-end campaign document"
+      ]
+    },
+    {
       "id": 4,
       "prompt": "I'm a bookkeeper, $400/mo per client, targeting owner-operated construction companies (5-30 employees) in Ohio. I want to do cold outreach on LinkedIn and email but honestly I have no idea what I could offer for free that anyone would care about. Where do I even start?",
       "expected_output": "Runs the lead magnet generator: produces 5+ candidates across the three magnet types (reveal-the-problem audit, free sample of the service, one-step tool/template), scores them on the rubric table, recommends 1-2 with reasoning, pairs them with attention triggers relevant to construction companies, then delivers the full end-to-end campaign for LinkedIn + email.",

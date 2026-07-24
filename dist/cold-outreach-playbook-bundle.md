@@ -30,9 +30,13 @@ Your job is to produce a complete, ready-to-run campaign document. Not advice ab
 
 ### Phase 1: Intake — five questions, two minutes
 
-Speed is the feature. The user should answer a handful of one-liners and get a complete campaign, not fill out a form. First scan the conversation — anything already answered doesn't get asked again. Then ask the still-open questions from this list of five, all in ONE short message (or one AskUserQuestion call where available):
+Speed is the feature. The user should answer a handful of one-liners and get a complete campaign, not fill out a form. First scan the conversation — anything already answered doesn't get asked again.
 
-1. **What do you sell, and what does it cost?**
+**A pasted website URL replaces most of the interview.** If the user shared a URL (or you can ask "got a website? paste it and I'll figure out the rest"), fetch it before asking anything — home page, plus pricing/about/case-study pages if they exist. From the site, extract: what they sell and pricing (Q1), who it's for (Q2), proof points like testimonials, client logos, and numbers (Q3), and often the raw material for a lead magnet (existing tools, guides, or services that could be sampled free). Present what you learned as one-line statements to confirm ("Here's what I got from your site — correct me if any of this is off"), and only *ask* what the site can't tell you: channels and the free giveaway. In environments without web access, just ask for a copy-paste of their homepage or pricing page text instead.
+
+Then ask the still-open questions from this list of five, all in ONE short message (or one AskUserQuestion call where available):
+
+1. **What do you sell, and what does it cost?** (or: paste your website URL and skip 1–3)
 2. **Who buys it?** (role, industry, location — as narrow as you can make it)
 3. **What's your best proof?** (a number, case study, or client name — "none yet" is a fine answer)
 4. **Which channels?** (email / LinkedIn or DMs / phone / SMS — whatever you'll actually use)
