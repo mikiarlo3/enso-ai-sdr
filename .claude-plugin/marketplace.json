@@ -1,0 +1,14 @@
+{
+  "name": "enso-ai-sdr",
+  "owner": {
+    "name": "enso",
+    "email": "mickey@enso.bot"
+  },
+  "plugins": [
+    {
+      "name": "cold-outreach-playbook",
+      "source": "./",
+      "description": "Build complete cold outreach campaigns: list strategy, hooks, channel copy, follow-up cadences, and a scaling plan — from a guided intake interview."
+    }
+  ]
+}

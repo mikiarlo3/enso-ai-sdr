@@ -1,0 +1,46 @@
+{
+  "skill_name": "cold-outreach-playbook",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I run a small web design agency (sites are $4k one-time, usually $150/mo hosting after). I want to start cold emailing local med spas and dental clinics in Texas to get more clients. It's just me sending for now, maybe 30 emails a day. I've never done cold outreach before. Can you set me up with everything I need?",
+      "expected_output": "A complete campaign document: list plan (likely manual/community + a scraper test), 5-10 hooks, full cold email, follow-up cadence with copy for every touch, scaling plan, metrics, compliance (CAN-SPAM). Should NOT need to ask many questions since offer, ICP, channel, and capacity are given — but should ask about or state assumptions for lead magnet and proof points.",
+      "files": [],
+      "assertions": [
+        "Asks about or explicitly assumes a lead magnet / free-value offer before or within the deliverable",
+        "Includes at least 5 distinct hooks/subject lines spanning different hook types",
+        "Includes a complete first-touch cold email under half a page with a personalization merge field",
+        "Includes a dated follow-up sequence with 6+ touches and actual copy for each touch, including a breakup email",
+        "Includes a list-building plan that references testing a sample before scaling",
+        "Includes metrics/benchmarks and a CAN-SPAM-relevant compliance note",
+        "Copy avoids banned phrases like 'I hope this email finds you well' and 'I wanted to reach out'"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "write me a cold DM i can send to fitness coaches on instagram to sell my $997 course on getting more clients",
+      "expected_output": "Asks the load-bearing intake questions (proof, lead magnet, what the course delivers) OR states assumptions, delivers a 2-3 sentence DM at a low reading level with personalization, then offers/includes the surrounding follow-up sequence rather than a lone message.",
+      "files": [],
+      "assertions": [
+        "The DM is 3 sentences or fewer",
+        "The DM contains a personalization element, not just {{first_name}}",
+        "The DM leads with value (a free gift/result) rather than pitching the $997 course directly",
+        "The response asks intake questions or explicitly lists its assumptions",
+        "The response offers or includes follow-up touches beyond the single DM"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Our SaaS ($500/mo, inventory management for e-commerce brands doing $1-10M) has an SDR team of 3 doing calls and emails into the US and Germany. Reply rates dropped from 4% to under 1% this quarter. Build us a new sequence and tell us what to test.",
+      "expected_output": "Diagnoses likely causes using the funnel diagnostic (deliverability vs copy vs list fatigue), asks for or assumes missing metrics (open rate, bounce rate), delivers a new multi-channel sequence with hooks and copy, an A/B testing protocol (one variable at a time, ~200 sends per arm), and GDPR guidance for the German segment.",
+      "files": [],
+      "assertions": [
+        "Uses funnel metrics (opens/bounces/replies) to diagnose or asks for them before/while prescribing",
+        "Delivers a multi-channel cadence using both email and phone since an SDR team exists",
+        "Includes an explicit A/B testing protocol with one-variable-at-a-time guidance",
+        "Addresses GDPR/legitimate interest for the Germany segment specifically",
+        "Provides new hooks/copy, not just strategy advice"
+      ]
+    }
+  ]
+}
