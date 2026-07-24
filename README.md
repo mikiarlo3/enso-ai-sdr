@@ -20,9 +20,31 @@ The deliverable is all or nothing on purpose. Whatever your channel mix, the ski
 
 ## Install
 
+Everything here is plain Markdown, so it runs on any AI agent that can read instructions, the same way [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) does. Step-by-step tutorials for each platform live in [`docs/install/`](docs/install/):
+
+| Where | How | Tutorial |
+|---|---|---|
+| Claude Code (CLI, desktop, claude.ai/code) | `/plugin` commands below | [docs/install/claude.md](docs/install/claude.md) |
+| claude.ai chat app (web/mobile) | upload `dist/cold-outreach-playbook-skill.zip` in Settings → Capabilities → Skills, or use the bundle in a Project | [docs/install/claude.md](docs/install/claude.md) |
+| ChatGPT | custom GPT or Project + `dist/cold-outreach-playbook-bundle.md` | [docs/install/chatgpt.md](docs/install/chatgpt.md) |
+| Manus | Knowledge entry or per-task attachment | [docs/install/manus.md](docs/install/manus.md) |
+| OpenClaw | copy skill folders into `~/.openclaw/skills/` | [docs/install/openclaw.md](docs/install/openclaw.md) |
+| Hermes / self-hosted models | bundle as system prompt | [docs/install/hermes.md](docs/install/hermes.md) |
+| Codex, Cursor, Gems, Poe, raw API, everything else | skills CLI or the bundle | [docs/install/other-agents.md](docs/install/other-agents.md) |
+
+The two fast paths:
+
+**Claude Code** (note: these commands exist only in Claude Code, not the claude.ai chat app):
+
 ```
 /plugin marketplace add mikiarlo3/enso-ai-sdr
 /plugin install cold-outreach-playbook@enso-ai-sdr
+```
+
+**Any skill-folder harness**, via the cross-agent [skills CLI](https://skills.sh):
+
+```bash
+npx skills add mikiarlo3/enso-ai-sdr --global
 ```
 
 ## Use
@@ -45,10 +67,19 @@ Claude asks whatever it still needs to know, then writes the campaign.
 ├── .claude-plugin/
 │   ├── plugin.json               # plugin manifest
 │   └── marketplace.json          # lets this repo act as a marketplace
+├── AGENTS.md                     # guidance for AGENTS.md-aware harnesses
 ├── assets/
 │   └── banner.svg
 ├── commands/
 │   └── outreach-campaign.md      # /outreach-campaign slash command
+├── dist/
+│   ├── cold-outreach-playbook-bundle.md   # whole plugin as one file (ChatGPT, Manus, Gems, APIs)
+│   ├── cold-outreach-playbook-skill.zip   # uploadable skill for claude.ai Settings → Skills
+│   └── ai-copywriter-skill.zip
+├── docs/
+│   └── install/                  # per-agent install tutorials
+├── scripts/
+│   └── build-bundle.sh           # regenerates dist/ after skill edits
 └── skills/
     ├── ai-copywriter/            # bundled copy sub-skill (mikiarlo3/ai-copywriter)
     │   ├── SKILL.md

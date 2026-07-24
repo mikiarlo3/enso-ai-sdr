@@ -12,6 +12,9 @@ description: >-
   they only ask for one piece (e.g. "write me a cold email" or "give me some
   hooks"), because a single message works far better as part of a designed
   sequence.
+license: MIT
+metadata:
+  version: "0.2.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
