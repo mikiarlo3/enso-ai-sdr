@@ -4,7 +4,7 @@
 
 Cold outreach fails for one reason: the person on the other end doesn't know you. This plugin teaches Claude a complete system for earning a stranger's trust, so instead of a generic "here's a cold email" answer, you get an entire campaign built around your offer and the people you actually sell to.
 
-Tell Claude what you sell. It asks the questions a good outbound consultant would ask (13 of them, covering your offer, your ideal customer, what you could give away free, your channels, and where your prospects live legally), then hands you one document with everything in it:
+Tell Claude what you sell. It asks five one-line questions (what you sell, who buys it, your best proof, your channels, and what you could give away free — two minutes, one message, and "no idea" is an acceptable answer), assumes sensible defaults for everything else, then hands you one document with everything in it:
 
 - A target list plan: where the leads come from (scraping software, list brokers, or digging through communities by hand) and how to test a source with a few hundred leads before spending real money on it.
 - A lead magnet, invented for you if you don't have one. Claude brainstorms 5 to 8 things you could give away free, scores them on a rubric, and picks the ones worth building. The bar: something so useful the prospect feels silly saying no.

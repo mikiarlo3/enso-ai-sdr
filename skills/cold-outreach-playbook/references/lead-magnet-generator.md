@@ -5,7 +5,7 @@ A hook is not just a clever first line. A hook is two things working together:
 - **The GIFT** — something you give away free that's so valuable the prospect feels foolish declining it. This is what generates *interest*.
 - **The GRAB** — the reason this message, to this person, right now. This is what earns *attention* in the first 2–3 seconds.
 
-Copy (subject lines, openers) is just the wrapper around these two. If the user doesn't have a strong gift and a real grab, no amount of copywriting fixes the campaign — so when intake question 7 ("what could you give away free?") gets a weak or uncertain answer, run this generator instead of accepting a mediocre magnet.
+Copy (subject lines, openers) is just the wrapper around these two. If the user doesn't have a strong gift and a real grab, no amount of copywriting fixes the campaign — so when the intake's free-gift question ("what could you give away free?") gets a weak or uncertain answer, run this generator instead of accepting a mediocre magnet.
 
 ## Part 1: Generating the GIFT (lead magnet)
 

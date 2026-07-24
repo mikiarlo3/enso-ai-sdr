@@ -28,34 +28,25 @@ Your job is to produce a complete, ready-to-run campaign document. Not advice ab
 
 ## Workflow
 
-### Phase 1: Intake interview
+### Phase 1: Intake — five questions, two minutes
 
-Never generate a campaign from guesses. The difference between generic outreach (ignored) and effective outreach (answered) is specificity, and specificity comes from these answers. Check the conversation first — the user may have already answered some. Then ask the unanswered ones, batched in one message (or via AskUserQuestion if available, grouping related items). If the user says "just make assumptions," make them, but state each assumption explicitly at the top of the deliverable so they're easy to correct.
+Speed is the feature. The user should answer a handful of one-liners and get a complete campaign, not fill out a form. First scan the conversation — anything already answered doesn't get asked again. Then ask the still-open questions from this list of five, all in ONE short message (or one AskUserQuestion call where available):
 
-**The offer (what they sell)**
-1. What do you sell, and at what price point?
-2. What concrete result does a customer get? (Numbers beat adjectives: "adds 15 booked calls/month" beats "grows your pipeline.")
-3. What proof exists? (Case studies, named clients, before/after metrics, testimonials.)
+1. **What do you sell, and what does it cost?**
+2. **Who buys it?** (role, industry, location — as narrow as you can make it)
+3. **What's your best proof?** (a number, case study, or client name — "none yet" is a fine answer)
+4. **Which channels?** (email / LinkedIn or DMs / phone / SMS — whatever you'll actually use)
+5. **What could you give away free that they'd genuinely want?** ("no idea" is fine — I'll generate options)
 
-**The audience (who they're targeting)**
-4. Who exactly is the ideal customer? Role/title, industry, company size, geography.
-5. What painful, top-of-mind problem does this person have that the offer solves? How do *they* describe it in their own words?
-6. Where do these people congregate? (Communities, groups, events, platforms, newsletters.)
+That's the whole interview. Everything else gets a smart default, inferred and stated in the assumptions block at the top of the deliverable so the user can correct by exception:
 
-**The value-first gift (the lead magnet)**
-7. What could you give away free that's so valuable they'd feel foolish declining? Ideally something others charge for — a free audit, teardown, sample deliverable, tool, or the first unit of your actual service. (If the user doesn't know, that's fine — don't push. Phase 2 runs a generator that produces scored options for them.)
-8. Can that gift be delivered/automated at scale, or is it hand-made per prospect?
+- **Compliance regime**: inferred from the location in Q2 (US → CAN-SPAM/TCPA, EU/UK → GDPR, Canada → CASL).
+- **Pain and where prospects congregate**: derived from the ICP — you know enough about most industries to name the likely top-of-mind pain and communities; state them as assumptions.
+- **Capacity and tools**: assume a solo sender at a modest daily volume with no sequencer yet, unless the conversation says otherwise; the scaling plan covers the upgrade path anyway.
+- **Proof framing**: if Q3 is "none yet," use the show-don't-claim approach (the lead magnet is the proof).
+- **Magnet scalability, outreach history, budget**: assume the common case, note it, move on.
 
-**Channels and capacity**
-9. Which channels can you actually use: email, LinkedIn/social DMs, phone, SMS? Any you refuse or can't access?
-10. Who does the sending — just you, a team, VAs? Roughly how many touches/day is realistic?
-11. What tools do you have (or will you buy)? Lead databases, email sequencers, dialers, enrichment.
-
-**Constraints and history**
-12. What regions are you contacting? (Determines compliance posture: GDPR, CAN-SPAM, CASL, TCPA for calls/SMS.)
-13. Have you done cold outreach before? What worked, what flopped? Share any current scripts.
-
-Questions 1–7 and 9 are load-bearing — push for real answers. Questions 8 and 10–13 can be assumed with stated defaults if the user is in a hurry.
+Ask a follow-up only when an answer is unusable — "everyone" for Q2 gets one push for the narrowest profitable slice, because a campaign aimed at everyone converts no one. If the user says "just assume everything," skip the questions entirely and build with stated assumptions.
 
 ### Phase 2: Diagnose and choose the strategy
 
@@ -134,7 +125,7 @@ A hook is not just a clever first line. A hook is two things working together:
 - **The GIFT** — something you give away free that's so valuable the prospect feels foolish declining it. This is what generates *interest*.
 - **The GRAB** — the reason this message, to this person, right now. This is what earns *attention* in the first 2–3 seconds.
 
-Copy (subject lines, openers) is just the wrapper around these two. If the user doesn't have a strong gift and a real grab, no amount of copywriting fixes the campaign — so when intake question 7 ("what could you give away free?") gets a weak or uncertain answer, run this generator instead of accepting a mediocre magnet.
+Copy (subject lines, openers) is just the wrapper around these two. If the user doesn't have a strong gift and a real grab, no amount of copywriting fixes the campaign — so when the intake's free-gift question ("what could you give away free?") gets a weak or uncertain answer, run this generator instead of accepting a mediocre magnet.
 
 ## Part 1: Generating the GIFT (lead magnet)
 
