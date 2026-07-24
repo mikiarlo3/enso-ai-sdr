@@ -57,7 +57,7 @@ Ask a follow-up only when an answer is unusable — "everyone" for Q2 gets one p
 From the answers, decide and briefly justify:
 - **List-building method(s)**: software scraping, list brokers, or manual "elbow grease" — usually a mix. High-ticket + niche audience → lean manual (higher-quality, less fatigued leads). High-volume + broad audience → lean software. See `references/list-building.md` for the selection logic, testing protocol, and per-method action steps.
 - **Primary channel + support channels**: pick where the audience actually pays attention, then use the other channels for follow-up variety.
-- **The hook: gift + grab.** This is the heart of the campaign, so treat it as a design step, not a copy step. Read `references/lead-magnet-generator.md` and run its process: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the five-criterion rubric, and present the table so the user picks with eyes open — then choose the attention triggers (why-now signals, observable gaps, problem signals) that will earn the first seconds for each segment. Run the generator whenever the user's intake answer for the free gift is missing, vague, or weak ("maybe an ebook?") — a mediocre magnet caps the whole campaign and no copy can rescue it. If the best magnet is hand-made (e.g. a personal video teardown), don't discard it — tier it: hand-made for the highest-value or already-engaged leads, a templated/automated version for everyone else. Where possible, feed the chosen attention triggers back into the list plan and build the list *from* the trigger, so personalization scales for free.
+- **The hook: gift + grab.** This is the heart of the campaign, so treat it as a design step, not a copy step. Read `references/lead-magnet-generator.md` and run its process: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the five-criterion rubric, and present the table so the user picks with eyes open — then choose the attention triggers (why-now signals, observable gaps, problem signals) that will earn the first seconds for each segment. Run the generator whenever the user's intake answer for the free gift is missing, vague, or weak ("maybe an ebook?") — a mediocre magnet caps the whole campaign and no copy can rescue it. If the best magnet is hand-made (e.g. a personal video teardown), don't discard it — tier it: hand-made for the highest-value or already-engaged leads, a templated/automated version for everyone else. Where possible, feed the chosen attention triggers back into the list plan and build the list *from* the trigger, so personalization scales for free. Finally, before any copy gets written, do the Part 2.5 value inventory: think deeply about this exact ICP and list what a stranger could hand them that's usable *the moment they read it* — the number they don't know, the mistake they can check in a minute, the fix they can apply today. The playbook's whole engine is value, delivered immediately, in the message itself — not offered, not scheduled, not gated behind a reply.
 - **Capacity math**: the user's daily send capacity covers *all* touches, not just first touches. With a 10-touch cadence, steady-state total sends ≈ new-leads/day × average touches consumed (usually 5–7). So "30 sends/day" supports roughly 5–6 *new* leads/day, not 30. Size the new-lead intake so follow-ups never get skipped — follow-ups convert better than first touches and get cut first when capacity is oversubscribed.
 
 ### Phase 3: Write the campaign
@@ -74,7 +74,7 @@ Then produce, for each channel in play:
 
 Copy rules that always apply (rationale in the references):
 - **Third-grade reading level.** Complex language is friction; friction kills replies. Short words, short sentences.
-- **Deliver value in the first sentences**, don't tease it. The reader decides in seconds.
+- **The message IS the value.** Every first touch hands over something usable in plain text — a finding, a number, a fix — so the prospect is better off having read it even if they never reply. The full asset rides along linked or attached; "want me to send it?" is allowed only where platforms flag cold links (DMs), and even then one real insight goes in the message text. The test for every draft: cover the CTA — did the prospect receive anything? If not, rewrite.
 - **Personalization slot in every first touch** — a `{{merge_field}}` plus instructions for what research fills it (30–60 seconds per lead, not 10 minutes).
 - **One CTA, low friction.** "Worth a look?" beats "book a 45-minute demo."
 - **No deception.** No fake "Re:" subject lines, no fake forwarded threads, no pretending a prior relationship exists. Deception poisons the trust the whole campaign is trying to build — and violates CAN-SPAM.
@@ -101,6 +101,7 @@ The job is not done until the user holds the **entire lead generation strategy e
 - [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
 - [ ] Attention triggers/segments defined, each with its personalization angle
 - [ ] 5–10 hooks as grab + gift pairs, ready to A/B test
+- [ ] Every first touch passes the cover-the-CTA test: the message delivers usable value inline, immediately — not a promise of value on reply
 - [ ] Complete first-touch copy for every channel in play — no placeholders except `{{merge_fields}}` with research instructions
 - [ ] Full dated follow-up sequence with real copy for every single touch, breakup included
 - [ ] Scaling plan, metrics scorecard with benchmarks, and first three A/B tests named
@@ -201,12 +202,24 @@ The grab answers: *why this person, why now?* Ranked from strongest to weakest �
 
 **Pattern interrupts** (use sparingly, honestly): a thumbnail showing *their* website in your teardown video, a hand-typed-looking two-line email in a sea of formatted ones, physical mail for high-ticket lists, a 30-second personalized voice note DM. The interrupt earns the glance; the gift must still carry the message.
 
-## Part 3: Assembling the hook
+## Part 2.5: Value IN the message — the immediacy rule
 
-For each segment, the hook = grab + gift in one or two sentences:
+The gift is not enough. Where the gift lives decides whether it works. There are three tiers:
+
+1. **Value in the message itself** (the standard). The recipient gets something usable *just by reading* — before replying, before clicking, before trusting anything. The top finding from the audit stated outright ("your booking form loses mobile users at the phone-number field — that's usually a 10–20% fix"), the benchmark number for their segment, the one change with the biggest payoff. If they never respond, they still walked away better off. That's what makes a stranger stop deleting.
+2. **Value one click away.** The full asset linked or attached, no email-gate, no "book a call to receive." Acceptable as the *container* for the full gift, never as a substitute for tier 1.
+3. **Value on reply** ("want me to send it?"). The weakest tier. Use it only where platforms force it (links in cold Instagram/LinkedIn DMs get flagged) — and even then, the message itself must still carry one tier-1 insight so the reply-ask rides on demonstrated value, not promised value.
+
+The failure mode to design out: a message that only *describes* value ("I made you a video that shows 3 fixes") delivers nothing until the prospect acts. Describe less, hand over more. Test for it explicitly: **cover the CTA and read the message — did the prospect receive anything? If not, it's a tease, not a gift. Rewrite.**
+
+This is why deep ICP thinking is mandatory before writing hooks: to put real value *inside* two sentences, you must know what this exact person can use off the shelf. For each segment, list what a stranger could hand them that's instantly usable: the number they don't know (benchmark, cost-of-problem math), the mistake they can check in 60 seconds, the fix they can apply today, the resource that took you hours and them zero. Pick the ones that need no trust and no context — those go in the message; the deeper asset backs them up.
+
+For each segment, the hook = grab + gift, with the gift's first installment paid inside the message:
 
 > **[GRAB]** "Saw you're hiring two front-desk staff — usually means the no-show problem got expensive."
-> **[GIFT]** "I put together a 5-minute breakdown of what your current booking flow is costing you. Want it? Free — most consultants charge $400 for this."
+> **[GIFT, delivered]** "Quick math: at your volume, every 1% of no-shows is roughly $900/month. The fastest fix I see for practices like yours is a deposit link in the confirmation text. I recorded a 5-minute breakdown of your full booking flow with two more fixes — here it is: [link]. Most consultants charge $400 for this; it's yours either way."
+
+The prospect got the number and the first fix just by reading. The video deepens it; the reply is optional.
 
 Test hooks as pairs: the same gift with different grabs across segments, and (once volume allows) different gifts against each other. A gift that no grab can save is a weak gift — go back to the scorecard.
 
@@ -286,7 +299,7 @@ The recipient is a stranger deciding in 2–3 seconds whether to keep reading. E
 ## The three copy laws
 
 1. **Act like you know them (because you did the homework).** One researched detail — a post they wrote, a review of their business, a hire they just made — separates the message from the 40 spam pitches around it. Personalization is not `Hi {{first_name}}`; it's proof a human looked.
-2. **Give big, fast value — don't tease it.** Strangers don't trust promises. Deliver something real in the first sentences: the audit already done, the loom already recorded, the 3 fixes already found. Offering free what others charge for sets a value anchor and multiplies response rates.
+2. **Give big, fast value — IN the message, not after it.** Strangers don't trust promises, and "I made you something, want it?" is still a promise. The first touch must hand over something usable the moment it's read: the top finding stated in plain text, the number they didn't know, the fix they can apply today — with the full asset linked as the deepening, not the gate. The test: cover the CTA and read the message. If the prospect received nothing, it's a tease; rewrite it. (The three delivery tiers and the ICP value inventory behind this are in `lead-magnet-generator.md`, Part 2.5.) Offering free what others charge for sets a value anchor and multiplies response rates — but only the delivered kind anchors anything.
 3. **Third-grade reading level.** Short words. Short sentences. One idea per sentence. Complex language creates friction, and friction loses readers who were only half-committed anyway. Test: would a smart 8-year-old follow every sentence?
 
 ## Hook formulas
@@ -328,9 +341,14 @@ Subject: [hook, 1–5 words]
 
 {{first_name}} — {{personalized_line}}
 
-[1–2 sentences: the specific result you get for people like them, with proof.]
+[THE VALUE, delivered in plain text: the top finding, the number, or the
+one fix — usable even if they stop reading here. e.g. "Sites like yours
+lose most mobile bookings at the phone-number field; removing it is
+usually worth 10–20%."]
 
-[The gift: "I put together X for you" / "Want me to send X?" — delivered or one yes away.]
+[The full gift, one click away: "I recorded the full 4-minute teardown
+with two more fixes — here: {{link}}. No strings; agencies charge $300+
+for this."]
 
 [CTA — one question, low friction:] Worth a look?
 
@@ -343,10 +361,12 @@ Rules: no images or attachments on first touch (deliverability), one link max, p
 ### Social DM (2–3 sentences, hard max)
 
 ```
-{{personalized_line}}. I made {{lead_magnet}} for {{their type of business}} — it's free, most agencies charge for this. Want me to send it over?
+{{personalized_line}}. {{one_usable_insight — e.g. "your booking link is
+broken on mobile, that's usually 10-20% of bookings"}}. I made a full
+{{lead_magnet}} on it — free, most agencies charge for this. Want it?
 ```
 
-The first DM's only job is earning a reply, not selling. "Want it?" converts far better than a link dump — and on most platforms unsolicited links get flagged.
+The first DM's only job is earning a reply, not selling — but the reply-ask must ride on value already delivered, not promised. Cold DMs are the one place "want it?" beats a link (unsolicited links get flagged on most platforms), which is exactly why the insight itself has to be in the message text.
 
 ### Cold call script (1–2 pages, hard max)
 

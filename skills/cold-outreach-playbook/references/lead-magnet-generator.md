@@ -77,11 +77,23 @@ The grab answers: *why this person, why now?* Ranked from strongest to weakest �
 
 **Pattern interrupts** (use sparingly, honestly): a thumbnail showing *their* website in your teardown video, a hand-typed-looking two-line email in a sea of formatted ones, physical mail for high-ticket lists, a 30-second personalized voice note DM. The interrupt earns the glance; the gift must still carry the message.
 
-## Part 3: Assembling the hook
+## Part 2.5: Value IN the message — the immediacy rule
 
-For each segment, the hook = grab + gift in one or two sentences:
+The gift is not enough. Where the gift lives decides whether it works. There are three tiers:
+
+1. **Value in the message itself** (the standard). The recipient gets something usable *just by reading* — before replying, before clicking, before trusting anything. The top finding from the audit stated outright ("your booking form loses mobile users at the phone-number field — that's usually a 10–20% fix"), the benchmark number for their segment, the one change with the biggest payoff. If they never respond, they still walked away better off. That's what makes a stranger stop deleting.
+2. **Value one click away.** The full asset linked or attached, no email-gate, no "book a call to receive." Acceptable as the *container* for the full gift, never as a substitute for tier 1.
+3. **Value on reply** ("want me to send it?"). The weakest tier. Use it only where platforms force it (links in cold Instagram/LinkedIn DMs get flagged) — and even then, the message itself must still carry one tier-1 insight so the reply-ask rides on demonstrated value, not promised value.
+
+The failure mode to design out: a message that only *describes* value ("I made you a video that shows 3 fixes") delivers nothing until the prospect acts. Describe less, hand over more. Test for it explicitly: **cover the CTA and read the message — did the prospect receive anything? If not, it's a tease, not a gift. Rewrite.**
+
+This is why deep ICP thinking is mandatory before writing hooks: to put real value *inside* two sentences, you must know what this exact person can use off the shelf. For each segment, list what a stranger could hand them that's instantly usable: the number they don't know (benchmark, cost-of-problem math), the mistake they can check in 60 seconds, the fix they can apply today, the resource that took you hours and them zero. Pick the ones that need no trust and no context — those go in the message; the deeper asset backs them up.
+
+For each segment, the hook = grab + gift, with the gift's first installment paid inside the message:
 
 > **[GRAB]** "Saw you're hiring two front-desk staff — usually means the no-show problem got expensive."
-> **[GIFT]** "I put together a 5-minute breakdown of what your current booking flow is costing you. Want it? Free — most consultants charge $400 for this."
+> **[GIFT, delivered]** "Quick math: at your volume, every 1% of no-shows is roughly $900/month. The fastest fix I see for practices like yours is a deposit link in the confirmation text. I recorded a 5-minute breakdown of your full booking flow with two more fixes — here it is: [link]. Most consultants charge $400 for this; it's yours either way."
+
+The prospect got the number and the first fix just by reading. The video deepens it; the reply is optional.
 
 Test hooks as pairs: the same gift with different grabs across segments, and (once volume allows) different gifts against each other. A gift that no grab can save is a weak gift — go back to the scorecard.

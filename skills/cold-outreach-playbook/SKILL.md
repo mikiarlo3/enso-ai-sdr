@@ -14,7 +14,7 @@ description: >-
   sequence.
 license: MIT
 metadata:
-  version: "0.4.0"
+  version: "0.5.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
@@ -59,7 +59,7 @@ Ask a follow-up only when an answer is unusable — "everyone" for Q2 gets one p
 From the answers, decide and briefly justify:
 - **List-building method(s)**: software scraping, list brokers, or manual "elbow grease" — usually a mix. High-ticket + niche audience → lean manual (higher-quality, less fatigued leads). High-volume + broad audience → lean software. See `references/list-building.md` for the selection logic, testing protocol, and per-method action steps.
 - **Primary channel + support channels**: pick where the audience actually pays attention, then use the other channels for follow-up variety.
-- **The hook: gift + grab.** This is the heart of the campaign, so treat it as a design step, not a copy step. Read `references/lead-magnet-generator.md` and run its process: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the five-criterion rubric, and present the table so the user picks with eyes open — then choose the attention triggers (why-now signals, observable gaps, problem signals) that will earn the first seconds for each segment. Run the generator whenever the user's intake answer for the free gift is missing, vague, or weak ("maybe an ebook?") — a mediocre magnet caps the whole campaign and no copy can rescue it. If the best magnet is hand-made (e.g. a personal video teardown), don't discard it — tier it: hand-made for the highest-value or already-engaged leads, a templated/automated version for everyone else. Where possible, feed the chosen attention triggers back into the list plan and build the list *from* the trigger, so personalization scales for free.
+- **The hook: gift + grab.** This is the heart of the campaign, so treat it as a design step, not a copy step. Read `references/lead-magnet-generator.md` and run its process: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the five-criterion rubric, and present the table so the user picks with eyes open — then choose the attention triggers (why-now signals, observable gaps, problem signals) that will earn the first seconds for each segment. Run the generator whenever the user's intake answer for the free gift is missing, vague, or weak ("maybe an ebook?") — a mediocre magnet caps the whole campaign and no copy can rescue it. If the best magnet is hand-made (e.g. a personal video teardown), don't discard it — tier it: hand-made for the highest-value or already-engaged leads, a templated/automated version for everyone else. Where possible, feed the chosen attention triggers back into the list plan and build the list *from* the trigger, so personalization scales for free. Finally, before any copy gets written, do the Part 2.5 value inventory: think deeply about this exact ICP and list what a stranger could hand them that's usable *the moment they read it* — the number they don't know, the mistake they can check in a minute, the fix they can apply today. The playbook's whole engine is value, delivered immediately, in the message itself — not offered, not scheduled, not gated behind a reply.
 - **Capacity math**: the user's daily send capacity covers *all* touches, not just first touches. With a 10-touch cadence, steady-state total sends ≈ new-leads/day × average touches consumed (usually 5–7). So "30 sends/day" supports roughly 5–6 *new* leads/day, not 30. Size the new-lead intake so follow-ups never get skipped — follow-ups convert better than first touches and get cut first when capacity is oversubscribed.
 
 ### Phase 3: Write the campaign
@@ -76,7 +76,7 @@ Then produce, for each channel in play:
 
 Copy rules that always apply (rationale in the references):
 - **Third-grade reading level.** Complex language is friction; friction kills replies. Short words, short sentences.
-- **Deliver value in the first sentences**, don't tease it. The reader decides in seconds.
+- **The message IS the value.** Every first touch hands over something usable in plain text — a finding, a number, a fix — so the prospect is better off having read it even if they never reply. The full asset rides along linked or attached; "want me to send it?" is allowed only where platforms flag cold links (DMs), and even then one real insight goes in the message text. The test for every draft: cover the CTA — did the prospect receive anything? If not, rewrite.
 - **Personalization slot in every first touch** — a `{{merge_field}}` plus instructions for what research fills it (30–60 seconds per lead, not 10 minutes).
 - **One CTA, low friction.** "Worth a look?" beats "book a 45-minute demo."
 - **No deception.** No fake "Re:" subject lines, no fake forwarded threads, no pretending a prior relationship exists. Deception poisons the trust the whole campaign is trying to build — and violates CAN-SPAM.
@@ -103,6 +103,7 @@ The job is not done until the user holds the **entire lead generation strategy e
 - [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
 - [ ] Attention triggers/segments defined, each with its personalization angle
 - [ ] 5–10 hooks as grab + gift pairs, ready to A/B test
+- [ ] Every first touch passes the cover-the-CTA test: the message delivers usable value inline, immediately — not a promise of value on reply
 - [ ] Complete first-touch copy for every channel in play — no placeholders except `{{merge_fields}}` with research instructions
 - [ ] Full dated follow-up sequence with real copy for every single touch, breakup included
 - [ ] Scaling plan, metrics scorecard with benchmarks, and first three A/B tests named

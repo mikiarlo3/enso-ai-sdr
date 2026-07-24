@@ -7,7 +7,7 @@ The recipient is a stranger deciding in 2–3 seconds whether to keep reading. E
 ## The three copy laws
 
 1. **Act like you know them (because you did the homework).** One researched detail — a post they wrote, a review of their business, a hire they just made — separates the message from the 40 spam pitches around it. Personalization is not `Hi {{first_name}}`; it's proof a human looked.
-2. **Give big, fast value — don't tease it.** Strangers don't trust promises. Deliver something real in the first sentences: the audit already done, the loom already recorded, the 3 fixes already found. Offering free what others charge for sets a value anchor and multiplies response rates.
+2. **Give big, fast value — IN the message, not after it.** Strangers don't trust promises, and "I made you something, want it?" is still a promise. The first touch must hand over something usable the moment it's read: the top finding stated in plain text, the number they didn't know, the fix they can apply today — with the full asset linked as the deepening, not the gate. The test: cover the CTA and read the message. If the prospect received nothing, it's a tease; rewrite it. (The three delivery tiers and the ICP value inventory behind this are in `lead-magnet-generator.md`, Part 2.5.) Offering free what others charge for sets a value anchor and multiplies response rates — but only the delivered kind anchors anything.
 3. **Third-grade reading level.** Short words. Short sentences. One idea per sentence. Complex language creates friction, and friction loses readers who were only half-committed anyway. Test: would a smart 8-year-old follow every sentence?
 
 ## Hook formulas
@@ -49,9 +49,14 @@ Subject: [hook, 1–5 words]
 
 {{first_name}} — {{personalized_line}}
 
-[1–2 sentences: the specific result you get for people like them, with proof.]
+[THE VALUE, delivered in plain text: the top finding, the number, or the
+one fix — usable even if they stop reading here. e.g. "Sites like yours
+lose most mobile bookings at the phone-number field; removing it is
+usually worth 10–20%."]
 
-[The gift: "I put together X for you" / "Want me to send X?" — delivered or one yes away.]
+[The full gift, one click away: "I recorded the full 4-minute teardown
+with two more fixes — here: {{link}}. No strings; agencies charge $300+
+for this."]
 
 [CTA — one question, low friction:] Worth a look?
 
@@ -64,10 +69,12 @@ Rules: no images or attachments on first touch (deliverability), one link max, p
 ### Social DM (2–3 sentences, hard max)
 
 ```
-{{personalized_line}}. I made {{lead_magnet}} for {{their type of business}} — it's free, most agencies charge for this. Want me to send it over?
+{{personalized_line}}. {{one_usable_insight — e.g. "your booking link is
+broken on mobile, that's usually 10-20% of bookings"}}. I made a full
+{{lead_magnet}} on it — free, most agencies charge for this. Want it?
 ```
 
-The first DM's only job is earning a reply, not selling. "Want it?" converts far better than a link dump — and on most platforms unsolicited links get flagged.
+The first DM's only job is earning a reply, not selling — but the reply-ask must ride on value already delivered, not promised. Cold DMs are the one place "want it?" beats a link (unsolicited links get flagged on most platforms), which is exactly why the insight itself has to be in the message text.
 
 ### Cold call script (1–2 pages, hard max)
 

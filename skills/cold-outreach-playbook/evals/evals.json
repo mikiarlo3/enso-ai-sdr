@@ -13,7 +13,8 @@
         "Includes a dated follow-up sequence with 6+ touches and actual copy for each touch, including a breakup email",
         "Includes a list-building plan that references testing a sample before scaling",
         "Includes metrics/benchmarks and a CAN-SPAM-relevant compliance note",
-        "Copy avoids banned phrases like 'I hope this email finds you well' and 'I wanted to reach out'"
+        "Copy avoids banned phrases like 'I hope this email finds you well' and 'I wanted to reach out'",
+        "The first-touch email delivers a usable insight inline (a finding, number, or fix readable in the message itself), not just an offer to send something on reply"
       ]
     },
     {
