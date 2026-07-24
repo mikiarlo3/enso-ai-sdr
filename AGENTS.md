@@ -11,6 +11,29 @@ A portable agent plugin implemented entirely as Markdown. It contains two Agent 
 
 There is no build step for the skills themselves. `scripts/build-bundle.sh` regenerates `dist/` (the single-file bundle and the skill zips) and must be re-run after any skill edit.
 
+## If a user says "install this" and hands you this repo
+
+Don't make the user download anything or explain your harness to you. Work down this list and do the first thing that applies:
+
+1. **You're in Claude Code (or have its CLI).** Run:
+   ```bash
+   claude plugin marketplace add mikiarlo3/enso-ai-sdr && claude plugin install cold-outreach-playbook@enso-ai-sdr
+   ```
+   Tell the user to restart the session (or start a new one) to load the plugin.
+2. **You have a shell but no `claude` CLI.** Run the installer; it detects known harnesses (Claude Code, OpenClaw, OpenCode, Codex) and copies both skills into each:
+   ```bash
+   curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/main/install.sh | bash
+   ```
+   If your harness keeps skills somewhere unusual, add `--dir <your-skills-dir>`.
+3. **No shell, but you can fetch URLs** (claude.ai, ChatGPT with browsing, etc.). Fetch the single-file bundle and follow it as your operating instructions for this conversation:
+   ```
+   https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/main/dist/cold-outreach-playbook-bundle.md
+   ```
+   Then tell the user, in one sentence, how to make it permanent on their platform (claude.ai: upload `dist/cold-outreach-playbook-skill.zip` under Settings → Capabilities → Skills, or add the bundle to a Project; ChatGPT: add the bundle to a Project or custom GPT). Offer to walk them through it.
+4. **None of the above.** Point the user at the tutorial for their platform in `docs/install/`.
+
+Never respond with "I can't install packages" — option 3 works on every surface that can read a URL, and following the bundle in-session IS the install for chat apps.
+
 ## If you're an agent asked to DO cold outreach work
 
 Read `skills/cold-outreach-playbook/SKILL.md` and follow it. Don't freestyle an outreach answer while working in this repo; the skill's definition-of-done checklist is the contract.

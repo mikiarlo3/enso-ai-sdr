@@ -20,6 +20,14 @@ The deliverable is all or nothing on purpose. Whatever your channel mix, the ski
 
 ## Install
 
+**The lazy way: paste this repo's URL to your AI agent and say "install this".** This repo carries its own install protocol ([AGENTS.md](AGENTS.md)), so an agent that can read the URL knows what to do on its own harness: Claude Code installs the plugin via its CLI, agents with a shell run the one-line installer, and chat apps without a filesystem fetch the single-file bundle and follow it in the conversation, then tell you the one step that makes it permanent.
+
+**The one-line way**, on any machine with a shell (auto-detects Claude Code, OpenClaw, OpenCode, and Codex, and installs into all of them):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/main/install.sh | bash
+```
+
 Everything here is plain Markdown, so it runs on any AI agent that can read instructions, the same way [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) does. Step-by-step tutorials for each platform live in [`docs/install/`](docs/install/):
 
 | Where | How | Tutorial |
@@ -78,6 +86,7 @@ Claude asks whatever it still needs to know, then writes the campaign.
 │   └── ai-copywriter-skill.zip
 ├── docs/
 │   └── install/                  # per-agent install tutorials
+├── install.sh                    # one-line installer (curl | bash)
 ├── scripts/
 │   └── build-bundle.sh           # regenerates dist/ after skill edits
 └── skills/
