@@ -4,6 +4,15 @@ All notable changes to the cold-outreach-playbook skill. Users on any
 platform can check their installed version against `VERSION` at the repo
 root (the skill does this itself when it has web access).
 
+## 1.4.0 — 2026-07-25
+- New reference: the psychology of free value (research-backed).
+  Reciprocity and its amplifiers (unexpected, personalized,
+  delivered-not-promised), zero-price effect with value anchoring,
+  the labor illusion, closable information gaps, endowment framing,
+  but-you-are-free exit lines, and contribution asks — each mapped to
+  its beat in the four-beat architecture, with an explicit
+  no-manipulation guardrail.
+
 ## 1.3.0 — 2026-07-25
 - New 360-degree hook palette (six families): trigger hooks, market
   signals, big ideas, relationship touches, give-them-a-stage plays

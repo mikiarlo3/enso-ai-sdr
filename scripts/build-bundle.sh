@@ -56,6 +56,8 @@ HEADER
   cat references/follow-up-cadence.md
   printf '\n---\n\n## Part 6: references/scaling-and-metrics.md\n\n'
   cat references/scaling-and-metrics.md
+  printf '\n---\n\n## Part 6.5: references/free-value-psychology.md\n\n'
+  cat references/free-value-psychology.md
   printf '\n---\n\n## Part 7: assets/playbook-template.md (output skeleton)\n\n'
   cat assets/playbook-template.md
   printf '\n---\n\n## Part 8: The ai-copywriter sub-skill (write all copy with this)\n\n'
