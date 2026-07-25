@@ -32,6 +32,17 @@
       ]
     },
     {
+      "id": 6,
+      "prompt": "We're an agency that does three things: paid ads management ($3k/mo), SEO retainers ($2k/mo), and one-off website builds ($8k). Set up cold outreach for us. Site is example-agency.com, we'll use email + linkedin.",
+      "expected_output": "Recognizes multiple products and asks which ONE this campaign promotes (or proposes picking one with reasoning) rather than building a blended campaign; invites a product-page URL; then anchors ICP research, hook, and sequence to that single product.",
+      "files": [],
+      "assertions": [
+        "Asks which single product/service the campaign promotes instead of averaging all three into one campaign",
+        "Invites a product page URL as an alternative to explaining",
+        "The eventual hook and sequence anchor to one named product, not the agency in general"
+      ]
+    },
+    {
       "id": 5,
       "prompt": "set up cold outreach for my business, here's my site: https://example-hvac-software.com (SaaS for HVAC contractors, pricing page says $299/mo). I can do email and linkedin.",
       "expected_output": "Fetches/researches the website to extract offer, pricing, ICP, and proof instead of asking for them; confirms the inferred facts in one-line statements; only asks about the free giveaway (channels are given); then delivers the complete campaign. In environments without web access, asks for pasted homepage text rather than re-asking questions 1-3 individually.",

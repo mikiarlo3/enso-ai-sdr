@@ -3,7 +3,8 @@
 > Generated [date]. Assumptions made (correct these if wrong): [list any assumed answers, or "none — all from intake"].
 
 ## 1. Campaign summary
-- **Offer:** [what's sold, price point, core result with numbers]
+- **Product promoted:** [the ONE product/service this campaign sells — named explicitly, since the company may have others]
+- **Offer:** [price point, core result with numbers]
 - **ICP:** [role, industry, size, geography]
 - **Core pain:** [the problem, in the prospect's own words]
 - **Lead magnet:** [the free gift] — normally worth [value anchor]
