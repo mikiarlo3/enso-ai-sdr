@@ -17,7 +17,7 @@ description: >-
   sequence.
 license: MIT
 metadata:
-  version: "0.8.1"
+  version: "1.0.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers

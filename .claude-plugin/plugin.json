@@ -1,7 +1,7 @@
 {
   "name": "cold-outreach-playbook",
-  "description": "Turn strangers into customers. Builds complete cold outreach campaigns end to end: target list strategy, lead magnets, hooks, channel-specific copy (email, DM, phone, SMS), multi-channel follow-up cadences, and a scaling plan — driven by a structured intake interview so the output fits your exact offer and audience.",
-  "version": "0.8.1",
+  "description": "Turn strangers into customers with value-first cold outreach. Ask five quick questions (or paste a product URL), and it does the rest: researches your ICP online — motivation, what they care about, the problem in their words — designs the best attention hook (grab + gift), and writes the full sequence where the first two messages deliver more value than competitors charge for. Plus channel copy, cadence, metrics, and compliance.",
+  "version": "1.0.0",
   "author": {
     "name": "enso",
     "email": "mickey@enso.bot"
