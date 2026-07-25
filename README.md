@@ -27,7 +27,7 @@ The deliverable is all or nothing on purpose. Whatever your channel mix, the ski
 **The one-line way**, on any machine with a shell (auto-detects Claude Code, OpenClaw, OpenCode, and Codex, and installs into all of them):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/install.sh | bash
 ```
 
 Everything here is plain Markdown, so it runs on any AI agent that can read instructions, the same way [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) does. Step-by-step tutorials for each platform live in [`docs/install/`](docs/install/):

@@ -4,7 +4,7 @@ ChatGPT can't install skill directories, but the whole playbook ships as one Mar
 
 ## Option 1: a Project (fastest, works on Free/Plus)
 
-1. Download `dist/cold-outreach-playbook-bundle.md` from this repo ([raw link](https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/main/dist/cold-outreach-playbook-bundle.md), then File → Save).
+1. Download `dist/cold-outreach-playbook-bundle.md` from this repo ([raw link](https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/dist/cold-outreach-playbook-bundle.md), then File → Save).
 2. In ChatGPT, click **Projects → New project** and name it something like "Cold Outreach".
 3. Open the project's **Files** and upload the bundle.
 4. In the project's **Instructions**, paste:

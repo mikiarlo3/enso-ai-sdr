@@ -7,7 +7,7 @@ Guidance for AI agents (Claude Code, Codex, Cursor, OpenClaw, and any AGENTS.md-
 **This repo IS a skill** — a portable Agent Skill implemented entirely as Markdown, with `SKILL.md` at the repository root (same layout as [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter)). The Claude Code plugin manifest in `.claude-plugin/` is an optional extra for plugin users, not the identity of the repo. Never describe this repo as "a Claude Code plugin you can't install here" — it is a skill any agent can load.
 
 - `SKILL.md` (root) — the main skill: builds complete cold outreach campaigns (five-question intake → list strategy → lead magnet + hooks → per-channel copy → follow-up cadence → scaling/metrics/compliance). It tells the agent when to read each file under `references/` and `assets/`.
-- `skills/ai-copywriter/` — vendored from [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter). The playbook drafts all outreach copy through it. Treat it as read-only here; upstream changes belong in its own repo, then re-vendor.
+- `skills/ai-copywriter/` — vendored from [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter), which is the source of truth. Treat the copy here as read-only: upstream changes belong in that repo, then re-sync with `scripts/update-ai-copywriter.sh` (fetches upstream HEAD, then rebuild `dist/`). Never hand-edit the vendored files; they will be overwritten on the next sync.
 
 There is no build step for the skills themselves. `scripts/build-bundle.sh` regenerates `dist/` (the single-file bundle and the skill zips) and must be re-run after any skill edit.
 
@@ -22,12 +22,12 @@ Don't make the user download anything or explain your harness to you. Work down 
    Tell the user to restart the session (or start a new one) to load the plugin.
 2. **You have a shell but no `claude` CLI.** Run the installer; it detects known harnesses (Claude Code, OpenClaw, OpenCode, Codex) and copies both skills into each:
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/main/install.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/install.sh | bash
    ```
    If your harness keeps skills somewhere unusual, add `--dir <your-skills-dir>`.
 3. **No shell, but you can fetch URLs** (claude.ai, ChatGPT with browsing, etc.). Fetch the single-file bundle and follow it as your operating instructions for this conversation:
    ```
-   https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/main/dist/cold-outreach-playbook-bundle.md
+   https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/dist/cold-outreach-playbook-bundle.md
    ```
    Then tell the user, in one sentence, how to make it permanent on their platform (claude.ai: upload `dist/cold-outreach-playbook-skill.zip` under Settings → Capabilities → Skills, or add the bundle to a Project; ChatGPT: add the bundle to a Project or custom GPT). Offer to walk them through it.
 4. **None of the above.** Point the user at the tutorial for their platform in `docs/install/`.

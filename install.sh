@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-line installer for the cold-outreach-playbook skills.
 #
-#   curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/install.sh | bash
 #
 # Detects the agent harnesses on this machine and installs both skills
 # (cold-outreach-playbook + ai-copywriter) into each. No arguments needed.
@@ -12,7 +12,7 @@
 set -euo pipefail
 
 REPO="mikiarlo3/enso-ai-sdr"
-BRANCH="${ENSO_SDR_BRANCH:-main}"
+BRANCH="${ENSO_SDR_BRANCH:-HEAD}"
 SKILLS=(cold-outreach-playbook ai-copywriter)
 INSTALLED=0
 
@@ -46,8 +46,12 @@ FETCHED=0
 if curl -fsSL "https://codeload.github.com/$REPO/tar.gz/refs/heads/$BRANCH" 2>/dev/null \
     | tar -xz -C "$TMP" --strip-components=1 2>/dev/null; then
   FETCHED=1
-elif git clone --depth 1 --branch "$BRANCH" "https://github.com/$REPO.git" "$TMP/clone" >/dev/null 2>&1; then
-  cp -r "$TMP/clone/." "$TMP/" && FETCHED=1
+else
+  CLONE_ARGS=(--depth 1)
+  [ "$BRANCH" != "HEAD" ] && CLONE_ARGS+=(--branch "$BRANCH")
+  if git clone "${CLONE_ARGS[@]}" "https://github.com/$REPO.git" "$TMP/clone" >/dev/null 2>&1; then
+    cp -r "$TMP/clone/." "$TMP/" && FETCHED=1
+  fi
 fi
 
 if [ "$FETCHED" = 0 ]; then
