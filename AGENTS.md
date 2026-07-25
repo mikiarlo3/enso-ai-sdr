@@ -7,9 +7,9 @@ Guidance for AI agents (Claude Code, Codex, Cursor, OpenClaw, and any AGENTS.md-
 **This repo IS a skill** — a portable Agent Skill implemented entirely as Markdown, with `SKILL.md` at the repository root (same layout as [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter)). The Claude Code plugin manifest in `.claude-plugin/` is an optional extra for plugin users, not the identity of the repo. Never describe this repo as "a Claude Code plugin you can't install here" — it is a skill any agent can load.
 
 - `SKILL.md` (root) — the main skill: builds complete cold outreach campaigns (five-question intake → list strategy → lead magnet + hooks → per-channel copy → follow-up cadence → scaling/metrics/compliance). It tells the agent when to read each file under `references/` and `assets/`.
-- `skills/ai-copywriter/` — vendored from [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter), which is the source of truth. Treat the copy here as read-only: upstream changes belong in that repo, then re-sync with `scripts/update-ai-copywriter.sh` (fetches upstream HEAD, then rebuild `dist/`). Never hand-edit the vendored files; they will be overwritten on the next sync.
+- `references/ai-copywriter.md` — the ai-copywriter method, vendored from [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) (the source of truth) as a REFERENCE FILE, deliberately not a nested SKILL.md: some hosts reject packages containing more than one skill, so this repo must always contain exactly ONE SKILL.md. Never hand-edit it; re-sync with `scripts/update-ai-copywriter.sh`, then rebuild `dist/`.
 
-There is no build step for the skills themselves. `scripts/build-bundle.sh` regenerates `dist/` (the single-file bundle and the skill zips) and must be re-run after any skill edit.
+There is no build step for the skill itself. `scripts/build-bundle.sh` regenerates `dist/` (the single-file bundle and the skill zip) and must be re-run after any skill edit.
 
 ## If a user says "install this" and hands you this repo
 
@@ -20,7 +20,7 @@ Don't make the user download anything or explain your harness to you. Work down 
    claude plugin marketplace add mikiarlo3/enso-ai-sdr && claude plugin install cold-outreach-playbook@enso-ai-sdr
    ```
    Tell the user to restart the session (or start a new one) to load the plugin.
-2. **You have a shell but no `claude` CLI.** Run the installer; it detects known harnesses (Claude Code, OpenClaw, OpenCode, Codex) and copies both skills into each:
+2. **You have a shell but no `claude` CLI.** Run the installer; it detects known harnesses (Claude Code, OpenClaw, OpenCode, Codex) and copies the skill into each:
    ```bash
    curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/install.sh | bash
    ```

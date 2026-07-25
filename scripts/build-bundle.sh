@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-# Builds dist/: the single-file bundle plus uploadable skill zips.
+# Builds dist/: the single-file bundle plus the uploadable skill zip.
 # - cold-outreach-playbook-bundle.md: the entire skill as one Markdown file,
 #   for platforms that accept a single document (ChatGPT custom GPTs and
 #   Projects, Manus knowledge, Gemini Gems, Hermes system prompts, any chat).
-# - cold-outreach-playbook-skill.zip / ai-copywriter-skill.zip: skill folders
-#   for surfaces that accept skill uploads (claude.ai Settings -> Skills).
+# - cold-outreach-playbook-skill.zip: ONE skill folder for surfaces that
+#   accept skill uploads (claude.ai Settings -> Skills). The ai-copywriter
+#   content ships inside as references/ai-copywriter.md, not as a second
+#   skill — some hosts reject multi-skill packages.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -24,8 +26,8 @@ VERSION="$(tr -d '[:space:]' < VERSION)"
 
 This is the complete cold-outreach-playbook agent skill in one file, bundled
 for platforms that accept a single document. It contains the main skill, all
-of its reference files, the output template, and the ai-copywriter skill used
-for drafting copy.
+of its reference files, the output template, and the ai-copywriter reference
+used for drafting copy.
 
 This copy is frozen at version $VERSION. The live version number is at
 https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/VERSION and the
@@ -36,9 +38,9 @@ HEADER
   cat <<'HEADER'
 
 Instructions for the AI agent reading this: follow Part 1 as your operating
-instructions. When Part 1 tells you to read a file under `references/`,
-`assets/`, or `skills/ai-copywriter/`, that content is included below as
-Parts 2-8 — use those instead of looking for files.
+instructions. When Part 1 tells you to read a file under `references/` or
+`assets/`, that content is included below as Parts 2-8 — use those instead
+of looking for files.
 
 ---
 
@@ -60,23 +62,20 @@ HEADER
   cat references/free-value-psychology.md
   printf '\n---\n\n## Part 7: assets/playbook-template.md (output skeleton)\n\n'
   cat assets/playbook-template.md
-  printf '\n---\n\n## Part 8: The ai-copywriter sub-skill (write all copy with this)\n\n'
-  strip_frontmatter skills/ai-copywriter/SKILL.md
+  printf '\n---\n\n## Part 8: references/ai-copywriter.md (write all copy with this)\n\n'
+  cat references/ai-copywriter.md
 } > "$OUT"
 
 echo "Wrote $OUT ($(wc -l < "$OUT") lines)"
 
 # Stage the root skill into a named folder so the zip carries a proper
-# skill directory (SKILL.md at cold-outreach-playbook/SKILL.md).
+# single-skill directory (SKILL.md at cold-outreach-playbook/SKILL.md).
 STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
 mkdir -p "$STAGE/cold-outreach-playbook/assets"
 cp SKILL.md LICENSE "$STAGE/cold-outreach-playbook/"
 cp -r references "$STAGE/cold-outreach-playbook/references"
 cp assets/playbook-template.md "$STAGE/cold-outreach-playbook/assets/"
-mkdir -p "$STAGE/cold-outreach-playbook/skills"
-cp -r skills/ai-copywriter "$STAGE/cold-outreach-playbook/skills/ai-copywriter"
-rm -f dist/cold-outreach-playbook-skill.zip dist/ai-copywriter-skill.zip
+rm -f dist/cold-outreach-playbook-skill.zip
 (cd "$STAGE" && zip -qr - cold-outreach-playbook) > dist/cold-outreach-playbook-skill.zip
-(cd skills && zip -qr - ai-copywriter) > dist/ai-copywriter-skill.zip
-echo "Wrote dist/cold-outreach-playbook-skill.zip and dist/ai-copywriter-skill.zip"
+echo "Wrote dist/cold-outreach-playbook-skill.zip (single skill, ai-copywriter embedded as a reference)"

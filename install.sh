@@ -3,8 +3,9 @@
 #
 #   curl -fsSL https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/install.sh | bash
 #
-# Detects the agent harnesses on this machine and installs both skills
-# (cold-outreach-playbook + ai-copywriter) into each. No arguments needed.
+# Detects the agent harnesses on this machine and installs the skill into
+# each. The ai-copywriter content ships inside it as a reference file, so
+# this is a SINGLE-skill install. No arguments needed.
 #
 # Options:
 #   --project     also install into ./.claude/skills (this repo/project only)
@@ -13,7 +14,7 @@ set -euo pipefail
 
 REPO="mikiarlo3/enso-ai-sdr"
 BRANCH="${ENSO_SDR_BRANCH:-HEAD}"
-SKILLS=(cold-outreach-playbook ai-copywriter)
+SKILLS=(cold-outreach-playbook)
 INSTALLED=0
 
 EXTRA_DIRS=()
@@ -66,12 +67,10 @@ fi
 # Stage the root skill as a named folder (SKILL.md lives at the repo root).
 stage_skills() {
   STAGED="$TMP/_staged"
-  mkdir -p "$STAGED/cold-outreach-playbook/assets" "$STAGED/cold-outreach-playbook/skills"
+  mkdir -p "$STAGED/cold-outreach-playbook/assets"
   cp "$TMP/SKILL.md" "$STAGED/cold-outreach-playbook/"
   cp -r "$TMP/references" "$STAGED/cold-outreach-playbook/references"
   cp "$TMP/assets/playbook-template.md" "$STAGED/cold-outreach-playbook/assets/"
-  cp -r "$TMP/skills/ai-copywriter" "$STAGED/cold-outreach-playbook/skills/ai-copywriter"
-  cp -r "$TMP/skills/ai-copywriter" "$STAGED/ai-copywriter"
 }
 
 copy_into() { # $1 = dest skills dir, $2 = label

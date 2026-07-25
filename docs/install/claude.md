@@ -28,7 +28,7 @@ A note if the repo isn't yours: marketplaces install skills and commands that sh
 npx skills add mikiarlo3/enso-ai-sdr --global
 ```
 
-This discovers and installs both skills (`cold-outreach-playbook` and `ai-copywriter`). Add `--agent '*'` to install into every supported harness on your machine, or omit `--global` for a project-local install you can commit for your team.
+This discovers and installs the skill (the ai-copywriter method is embedded inside it). Add `--agent '*'` to install into every supported harness on your machine, or omit `--global` for a project-local install you can commit for your team.
 
 ## claude.ai chat app (web and mobile)
 
@@ -36,8 +36,8 @@ Two ways, no Claude Code needed:
 
 **Upload as a skill (Pro/Max/Team plans).** Skills uploaded in settings work across your chats.
 
-1. Download `dist/cold-outreach-playbook-skill.zip` from this repo (grab `dist/ai-copywriter-skill.zip` too for best copy quality).
-2. On claude.ai go to **Settings → Capabilities → Skills** and upload the zip(s). If you don't see the Skills section, your plan or org settings don't include custom skills yet; use the Project method below.
+1. Download `dist/cold-outreach-playbook-skill.zip` from this repo — it's a single skill with the ai-copywriter method embedded inside, so one upload is the whole install.
+2. On claude.ai go to **Settings → Capabilities → Skills** and upload the zip. If you don't see the Skills section, your plan or org settings don't include custom skills yet; use the Project method below.
 3. In any chat, ask for a cold outreach campaign. The skill triggers on its own.
 
 **Use a Project with the bundle file (any plan with Projects).**
@@ -49,11 +49,12 @@ Two ways, no Claude Code needed:
 
 ## Manual copy (any machine running Claude Code)
 
-The repo root is the skill (SKILL.md at the top level), so a clone into your skills directory is the whole install:
+The repo root is the skill (SKILL.md at the top level), so a clone into your skills directory is the whole install — the ai-copywriter method is embedded as a reference file, nothing else to copy:
 
 ```bash
 git clone https://github.com/mikiarlo3/enso-ai-sdr.git ~/.claude/skills/cold-outreach-playbook
-cp -r ~/.claude/skills/cold-outreach-playbook/skills/ai-copywriter ~/.claude/skills/ai-copywriter
 ```
+
+(Want ai-copywriter as its own standalone skill too? Install it from [its repo](https://github.com/mikiarlo3/ai-copywriter).)
 
 Use a repo's `.claude/skills/` directory instead of `~/.claude/skills/` to install for a single project.

@@ -15,7 +15,7 @@ Tell Claude which product you're promoting, or just paste the product page URL a
 - The full sequence (10 touches over 21 days by default) with real copy for every touch, each one carrying value — no "just bumping this" anywhere — down to the breakup email.
 - The supporting system, kept lean: where to find these people (2 to 4 named sources), metrics with a which-number-means-what diagnostic, scaling notes, and a compliance checklist for CAN-SPAM, GDPR, CASL, TCPA, and platform rules.
 
-Every line of copy runs through the bundled [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) skill, which writes reader-first and strips the phrases that make outreach smell like a template blast. "I hope this email finds you well" does not survive contact.
+Every line of copy runs through the embedded [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) method (vendored inside as a reference file, so this package is a single skill on every host), which writes reader-first and strips the phrases that make outreach smell like a template blast. "I hope this email finds you well" does not survive contact.
 
 The deliverable is all or nothing on purpose. Whatever your channel mix, the skill won't stop at ideas or a lone email: it delivers the whole strategy end to end, from ICP to launch checklist, in one document you can start executing the same day.
 
@@ -89,24 +89,23 @@ Claude asks whatever it still needs to know, then writes the campaign.
 ```
 ├── SKILL.md                      # THE SKILL — workflow, five-question intake, definition of done
 ├── references/
-│   ├── lead-magnet-generator.md  # gift + grab: magnet ideation, scoring, value-in-message rule
-│   ├── list-building.md          # the 3 list methods + testing protocol
+│   ├── lead-magnet-generator.md  # the hook engine: ICP research, gift + grab, 8 hook families
+│   ├── free-value-psychology.md  # 12 research-backed attention mechanisms
 │   ├── hooks-and-copy.md         # hook formulas, channel templates, banned phrases
 │   ├── follow-up-cadence.md      # cadence tables + copy angles per touch
-│   └── scaling-and-metrics.md    # scaling ramp, benchmarks, diagnostics, compliance
+│   ├── list-building.md          # the 3 list methods + testing protocol
+│   ├── scaling-and-metrics.md    # scaling ramp, benchmarks, diagnostics, compliance
+│   └── ai-copywriter.md          # embedded copy method (vendored from mikiarlo3/ai-copywriter)
 ├── assets/
 │   ├── playbook-template.md      # output document skeleton
 │   └── banner.svg
 ├── evals/
 │   └── evals.json                # test prompts for skill iteration
-├── skills/
-│   └── ai-copywriter/            # bundled copy sub-skill (mikiarlo3/ai-copywriter)
 ├── AGENTS.md                     # guidance + self-install protocol for agents
 ├── install.sh                    # one-line installer (curl | bash)
 ├── dist/
 │   ├── cold-outreach-playbook-bundle.md   # whole skill as one file (ChatGPT, Manus, Gems, APIs)
-│   ├── cold-outreach-playbook-skill.zip   # uploadable skill for claude.ai Settings → Skills
-│   └── ai-copywriter-skill.zip
+│   └── cold-outreach-playbook-skill.zip   # uploadable single skill for claude.ai Settings → Skills
 ├── docs/install/                 # per-agent install tutorials
 ├── scripts/build-bundle.sh       # regenerates dist/ after skill edits
 ├── commands/outreach-campaign.md # /outreach-campaign (Claude Code plugin users)

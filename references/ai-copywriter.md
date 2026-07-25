@@ -1,10 +1,7 @@
----
-name: ai-copywriter
-description: "Write copy that converts and doesn't sound like a robot. Two jobs in one skill: a reader-first copywriter for clickbait titles, headlines, short descriptions, microcopy, CTAs, error messages, subject lines, and viral LinkedIn posts, which asks for the ICP, the category, and the story before writing, helps sharpen the story until it is worth telling, names the feeling of the person on the other end, and finds the simplest way to explain the concept; and a humanizer built on Wikipedia's comprehensive Signs of AI writing guide, which detects and fixes inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, passive voice, negative parallelisms, and filler phrases. Use when writing or punching up marketing copy, UI text, titles, or LinkedIn posts, or when editing text to sound natural and human-written."
-license: MIT
-metadata:
-  version: "1.5.1"
----
+<!-- Vendored from https://github.com/mikiarlo3/ai-copywriter (MIT license,
+     by Mickey Haslavsky, built on blader/humanizer). This is a reference file,
+     not a standalone skill, so the package stays a single skill. Do not edit
+     by hand — re-sync with scripts/update-ai-copywriter.sh -->
 
 # AI Copywriter: Write Copy That Converts, Humanize Everything
 

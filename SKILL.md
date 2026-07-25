@@ -17,7 +17,7 @@ description: >-
   sequence.
 license: MIT
 metadata:
-  version: "1.6.0"
+  version: "1.7.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
@@ -98,7 +98,7 @@ Every first message follows the four-beat architecture: **Verified Trigger → U
 
 ### Phase 4: Write the sequence — value first, value always
 
-Read `references/hooks-and-copy.md` before writing copy — hook formulas, channel templates, banned phrases. **Draft all copy with the ai-copywriter sub-skill** (bundled at `skills/ai-copywriter/SKILL.md`; a separately installed copy works too; if neither is reachable, hold the same bar via the copy rules below). Run every finished piece through its humanizer audit — outreach dies the moment it smells like a template blast.
+Read `references/hooks-and-copy.md` before writing copy — hook formulas, channel templates, banned phrases. **Draft all copy with the ai-copywriter method**, shipped inside this skill at `references/ai-copywriter.md` (vendored from the standalone [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) skill as a reference file, so this package stays a single skill — a separately installed ai-copywriter skill works identically; if neither is reachable, hold the same bar via the copy rules below). Run every finished piece through its humanizer audit — outreach dies the moment it smells like a template blast.
 
 The sequence lives or dies on its first two messages, so build them deliberately:
 

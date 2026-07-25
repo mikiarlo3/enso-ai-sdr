@@ -1,20 +1,20 @@
-# Cold Outreach Playbook (single-file bundle, v1.6.0)
+# Cold Outreach Playbook (single-file bundle, v1.7.0)
 
 This is the complete cold-outreach-playbook agent skill in one file, bundled
 for platforms that accept a single document. It contains the main skill, all
-of its reference files, the output template, and the ai-copywriter skill used
-for drafting copy.
+of its reference files, the output template, and the ai-copywriter reference
+used for drafting copy.
 
-This copy is frozen at version 1.6.0. The live version number is at
+This copy is frozen at version 1.7.0. The live version number is at
 https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/VERSION and the
 changelog at https://github.com/mikiarlo3/enso-ai-sdr/blob/main/CHANGELOG.md —
 if the live version is newer, tell the user once (after the deliverable) to
 re-download the bundle from the repo's dist/ folder.
 
 Instructions for the AI agent reading this: follow Part 1 as your operating
-instructions. When Part 1 tells you to read a file under `references/`,
-`assets/`, or `skills/ai-copywriter/`, that content is included below as
-Parts 2-8 — use those instead of looking for files.
+instructions. When Part 1 tells you to read a file under `references/` or
+`assets/`, that content is included below as Parts 2-8 — use those instead
+of looking for files.
 
 ---
 
@@ -99,7 +99,7 @@ Every first message follows the four-beat architecture: **Verified Trigger → U
 
 ### Phase 4: Write the sequence — value first, value always
 
-Read `references/hooks-and-copy.md` before writing copy — hook formulas, channel templates, banned phrases. **Draft all copy with the ai-copywriter sub-skill** (bundled at `skills/ai-copywriter/SKILL.md`; a separately installed copy works too; if neither is reachable, hold the same bar via the copy rules below). Run every finished piece through its humanizer audit — outreach dies the moment it smells like a template blast.
+Read `references/hooks-and-copy.md` before writing copy — hook formulas, channel templates, banned phrases. **Draft all copy with the ai-copywriter method**, shipped inside this skill at `references/ai-copywriter.md` (vendored from the standalone [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) skill as a reference file, so this package stays a single skill — a separately installed ai-copywriter skill works identically; if neither is reachable, hold the same bar via the copy rules below). Run every finished piece through its humanizer audit — outreach dies the moment it smells like a template blast.
 
 The sequence lives or dies on its first two messages, so build them deliberately:
 
@@ -934,8 +934,12 @@ Every mechanism above works because it rides on something true: real effort, rea
 
 ---
 
-## Part 8: The ai-copywriter sub-skill (write all copy with this)
+## Part 8: references/ai-copywriter.md (write all copy with this)
 
+<!-- Vendored from https://github.com/mikiarlo3/ai-copywriter (MIT license,
+     by Mickey Haslavsky, built on blader/humanizer). This is a reference file,
+     not a standalone skill, so the package stays a single skill. Do not edit
+     by hand — re-sync with scripts/update-ai-copywriter.sh -->
 
 # AI Copywriter: Write Copy That Converts, Humanize Everything
 

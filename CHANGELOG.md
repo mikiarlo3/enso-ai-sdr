@@ -4,6 +4,14 @@ All notable changes to the cold-outreach-playbook skill. Users on any
 platform can check their installed version against `VERSION` at the repo
 root (the skill does this itself when it has web access).
 
+## 1.7.0 — 2026-07-25
+- Single-skill package: the ai-copywriter method now ships as
+  references/ai-copywriter.md instead of a nested second skill, because
+  some hosts (including claude.ai skill upload) reject packages
+  containing more than one skill. Same content, same workflow; the
+  standalone ai-copywriter skill remains available from its own repo
+  and is used automatically when installed.
+
 ## 1.6.0 — 2026-07-25
 - Eighth hook family: identity and tribe hooks — genuine shared
   membership, insider language from the ICP research, the shared enemy

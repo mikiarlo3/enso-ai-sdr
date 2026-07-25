@@ -8,13 +8,12 @@ OpenClaw reads Agent Skills in the same `SKILL.md` format Claude uses, so this p
    ```bash
    git clone https://github.com/mikiarlo3/enso-ai-sdr.git
    ```
-2. Copy the skill folders into OpenClaw's skills directory (`~/.openclaw/skills/` for your whole install, or your workspace's `skills/` directory for one workspace):
+2. Copy the skill folder into OpenClaw's skills directory (`~/.openclaw/skills/` for your whole install, or your workspace's `skills/` directory for one workspace):
    ```bash
    cp -r enso-ai-sdr ~/.openclaw/skills/cold-outreach-playbook
-   cp -r enso-ai-sdr/skills/ai-copywriter ~/.openclaw/skills/ai-copywriter
    ```
 3. Restart the OpenClaw gateway (or start a fresh session) so it re-scans skills.
-4. Verify: ask your agent "what skills do you have?" — both `cold-outreach-playbook` and `ai-copywriter` should be listed.
+4. Verify: ask your agent "what skills do you have?" — `cold-outreach-playbook` should be listed (the ai-copywriter method is embedded inside it as a reference).
 
 The skills CLI route works too, if you prefer a managed install:
 
