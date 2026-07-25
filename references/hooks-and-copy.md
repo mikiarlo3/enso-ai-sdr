@@ -47,18 +47,20 @@ Every template needs: `{{personalized_line}}` (with instructions for the 30–60
 ```
 Subject: [hook, 1–5 words]
 
-{{first_name}} — {{personalized_line}}
+{{first_name}} — [TRIGGER: {{personalized_line}} — the verified, dated
+fact about them; source logged in the tracker]
 
-[THE VALUE, delivered in plain text: the top finding, the number, or the
-one fix — usable even if they stop reading here. e.g. "Sites like yours
-lose most mobile bookings at the phone-number field; removing it is
-usually worth 10–20%."]
+[IMPLICATION, delivered in plain text: the role-relevant cost or risk
+the trigger creates, with a defensible number or mechanism — usable
+even if they stop reading here. e.g. "Sites like yours lose most mobile
+bookings at the phone-number field; removing it is usually worth
+10–20%."]
 
-[The full gift, one click away: "I recorded the full 4-minute teardown
-with two more fixes — here: {{link}}. No strings; agencies charge $300+
-for this."]
+[ASSET, one click away: "I recorded the full 4-minute teardown with two
+more fixes — here: {{link}}. No strings; agencies charge $300+ for
+this."]
 
-[CTA — one question, low friction:] Worth a look?
+[MICRO-ASK — one yes/no question, never a meeting:] Worth a look?
 
 [Name]
 [One-line signature: who you are + one credibility marker]

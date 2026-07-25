@@ -22,8 +22,14 @@
 
 ## 3. Hooks (recommended winner per segment + A/B alternates)
 ### [Segment name]
-**Send this one:** [the winning hook — grab + gift]
+**Send this one:**
+- *Trigger:* [the verified, dated fact — source: URL/where found]
+- *Implication:* [the role-relevant cost/risk it creates, with a defensible number or mechanism]
+- *Asset:* [the concrete gift, described exactly, delivery per platform]
+- *Micro-ask:* [one yes/no question — never a meeting]
+
 *Why it wins for this ICP:* [one sentence tied to the profile — their words, their motivation, their skepticism, their reading moment]
+*Quality score:* [n/10 per the Part 3.5 checklist]
 
 **A/B alternates:**
 1. [hook] — *(type: personalized observation)*

@@ -81,12 +81,12 @@ Without web access, infer the profile from what you know and ask the user for tw
 
 ### Phase 3: Design the hook — the heart of the skill
 
-The hook is a **grab + gift pair**: the reason this person stops (grab) and the value they receive (gift). Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
+Every first message follows the four-beat architecture: **Verified Trigger → Useful Implication → Small Asset → Micro-Ask.** The trigger is a public, dated, work-relevant fact ("why you, why now"); the implication is one role-relevant inference naming the specific cost or risk that fact creates — the beat that proves competence and delivers value before anything is offered; the asset is the concrete gift; the micro-ask is one yes/no question, and **never a meeting request in message 1**. Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
 
 - **Value inventory (Part 2.5)**: from the profile, list what a stranger could hand this exact person that's usable the moment they read it — the number they don't know, the mistake they can check in a minute, the fix they can apply today.
 - **The gift**: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the rubric, present the table. Run this whenever the user's free-gift answer is missing or weak — a mediocre gift caps the campaign and no copy rescues it. Hand-made gifts get tiered, not discarded.
-- **The grab**: pick attention triggers per segment — problem signals, why-now events, observable gaps — strongest tier the list can support.
-- **The best hook**: draft candidates, score each against the ICP profile (their words? their motivation? survives their skepticism? fits their reading moment?), and mark ONE recommended winner per segment with a one-sentence reason tied to the profile. The rest are A/B alternates. Never hand the user ten hooks and make them guess.
+- **The trigger + implication**: pick verified, source-logged attention triggers per segment, matched to buyer type (executives → company-level triggers like initiatives and earnings; practitioners → workflow triggers like job posts and visible process friction). Then write the implication — the non-obvious consequence, with a mechanism or number you can defend, never invented. No valid trigger → peer-benchmark grab or leave the prospect out; never force personalization.
+- **The best hook**: draft candidates as full four-beat messages, score each against the ICP profile (their words? their motivation? survives their skepticism?) AND the 10-point quality score in Part 3.5 — **8 of 10 minimum or it doesn't ship**. Mark ONE recommended winner per segment with a one-sentence reason tied to the profile. The rest are A/B alternates. Never hand the user ten hooks and make them guess.
 
 ### Phase 4: Write the sequence — value first, value always
 
@@ -103,7 +103,8 @@ Copy rules that always apply (rationale in the references):
 - **Third-grade reading level.** Complex language is friction; friction kills replies. Short words, short sentences.
 - **The message IS the value.** Every first touch hands over something usable in plain text — a finding, a number, a fix — so the prospect is better off having read it even if they never reply. The full asset rides along linked or attached; "want me to send it?" is allowed only where platforms flag cold links (DMs), and even then one real insight goes in the message text. The test for every draft: cover the CTA — did the prospect receive anything? If not, rewrite.
 - **Personalization slot in every first touch** — a `{{merge_field}}` plus instructions for what research fills it (30–60 seconds per lead, not 10 minutes).
-- **One CTA, low friction.** "Worth a look?" beats "book a 45-minute demo."
+- **One CTA, low friction — and no meeting requests in message 1.** "Worth a look?" beats "book a 45-minute demo." The message sells the asset; the asset sells the conversation; the conversation sells the meeting.
+- **Only verifiable claims.** Every number, peer outcome, and case result in any message must come from the user, the ICP research, or a source you can name. An invented statistic that gets a reply is a landmine, not a win.
 - **No deception.** No fake "Re:" subject lines, no fake forwarded threads, no pretending a prior relationship exists. Deception poisons the trust the whole campaign is trying to build — and violates CAN-SPAM.
 - **Sound like a person.** Read the copy aloud; if it sounds like a marketing robot or an AI, rewrite it. The banned-phrases list in the references catches the worst offenders.
 
@@ -125,7 +126,7 @@ The job is not done until the user holds the **entire lead generation strategy e
 - [ ] ICP psychology profile written from research: motivation, what they care about, the problem in their words, what the offer fixes for them, their skepticism, their reading moment
 - [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
 - [ ] Attention triggers/segments defined, each with its personalization angle
-- [ ] ONE recommended hook per segment with a profile-tied reason, plus 5–10 A/B alternates as grab + gift pairs
+- [ ] ONE recommended hook per segment with a profile-tied reason, plus 5–10 A/B alternates — each built as Verified Trigger → Useful Implication → Small Asset → Micro-Ask, scoring ≥8/10 on the Part 3.5 quality check, with trigger sources logged
 - [ ] Message 1 passes the cover-the-CTA test: usable value delivered inline, immediately — not a promise of value on reply
 - [ ] Message 2 delivers the full gift unprompted — by its end the prospect has received what others charge for
 - [ ] Every touch in the sequence carries value (no "just bumping" anywhere), with real copy for every single touch, breakup included, dated
@@ -250,6 +251,15 @@ The grab answers: *why this person, why now?* Ranked from strongest to weakest �
 
 **Tier 4 — Genuine common ground.** Shared community, event, connection, or locality — real ones only.
 
+**Match the trigger to the buyer type.** Where you hunt depends on who reads the message:
+- **Executives** → company-level triggers: earnings calls, press releases, strategic initiatives, announced risks and expansions.
+- **Managers/practitioners** → workflow triggers: job postings, public docs, the company's own website funnel, process friction visible from outside.
+- **Warm-ish contacts** (engaged with content, attended an event) → the specific webinar, post, or thread they touched.
+
+**Verify before you use.** A trigger goes into a message only if it's public, professional, dated, and you can point at where you found it — log the source URL in the tracker. Never use personal-life data (family, health, private activity): it doesn't read as "they did their homework," it reads as surveillance, and the reply it earns is an opt-out.
+
+**No trigger found? Don't force it.** Forced personalization ("loved your website!") is worse than none. Fall back to a segment-level peer-benchmark grab ("most med spas we look at lose 10–20% of mobile bookings at the same form field") or leave the prospect out of the personalized track entirely.
+
 **The multiplier: build the list FROM the grab.** Instead of building a list and then hunting for personalization, reverse it — make the trigger the list criterion ("Texas med spas whose sites lack online booking," "SaaS companies that hired a first SDR this quarter"). The opener then writes itself for every lead, and personalization scales for free. Recommend this whenever the ICP makes trigger-based filtering possible; feed the chosen triggers back into the list plan (see `list-building.md` segments).
 
 **Pattern interrupts** (use sparingly, honestly): a thumbnail showing *their* website in your teardown video, a hand-typed-looking two-line email in a sea of formatted ones, physical mail for high-ticket lists, a 30-second personalized voice note DM. The interrupt earns the glance; the gift must still carry the message.
@@ -266,14 +276,33 @@ The failure mode to design out: a message that only *describes* value ("I made y
 
 This is why deep ICP thinking is mandatory before writing hooks: to put real value *inside* two sentences, you must know what this exact person can use off the shelf. For each segment, list what a stranger could hand them that's instantly usable: the number they don't know (benchmark, cost-of-problem math), the mistake they can check in 60 seconds, the fix they can apply today, the resource that took you hours and them zero. Pick the ones that need no trust and no context — those go in the message; the deeper asset backs them up.
 
-For each segment, the hook = grab + gift, with the gift's first installment paid inside the message:
+## Part 3: Assembling the hook — the four-beat architecture
 
-> **[GRAB]** "Saw you're hiring two front-desk staff — usually means the no-show problem got expensive."
-> **[GIFT, delivered]** "Quick math: at your volume, every 1% of no-shows is roughly $900/month. The fastest fix I see for practices like yours is a deposit link in the confirmation text. I recorded a 5-minute breakdown of your full booking flow with two more fixes — here it is: [link]. Most consultants charge $400 for this; it's yours either way."
+Every first message follows the same architecture: **Verified Trigger → Useful Implication → Small Asset → Micro-Ask.** The grab supplies beats 1–2, the gift supplies beat 3, and the CTA rules supply beat 4.
 
-The prospect got the number and the first fix just by reading. The video deepens it; the reply is optional.
+1. **Verified Trigger** — the public, dated, work-relevant fact that answers "why you, why now." From Part 2, verified and sourced. *"Saw you're hiring two front-desk staff."*
+2. **Useful Implication** — the beat most cold messages skip, and the one that proves competence. One concise, role-relevant inference naming the specific cost, risk, or trade-off the trigger creates — not "that must be hard," but the operational consequence: *"Usually that means no-shows got expensive enough to staff against — at your volume, every 1% of no-shows is roughly $900/month."* Non-obvious but defensible: a mechanism or number you can stand behind (from the ICP research, the user's own data, or a published benchmark — never invented). The implication is in-message value on its own: the prospect learns something even if they stop reading here.
+3. **Small Asset** — the concrete gift, described so specifically they know exactly what they'd receive: *"I recorded a 5-minute breakdown of your booking flow with the two highest-impact fixes — here: [link]. Most consultants charge $400 for this; it's yours either way."* Delivered per the Part 2.5 tiers — linked outright where platforms allow, permission-gated only in cold DMs.
+4. **Micro-Ask** — one low-commitment yes/no question: *"Worth a look?"* / *"Want the same map for your other location?"* **Never ask for a meeting in the first message.** The message sells the asset, the asset sells the conversation, the conversation sells the meeting — a 30-minute ask from a stranger skips two rungs and reads like every other pitch they delete.
 
-Test hooks as pairs: the same gift with different grabs across segments, and (once volume allows) different gifts against each other. A gift that no grab can save is a weak gift — go back to the scorecard.
+Test hooks as controlled pairs: the same asset with different triggers across segments, then (once volume allows) different assets against each other. A gift that no trigger can save is a weak gift — back to the scorecard.
+
+## Part 3.5: Score the hook before it ships
+
+Score every candidate first message, one point per line. **8 of 10 or it doesn't enter the campaign** — rewrite the failing beats instead of shipping on hope:
+
+1. The first sentence names a real, verifiable trigger (or an honest peer-benchmark on the no-trigger track).
+2. The trigger fits the recipient's role — executives get company-level triggers, practitioners get workflow ones.
+3. The implication is non-obvious but plausible, naming a specific cost, risk, or trade-off.
+4. There's a concrete asset or insight — not a generic ROI promise.
+5. The prospect gains something even if they never reply (cover-the-CTA test).
+6. Every fact, number, and peer claim is verifiable, with known provenance.
+7. Plain language, zero promotional buzzwords or AI-tells (ai-copywriter audit passed).
+8. The personalization is work-relevant and wouldn't feel intrusive read aloud to the prospect's face.
+9. The CTA is a small yes/no or permission question — no meeting request.
+10. Readable in under 30 seconds.
+
+**Instant rejections, regardless of score:** a compliment with no insight; a meeting request in message 1; "increase ROI / save time / drive growth" with no mechanism; any invented statistic, peer outcome, or manufactured urgency; more than one core value proposition; a question that makes the prospect explain their business before receiving value; a sales pitch wearing a free-audit costume.
 
 ---
 
@@ -391,18 +420,20 @@ Every template needs: `{{personalized_line}}` (with instructions for the 30–60
 ```
 Subject: [hook, 1–5 words]
 
-{{first_name}} — {{personalized_line}}
+{{first_name}} — [TRIGGER: {{personalized_line}} — the verified, dated
+fact about them; source logged in the tracker]
 
-[THE VALUE, delivered in plain text: the top finding, the number, or the
-one fix — usable even if they stop reading here. e.g. "Sites like yours
-lose most mobile bookings at the phone-number field; removing it is
-usually worth 10–20%."]
+[IMPLICATION, delivered in plain text: the role-relevant cost or risk
+the trigger creates, with a defensible number or mechanism — usable
+even if they stop reading here. e.g. "Sites like yours lose most mobile
+bookings at the phone-number field; removing it is usually worth
+10–20%."]
 
-[The full gift, one click away: "I recorded the full 4-minute teardown
-with two more fixes — here: {{link}}. No strings; agencies charge $300+
-for this."]
+[ASSET, one click away: "I recorded the full 4-minute teardown with two
+more fixes — here: {{link}}. No strings; agencies charge $300+ for
+this."]
 
-[CTA — one question, low friction:] Worth a look?
+[MICRO-ASK — one yes/no question, never a meeting:] Worth a look?
 
 [Name]
 [One-line signature: who you are + one credibility marker]
@@ -651,8 +682,14 @@ Not legal advice — but these are the standard lines, and staying inside them p
 
 ## 3. Hooks (recommended winner per segment + A/B alternates)
 ### [Segment name]
-**Send this one:** [the winning hook — grab + gift]
+**Send this one:**
+- *Trigger:* [the verified, dated fact — source: URL/where found]
+- *Implication:* [the role-relevant cost/risk it creates, with a defensible number or mechanism]
+- *Asset:* [the concrete gift, described exactly, delivery per platform]
+- *Micro-ask:* [one yes/no question — never a meeting]
+
 *Why it wins for this ICP:* [one sentence tied to the profile — their words, their motivation, their skepticism, their reading moment]
+*Quality score:* [n/10 per the Part 3.5 checklist]
 
 **A/B alternates:**
 1. [hook] — *(type: personalized observation)*
