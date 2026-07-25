@@ -4,6 +4,14 @@ All notable changes to the cold-outreach-playbook skill. Users on any
 platform can check their installed version against `VERSION` at the repo
 root (the skill does this itself when it has web access).
 
+## 1.5.0 — 2026-07-25
+- Seventh hook family: FOMO and tension hooks — competitor motion,
+  peer-benchmark gaps, left-out-of-the-report, closing windows, and
+  honest scarcity with its reason stated. Grounded in Worchel/Cialdini
+  scarcity research (new psychology section 8), with a hard line
+  against artificial urgency: if the constraint isn't real, use a
+  different family.
+
 ## 1.4.0 — 2026-07-25
 - New reference: the psychology of free value (research-backed).
   Reciprocity and its amplifiers (unexpected, personalized,

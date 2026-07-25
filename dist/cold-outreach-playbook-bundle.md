@@ -1,11 +1,11 @@
-# Cold Outreach Playbook (single-file bundle, v1.4.0)
+# Cold Outreach Playbook (single-file bundle, v1.5.0)
 
 This is the complete cold-outreach-playbook agent skill in one file, bundled
 for platforms that accept a single document. It contains the main skill, all
 of its reference files, the output template, and the ai-copywriter skill used
 for drafting copy.
 
-This copy is frozen at version 1.4.0. The live version number is at
+This copy is frozen at version 1.5.0. The live version number is at
 https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/VERSION and the
 changelog at https://github.com/mikiarlo3/enso-ai-sdr/blob/main/CHANGELOG.md —
 if the live version is newer, tell the user once (after the deliverable) to
@@ -90,7 +90,7 @@ Without web access, infer the profile from what you know and ask the user for tw
 Every first message follows the four-beat architecture: **Verified Trigger → Useful Implication → Small Asset → Micro-Ask.** The trigger is a public, dated, work-relevant fact ("why you, why now"); the implication is one role-relevant inference naming the specific cost or risk that fact creates — the beat that proves competence and delivers value before anything is offered; the asset is the concrete gift; the micro-ask is one yes/no question, and **never a meeting request in message 1**. Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
 
 - **Value inventory + the enormity bar (Part 2.5)**: from the profile, list what a stranger could hand this exact person that's usable the moment they read it — then raise the bar from useful to *disproportionate*. Reason deeply and in writing (3–5 sentences in the campaign doc): what would make THIS person stop and think "why is a stranger giving me this free?" — would they forward it to a peer, would they feel a twinge of guilt taking it? The answer must trace to the ICP research, never to "it was easy to make."
-- **Scan the full 360° hook palette (Part 4)**: six families — triggers, market signals, big ideas, relationship touches, give-them-a-stage plays (podcast invites, industry-report quotes, webinars, rankings), ecosystem plays. Don't default to trigger hooks just because they're the reflex.
+- **Scan the full 360° hook palette (Part 4)**: seven families — triggers, market signals, big ideas, relationship touches, give-them-a-stage plays (podcast invites, industry-report quotes, webinars, rankings), ecosystem plays, and FOMO/tension hooks (competitor motion, peer-benchmark gaps, left-out-of-the-report, closing windows, honest scarcity with its reason stated — never fake urgency). Don't default to trigger hooks just because they're the reflex.
 - **Apply the psychology of free value deliberately**: read `references/free-value-psychology.md` and pick one or two mechanisms per message — reciprocity's amplifiers (unexpected, personalized, delivered-not-promised), the zero-price effect with a value anchor, the labor illusion (show the work in one sentence), a closable information gap, endowment naming ("your report is ready"), a but-you-are-free exit line, or a contribution ask on stage plays. The reference maps each technique to its beat in the four-beat architecture — and draws the line: these ride on real value or they backfire.
 - **The gift**: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the rubric, present the table. Run this whenever the user's free-gift answer is missing or weak — a mediocre gift caps the campaign and no copy rescues it. Hand-made gifts get tiered, not discarded.
 - **The trigger + implication**: pick verified, source-logged attention triggers per segment, matched to buyer type (executives → company-level triggers like initiatives and earnings; practitioners → workflow triggers like job posts and visible process friction). Then write the implication — the non-obvious consequence, with a mechanism or number you can defend, never invented. No valid trigger → peer-benchmark grab or leave the prospect out; never force personalization.
@@ -327,9 +327,9 @@ Score every candidate first message, one point per line. **8 of 10 or it doesn't
 
 **Instant rejections, regardless of score:** a compliment with no insight; a meeting request in message 1; "increase ROI / save time / drive growth" with no mechanism; any invented statistic, peer outcome, or manufactured urgency; more than one core value proposition; a question that makes the prospect explain their business before receiving value; a sales pitch wearing a free-audit costume.
 
-## Part 4: The 360° hook palette — six families
+## Part 4: The 360° hook palette — seven families
 
-The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. Scan all six for every campaign and recommend from the full palette, not just the reflex.
+The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Scan all seven for every campaign. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. 
 
 **1. Trigger hooks (the classic).** Why-now events, observable gaps, problem signals — everything in Part 2. The workhorse: fastest to run, fully scalable, and the default when nothing below fits better.
 
@@ -349,6 +349,15 @@ The four-beat architecture is the skeleton of every first message, but the hook 
 Stage hooks flip the trust equation — a stranger *giving* status instead of requesting attention — and they compound: every episode, quote, and panel produces content, social proof, and warm intros for the next wave. The cost is real: they're slower, they require actually building the thing, and a stage with no audience is a weak gift (be honest about this — a brand-new podcast's value is the conversation and the association, not the reach; say so in the invite). Truthfulness rules still apply: never invent listenership, never fake an award, never run a report you won't publish.
 
 **6. Ecosystem hooks.** Reach them through something they already trust: a genuinely useful contribution in the community where they live (answer the hard question, publish the resource the group keeps asking for), a shared partner or vendor who'd make a warm-ish intro, sponsoring the small thing they love. Slowest family, strongest trust transfer.
+
+**7. FOMO and tension hooks.** The grab is what they're missing or about to lose — the strongest attention mechanism there is, and the most dangerous, because faked tension is the fastest way to the spam folder. Every claim in this family must be verifiable, and scarcity must always come with its honest reason (scarcity with a stated real cause is rated far more valuable than scarcity that looks accidental):
+- **Competitor motion**: verifiable moves by peers they compete with. "Three clinics within two miles of you added online booking last quarter — the teardown shows what that's doing to same-day appointments." The prospect's real fear isn't missing a vendor; it's falling behind the practice down the street.
+- **Peer-benchmark gap**: their position in real data. "You rank 14th of 20 Austin practices on response time — the full table is attached." Status threat plus curiosity gap in one line; requires actually having the data (which the market-signal family produces).
+- **Left out of the room**: the report/ranking/panel their peers are already in. "27 operators are quoted in the 2026 report — your perspective isn't in it yet. Want it in?" This is the stage play wearing its FOMO face, and it's the most natural honest FOMO there is.
+- **Closing window**: real external deadlines — a regulation taking effect, a platform change ("Google's local-ranking update lands in March"), a seasonal demand wave. The date does the urgency work, and the date is checkable.
+- **Honest scarcity**: true capacity limits, stated with the reason. "I do three of these audits a week by hand — Thursday's slot is open if you want it." Never invent limits, never fake countdowns; if the constraint isn't real, this subtype is off the table.
+
+FOMO earns the glance; it never replaces the gift. A tension hook with no enormous value behind it is just anxiety marketing — pair every FOMO grab with a delivered asset, and keep the exit free ("either way, the benchmark table is yours").
 
 **How to choose — and when to recommend the bigger plays.** Families 1–3 are message-speed: run them this week. Families 4–6 are build-speed: they take weeks and produce an asset. The skill's job is to ALWAYS put at least two build-speed plays on the table when the economics support them — high LTV, narrow ICP (a few hundred names, not fifty thousand), relationship-driven buying, or a user with content ambitions — because users don't ask for what they haven't imagined. Present each recommended play with: why it fits THIS ICP (from the profile), the first-touch script, the effort honestly stated, and the payoff horizon. A campaign can and usually should run both tracks at once: trigger hooks for volume today, one stage play compounding in the background.
 
@@ -756,6 +765,12 @@ Asking someone for a *small, flattering* contribution makes them invest in you �
 
 **Application:** when a stage play is running, the micro-ask can be a contribution ask. Keep it small and flattering; asking them to do real work before receiving value is a rejection-rule violation.
 
+## 8. Scarcity and FOMO — the fear of the closing door
+
+Worchel's cookie-jar experiment: identical cookies were rated more desirable from the nearly-empty jar — and *most* desirable when the scarcity had a stated social reason ("demand reduced the supply") rather than looking accidental. Cialdini codified it: restricted availability inflates perceived value, and fear of missing out overrides slow rational evaluation. Social proof compounds it — scarcity plus "your peers are already in" is the strongest tension combination there is.
+
+**Application (Part 4, family 7):** competitor motion, peer-benchmark gaps, left-out-of-the-report, closing windows, honest capacity limits — always with the real reason stated ("I do three of these a week by hand"), because scarcity-with-a-reason is both more effective and true. **The hard line:** artificial scarcity is detectable and, once detected, destroys everything the gift built. No fake countdowns, no invented slots, no "spots filling fast" that aren't. If the constraint isn't real, use a different family.
+
 ## Mapping techniques to the four beats
 
 | Beat | Techniques that live there |
@@ -764,6 +779,7 @@ Asking someone for a *small, flattering* contribution makes them invest in you �
 | Implication | Loss framing, labor illusion (the analysis shows the work), gap partially closed |
 | Asset | Reciprocity (delivered, not promised), zero-price + value anchor, endowment naming, labor illusion |
 | Micro-ask | But-you-are-free line, contribution ask (stage plays), zero pressure |
+| Any beat, honest only | Scarcity with its reason stated, peer social proof, FOMO (family 7) |
 
 ## The line not to cross
 
@@ -778,6 +794,7 @@ Every mechanism above works because it rides on something true: real effort, rea
 - Loewenstein (1994), information-gap theory of curiosity — [overview](https://psychologyfanatic.com/information-gap-theory/); Golman & Loewenstein — [paper](https://www.cmu.edu/dietrich/sds/docs/golman/golman_loewenstein_curiosity.pdf)
 - Carpenter (2013), BYAF meta-analysis — [abstract](https://www.tandfonline.com/doi/full/10.1080/10510974.2012.727941); later re-examination with reproducibility caveats — [meta-psychology](https://open.lnu.se/index.php/metapsychology/article/view/2640/3402)
 - White et al. (2008), reactance to over-personalization — cited in the agent operating playbook's guardrails
+- Worchel, Lee & Adewole (1975), the cookie-jar scarcity experiment; Cialdini's scarcity principle — [overview](https://www.explorepsychology.com/scarcity-principle/), [scarcity psychology](https://www.coglode.com/nuggets/scarcity)
 
 ---
 

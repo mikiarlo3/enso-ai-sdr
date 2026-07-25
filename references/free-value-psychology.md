@@ -48,6 +48,12 @@ Asking someone for a *small, flattering* contribution makes them invest in you �
 
 **Application:** when a stage play is running, the micro-ask can be a contribution ask. Keep it small and flattering; asking them to do real work before receiving value is a rejection-rule violation.
 
+## 8. Scarcity and FOMO — the fear of the closing door
+
+Worchel's cookie-jar experiment: identical cookies were rated more desirable from the nearly-empty jar — and *most* desirable when the scarcity had a stated social reason ("demand reduced the supply") rather than looking accidental. Cialdini codified it: restricted availability inflates perceived value, and fear of missing out overrides slow rational evaluation. Social proof compounds it — scarcity plus "your peers are already in" is the strongest tension combination there is.
+
+**Application (Part 4, family 7):** competitor motion, peer-benchmark gaps, left-out-of-the-report, closing windows, honest capacity limits — always with the real reason stated ("I do three of these a week by hand"), because scarcity-with-a-reason is both more effective and true. **The hard line:** artificial scarcity is detectable and, once detected, destroys everything the gift built. No fake countdowns, no invented slots, no "spots filling fast" that aren't. If the constraint isn't real, use a different family.
+
 ## Mapping techniques to the four beats
 
 | Beat | Techniques that live there |
@@ -56,6 +62,7 @@ Asking someone for a *small, flattering* contribution makes them invest in you �
 | Implication | Loss framing, labor illusion (the analysis shows the work), gap partially closed |
 | Asset | Reciprocity (delivered, not promised), zero-price + value anchor, endowment naming, labor illusion |
 | Micro-ask | But-you-are-free line, contribution ask (stage plays), zero pressure |
+| Any beat, honest only | Scarcity with its reason stated, peer social proof, FOMO (family 7) |
 
 ## The line not to cross
 
@@ -70,3 +77,4 @@ Every mechanism above works because it rides on something true: real effort, rea
 - Loewenstein (1994), information-gap theory of curiosity — [overview](https://psychologyfanatic.com/information-gap-theory/); Golman & Loewenstein — [paper](https://www.cmu.edu/dietrich/sds/docs/golman/golman_loewenstein_curiosity.pdf)
 - Carpenter (2013), BYAF meta-analysis — [abstract](https://www.tandfonline.com/doi/full/10.1080/10510974.2012.727941); later re-examination with reproducibility caveats — [meta-psychology](https://open.lnu.se/index.php/metapsychology/article/view/2640/3402)
 - White et al. (2008), reactance to over-personalization — cited in the agent operating playbook's guardrails
+- Worchel, Lee & Adewole (1975), the cookie-jar scarcity experiment; Cialdini's scarcity principle — [overview](https://www.explorepsychology.com/scarcity-principle/), [scarcity psychology](https://www.coglode.com/nuggets/scarcity)

@@ -157,9 +157,9 @@ Score every candidate first message, one point per line. **8 of 10 or it doesn't
 
 **Instant rejections, regardless of score:** a compliment with no insight; a meeting request in message 1; "increase ROI / save time / drive growth" with no mechanism; any invented statistic, peer outcome, or manufactured urgency; more than one core value proposition; a question that makes the prospect explain their business before receiving value; a sales pitch wearing a free-audit costume.
 
-## Part 4: The 360° hook palette — six families
+## Part 4: The 360° hook palette — seven families
 
-The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. Scan all six for every campaign and recommend from the full palette, not just the reflex.
+The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Scan all seven for every campaign. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. 
 
 **1. Trigger hooks (the classic).** Why-now events, observable gaps, problem signals — everything in Part 2. The workhorse: fastest to run, fully scalable, and the default when nothing below fits better.
 
@@ -179,5 +179,14 @@ The four-beat architecture is the skeleton of every first message, but the hook 
 Stage hooks flip the trust equation — a stranger *giving* status instead of requesting attention — and they compound: every episode, quote, and panel produces content, social proof, and warm intros for the next wave. The cost is real: they're slower, they require actually building the thing, and a stage with no audience is a weak gift (be honest about this — a brand-new podcast's value is the conversation and the association, not the reach; say so in the invite). Truthfulness rules still apply: never invent listenership, never fake an award, never run a report you won't publish.
 
 **6. Ecosystem hooks.** Reach them through something they already trust: a genuinely useful contribution in the community where they live (answer the hard question, publish the resource the group keeps asking for), a shared partner or vendor who'd make a warm-ish intro, sponsoring the small thing they love. Slowest family, strongest trust transfer.
+
+**7. FOMO and tension hooks.** The grab is what they're missing or about to lose — the strongest attention mechanism there is, and the most dangerous, because faked tension is the fastest way to the spam folder. Every claim in this family must be verifiable, and scarcity must always come with its honest reason (scarcity with a stated real cause is rated far more valuable than scarcity that looks accidental):
+- **Competitor motion**: verifiable moves by peers they compete with. "Three clinics within two miles of you added online booking last quarter — the teardown shows what that's doing to same-day appointments." The prospect's real fear isn't missing a vendor; it's falling behind the practice down the street.
+- **Peer-benchmark gap**: their position in real data. "You rank 14th of 20 Austin practices on response time — the full table is attached." Status threat plus curiosity gap in one line; requires actually having the data (which the market-signal family produces).
+- **Left out of the room**: the report/ranking/panel their peers are already in. "27 operators are quoted in the 2026 report — your perspective isn't in it yet. Want it in?" This is the stage play wearing its FOMO face, and it's the most natural honest FOMO there is.
+- **Closing window**: real external deadlines — a regulation taking effect, a platform change ("Google's local-ranking update lands in March"), a seasonal demand wave. The date does the urgency work, and the date is checkable.
+- **Honest scarcity**: true capacity limits, stated with the reason. "I do three of these audits a week by hand — Thursday's slot is open if you want it." Never invent limits, never fake countdowns; if the constraint isn't real, this subtype is off the table.
+
+FOMO earns the glance; it never replaces the gift. A tension hook with no enormous value behind it is just anxiety marketing — pair every FOMO grab with a delivered asset, and keep the exit free ("either way, the benchmark table is yours").
 
 **How to choose — and when to recommend the bigger plays.** Families 1–3 are message-speed: run them this week. Families 4–6 are build-speed: they take weeks and produce an asset. The skill's job is to ALWAYS put at least two build-speed plays on the table when the economics support them — high LTV, narrow ICP (a few hundred names, not fifty thousand), relationship-driven buying, or a user with content ambitions — because users don't ask for what they haven't imagined. Present each recommended play with: why it fits THIS ICP (from the profile), the first-touch script, the effort honestly stated, and the payoff horizon. A campaign can and usually should run both tracks at once: trigger hooks for volume today, one stage play compounding in the background.

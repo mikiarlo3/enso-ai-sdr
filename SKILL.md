@@ -17,7 +17,7 @@ description: >-
   sequence.
 license: MIT
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
@@ -89,7 +89,7 @@ Without web access, infer the profile from what you know and ask the user for tw
 Every first message follows the four-beat architecture: **Verified Trigger → Useful Implication → Small Asset → Micro-Ask.** The trigger is a public, dated, work-relevant fact ("why you, why now"); the implication is one role-relevant inference naming the specific cost or risk that fact creates — the beat that proves competence and delivers value before anything is offered; the asset is the concrete gift; the micro-ask is one yes/no question, and **never a meeting request in message 1**. Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
 
 - **Value inventory + the enormity bar (Part 2.5)**: from the profile, list what a stranger could hand this exact person that's usable the moment they read it — then raise the bar from useful to *disproportionate*. Reason deeply and in writing (3–5 sentences in the campaign doc): what would make THIS person stop and think "why is a stranger giving me this free?" — would they forward it to a peer, would they feel a twinge of guilt taking it? The answer must trace to the ICP research, never to "it was easy to make."
-- **Scan the full 360° hook palette (Part 4)**: six families — triggers, market signals, big ideas, relationship touches, give-them-a-stage plays (podcast invites, industry-report quotes, webinars, rankings), ecosystem plays. Don't default to trigger hooks just because they're the reflex.
+- **Scan the full 360° hook palette (Part 4)**: seven families — triggers, market signals, big ideas, relationship touches, give-them-a-stage plays (podcast invites, industry-report quotes, webinars, rankings), ecosystem plays, and FOMO/tension hooks (competitor motion, peer-benchmark gaps, left-out-of-the-report, closing windows, honest scarcity with its reason stated — never fake urgency). Don't default to trigger hooks just because they're the reflex.
 - **Apply the psychology of free value deliberately**: read `references/free-value-psychology.md` and pick one or two mechanisms per message — reciprocity's amplifiers (unexpected, personalized, delivered-not-promised), the zero-price effect with a value anchor, the labor illusion (show the work in one sentence), a closable information gap, endowment naming ("your report is ready"), a but-you-are-free exit line, or a contribution ask on stage plays. The reference maps each technique to its beat in the four-beat architecture — and draws the line: these ride on real value or they backfire.
 - **The gift**: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the rubric, present the table. Run this whenever the user's free-gift answer is missing or weak — a mediocre gift caps the campaign and no copy rescues it. Hand-made gifts get tiered, not discarded.
 - **The trigger + implication**: pick verified, source-logged attention triggers per segment, matched to buyer type (executives → company-level triggers like initiatives and earnings; practitioners → workflow triggers like job posts and visible process friction). Then write the implication — the non-obvious consequence, with a mechanism or number you can defend, never invented. No valid trigger → peer-benchmark grab or leave the prospect out; never force personalization.
