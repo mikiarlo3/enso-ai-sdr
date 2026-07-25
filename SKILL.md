@@ -17,7 +17,7 @@ description: >-
   sequence.
 license: MIT
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
@@ -144,6 +144,12 @@ The job is not done until the user holds the **entire lead generation strategy e
 Ideas, strategy, content, copy — all of it, in one document. If any box can't be filled, say why and what's needed rather than delivering a partial campaign silently. If the user asked for only one piece (just hooks, just an email), deliver that piece at full quality, then offer the surrounding sequence, noting that a first touch without follow-ups leaves most replies on the table.
 
 Write the document to a file (e.g. `cold-outreach-campaign.md`) when working in an environment with a filesystem, so the user keeps it.
+
+## Staying up to date
+
+This skill improves over time. Once per full campaign build (not for quick one-off asks), if web access is available, fetch `https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/VERSION` and compare it to this file's `metadata.version`. If the remote version is newer, add ONE line at the end of your reply — after the deliverable, never before it: "A newer version of this skill is available (vX.Y.Z — see the changelog at github.com/mikiarlo3/enso-ai-sdr/blob/main/CHANGELOG.md). Update with: [the step for this platform]." Platform steps: Claude Code plugin → `claude plugin marketplace update enso-ai-sdr`; skills CLI → `npx skills update cold-outreach-playbook --global`; manual clone → `git pull`; uploaded zip or bundle (claude.ai, ChatGPT, Manus) → re-download from the repo's `dist/` folder and re-upload.
+
+Rules: never block or delay the campaign on this check, never nag more than once per conversation, and on any fetch failure skip silently — an update notice is a courtesy, not a feature the user asked for.
 
 ## Principles to hold onto
 

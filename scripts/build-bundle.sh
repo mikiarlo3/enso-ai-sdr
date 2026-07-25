@@ -16,14 +16,24 @@ strip_frontmatter() {
   awk 'NR==1 && $0=="---" {fm=1; next} fm==1 && $0=="---" {fm=2; next} fm!=1 {print}' "$1"
 }
 
+VERSION="$(tr -d '[:space:]' < VERSION)"
+
 {
-  cat <<'HEADER'
-# Cold Outreach Playbook (single-file bundle)
+  cat <<HEADER
+# Cold Outreach Playbook (single-file bundle, v$VERSION)
 
 This is the complete cold-outreach-playbook agent skill in one file, bundled
 for platforms that accept a single document. It contains the main skill, all
 of its reference files, the output template, and the ai-copywriter skill used
 for drafting copy.
+
+This copy is frozen at version $VERSION. The live version number is at
+https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/VERSION and the
+changelog at https://github.com/mikiarlo3/enso-ai-sdr/blob/main/CHANGELOG.md —
+if the live version is newer, tell the user once (after the deliverable) to
+re-download the bundle from the repo's dist/ folder.
+HEADER
+  cat <<'HEADER'
 
 Instructions for the AI agent reading this: follow Part 1 as your operating
 instructions. When Part 1 tells you to read a file under `references/`,

@@ -56,6 +56,20 @@ The two fast paths:
 npx skills add mikiarlo3/enso-ai-sdr --global
 ```
 
+## Updating
+
+The skill checks for new versions on its own: when it builds a campaign and has web access, it compares its installed version against [`VERSION`](VERSION) in this repo and, if there's something newer, adds one line after the deliverable telling you what changed ([CHANGELOG.md](CHANGELOG.md)) and how to update. The update itself, per install method:
+
+| Installed via | Update with |
+|---|---|
+| Claude Code plugin | `claude plugin marketplace update enso-ai-sdr` (or `/plugin` → manage) |
+| skills CLI | `npx skills update cold-outreach-playbook --global` |
+| One-line installer | run the `curl \| bash` line again |
+| Manual clone | `git pull` |
+| Uploaded zip / bundle (claude.ai, ChatGPT, Manus, Gems) | re-download from [`dist/`](dist/) and re-upload |
+
+To get notified by GitHub instead: **Watch → Custom → Releases** on this repo (publishing a release per version is recommended; watchers get an email and the [releases feed](https://github.com/mikiarlo3/enso-ai-sdr/releases.atom) works with any RSS reader).
+
 ## Use
 
 Ask naturally. The skill triggers on cold outreach topics:

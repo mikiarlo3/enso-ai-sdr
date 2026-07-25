@@ -43,7 +43,7 @@ Read `SKILL.md` at the repo root and follow it. Don't freestyle an outreach answ
 - `SKILL.md` prose is the product. Edit it like an instruction document, keeping the explain-the-why style; avoid piling on ALL-CAPS musts.
 - The cold-outreach skill's copy guidance must itself pass the ai-copywriter rules (no em dashes in copy examples, no banned hype vocabulary outside banned-word lists).
 - Keep `README.md`, the install docs in `docs/install/`, and the file tree in the README in sync with reality.
-- Version lives in the root `SKILL.md` frontmatter (`metadata.version`) and `.claude-plugin/plugin.json` — bump both together.
+- Version lives in THREE places that must stay identical: root `SKILL.md` frontmatter (`metadata.version`), `.claude-plugin/plugin.json`, and the root `VERSION` file (which installed copies poll for update notices). Bump all three together and add a `CHANGELOG.md` entry — the changelog is what the update notice points users at.
 - After skill edits: run `./scripts/build-bundle.sh`, and validate with `claude plugin validate .` when available.
 - Test prompts with per-case assertions live in `evals/evals.json`.
 
