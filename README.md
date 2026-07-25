@@ -8,13 +8,12 @@ Cold outreach fails for one reason: the person on the other end doesn't know you
 
 Tell Claude what you sell, or just paste your website URL and let it work that out itself. The intake is five one-line questions in one message (what you sell, who buys it, your best proof, your channels, and what you could give away free — and a URL answers the first three for you), sensible defaults cover everything else, and then you get one document with everything in it:
 
-- A target list plan: where the leads come from (scraping software, list brokers, or digging through communities by hand) and how to test a source with a few hundred leads before spending real money on it.
-- A lead magnet, invented for you if you don't have one. Claude brainstorms 5 to 8 things you could give away free, scores them on a rubric, and picks the ones worth building. The bar: something so useful the prospect feels silly saying no.
-- Hooks built as grab + gift pairs. The grab is the reason to contact this person now (they just raised, they're hiring, their website is visibly broken). The gift is the free thing. You get 5 to 10 per channel, ready to A/B test.
-- The actual copy for every channel you use: cold email, social DM, a phone script with objection responses, SMS where consent allows. All of it written at a reading level a tired person can absorb in four seconds.
-- A follow-up cadence (10 touches over 21 days by default) with real copy for every single touch, down to the breakup email. Most replies come from follow-up, so this is where campaigns are won.
-- A scaling plan and a metrics table that tells you which number being low means which part is broken.
-- A compliance checklist for CAN-SPAM, GDPR, CASL, TCPA, and platform rules.
+- An ICP psychology profile, researched for you. Before writing a single hook, the skill goes online and studies who you're selling to — the forums and groups where they complain, the reviews they write and receive, their job postings — and comes back with their motivation, what they care about right now, the problem in their own words, and what your offer actually fixes for them.
+- The best attention hook, chosen and defended. Hooks are grab + gift pairs: the reason this person stops now, and the value they receive for reading. You get one recommended winner per segment with the reasoning tied to the profile, plus 5 to 10 alternates to A/B test.
+- A lead magnet, invented for you if you don't have one: 5 to 8 candidates scored on a rubric, with the bar set at "so useful the prospect feels silly saying no."
+- The first two messages, built to win the campaign. Message 1 delivers a real insight in the message text itself — the prospect gains something even if they never reply. Message 2 hands over the full gift unprompted. By then they've received what your competitors charge for, and that's what turns cold into warm.
+- The full sequence (10 touches over 21 days by default) with real copy for every touch, each one carrying value — no "just bumping this" anywhere — down to the breakup email.
+- The supporting system, kept lean: where to find these people (2 to 4 named sources), metrics with a which-number-means-what diagnostic, scaling notes, and a compliance checklist for CAN-SPAM, GDPR, CASL, TCPA, and platform rules.
 
 Every line of copy runs through the bundled [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) skill, which writes reader-first and strips the phrases that make outreach smell like a template blast. "I hope this email finds you well" does not survive contact.
 

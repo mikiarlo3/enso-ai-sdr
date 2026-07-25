@@ -19,14 +19,7 @@
 - **The reading moment:** [where/when the message lands; what tone survives it]
 - **Research sources:** [threads/reviews/postings read, or "inferred — validate with real quotes"]
 
-## 3. Target list plan
-- **Method mix:** [software / broker / manual — and why for this ICP]
-- **Sources to test:** [specific platforms, communities, broker types]
-- **Testing protocol:** [sample size, verification steps, pass/fail criteria]
-- **Segments:** [segment → personalization angle for each]
-- **Tracker fields:** name, company, source, segment, personalization note, contact info, status, touch count
-
-## 4. Hooks (recommended winner per segment + A/B alternates)
+## 3. Hooks (recommended winner per segment + A/B alternates)
 ### [Segment name]
 **Send this one:** [the winning hook — grab + gift]
 *Why it wins for this ICP:* [one sentence tied to the profile — their words, their motivation, their skepticism, their reading moment]
@@ -39,26 +32,31 @@
 5. [hook] — *(type: honest cold open)*
 [5–10 total per primary channel; repeat block per segment]
 
-## 5. First-touch copy
-### Cold email
-[full email with {{merge_fields}} + research instructions for {{personalized_line}}]
+## 4. The first two messages (where the campaign is won)
+### Message 1 — [primary channel]
+[full copy with {{merge_fields}} + research instructions for {{personalized_line}}. Must deliver a usable insight in the message text — cover the CTA and the prospect still received something]
 
-### DM
-[2–3 sentence message]
+### Message 2 — the unprompted delivery
+[full copy: the complete gift handed over without waiting for a reply. After this message the prospect has received what competitors charge for]
 
-### Phone script
-[open / reason + value / qualify / CTA / top-5 objection responses]
+### Other channels' first touch
+**DM (2–3 sentences):** [copy with one inline insight]
+**Phone script:** [open / reason + value / qualify / CTA / top-5 objection responses]
+**SMS (only post-engagement, consent basis noted):** [1–2 sentences]
 
-### SMS (if applicable, consent basis noted)
-[1–2 sentences]
-
-## 6. Follow-up sequence
+## 5. Follow-up sequence
 | Day | Channel | Touch | Copy |
 |-----|---------|-------|------|
-| 1 | ... | #1 | [actual copy or pointer to section 5] |
+| 1 | ... | #1 | [actual copy or pointer to section 4] |
 | ... | ... | ... | [actual copy for every touch, including the breakup] |
 
 **Exit rules:** reply → live conversation; "no"/opt-out → global suppression; "not now" → monthly nurture track.
+
+## 6. Where to find them (lean)
+- **Best 2–4 sources for this ICP:** [communities / directories / scraper / trigger-based searches — built from the grab where possible]
+- **Sample-test rule:** [verify a few hundred before scaling; bounce >5% → switch source]
+- **Segments:** [segment → personalization angle]
+- Full method detail: references/list-building.md
 
 ## 7. Scaling plan
 - **Weeks 1–4 (manual proof):** [daily activity, what signal to watch]

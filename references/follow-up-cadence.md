@@ -2,15 +2,17 @@
 
 Most conversions happen in follow-up, not the first touch. A first message with no sequence behind it leaves the majority of replies unclaimed — people are busy, not uninterested. The rule: **follow up more times than feels comfortable**, across **multiple channels**, with each touch adding something instead of just "bumping."
 
+**The front-load rule:** the sequence's value is concentrated at the start, on purpose. Message 1 delivers a real insight in the message text plus the gift where links are allowed; the next message delivers the full gift unprompted, no matter what. By the end of the second message the prospect has received what the user's competitors charge for — that imbalance is the engine of the whole sequence, and everything after it is a value-bearing reminder that it happened.
+
 ## Default cadence: 10 touches over 21 days (multi-channel)
 
 Adapt channels to what the user can actually use; keep the rhythm — dense in week 1 while attention is warm, spaced out after.
 
 | Day | Channel | Touch | Angle |
 |----|---------|-------|-------|
-| 1  | Email | #1 | First touch: personalized hook + lead magnet offer |
+| 1  | Email | #1 | The hook: insight delivered in-text + full gift linked |
 | 2  | LinkedIn | #2 | Connection request, no note or a 1-liner referencing the email |
-| 4  | Email | #3 | Deliver more value: the actual asset, a relevant case study, or the promised thing sent unprompted |
+| 3  | Email | #3 | The full gift delivered unprompted — the asset itself, not a nudge ("made it anyway — here it is") |
 | 5  | Phone | #4 | Call. If no answer: no voicemail yet |
 | 7  | Email | #5 | Short reply *to your own thread* — new angle on the pain, 2 sentences |
 | 9  | Phone | #6 | Call. If no answer: 20-second voicemail referencing the emails |

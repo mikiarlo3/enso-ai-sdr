@@ -1,20 +1,23 @@
 ---
 name: cold-outreach-playbook
 description: >-
-  Build a complete cold outreach campaign from scratch: target list strategy,
-  lead magnet, hooks, channel-specific copy (cold email, LinkedIn/social DM,
-  phone script, SMS), a multi-channel follow-up cadence, and a scaling plan.
-  Asks five quick questions first (two minutes, one message) so everything is
-  tailored to the user's offer, audience, and channels. Use this skill whenever the user mentions cold
-  outreach, cold email, cold calling, cold DMs, outbound sales, prospecting,
-  booking meetings with strangers, SDR/BDR sequences, follow-up cadences, lead
-  lists, or wants help writing messages to people who don't know them — even if
-  they only ask for one piece (e.g. "write me a cold email" or "give me some
+  Design the hook and the full outreach sequence for cold outreach that leads
+  with value. Asks five quick questions (or reads the user's website), then
+  does the work itself: researches the ICP online — their motivation, what
+  they care about, the problem in their own words, what the offer fixes for
+  them — designs the best attention hook (grab + gift), and writes a complete
+  multi-channel sequence where the first two messages deliver more value than
+  competitors charge for, plus channel copy, cadence, metrics, and compliance.
+  Use this skill whenever the user mentions cold outreach, cold email, cold
+  calling, cold DMs, outbound sales, prospecting, booking meetings with
+  strangers, SDR/BDR sequences, follow-up cadences, hooks, lead magnets, or
+  wants help writing messages to people who don't know them — even if they
+  only ask for one piece (e.g. "write me a cold email" or "give me some
   hooks"), because a single message works far better as part of a designed
   sequence.
 license: MIT
 metadata:
-  version: "0.7.0"
+  version: "0.8.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
@@ -54,26 +57,48 @@ That's the whole interview. Everything else gets a smart default, inferred and s
 
 Ask a follow-up only when an answer is unusable — "everyone" for Q2 gets one push for the narrowest profitable slice, because a campaign aimed at everyone converts no one. If the user says "just assume everything," skip the questions entirely and build with stated assumptions.
 
-### Phase 2: Diagnose and choose the strategy
+### Phase 2: Research the ICP — this is YOUR work, not theirs
 
-From the answers, decide and briefly justify:
-- **Research the ICP first — the hook depends on it.** Before choosing anything, run Part 0 of `references/lead-magnet-generator.md`: study who this person actually is. With web access, spend 10–15 minutes where they talk (their subreddits, forums, groups, the reviews they write and receive, their job postings) and capture their motivation, what they care about this week, the problem in their own words, what the offer really fixes *for them*, their default skepticism toward cold messages, and the moment the message will reach them. Without web access, infer the profile and ask the user for two or three real customer quotes. Write the resulting ICP psychology profile into the campaign document — every gift, grab, and hook downstream is chosen and judged against it.
-- **List-building method(s)**: software scraping, list brokers, or manual "elbow grease" — usually a mix. High-ticket + niche audience → lean manual (higher-quality, less fatigued leads). High-volume + broad audience → lean software. See `references/list-building.md` for the selection logic, testing protocol, and per-method action steps.
-- **Primary channel + support channels**: pick where the audience actually pays attention, then use the other channels for follow-up variety.
-- **The hook: gift + grab.** This is the heart of the campaign, so treat it as a design step, not a copy step. Read `references/lead-magnet-generator.md` and run its process: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the five-criterion rubric, and present the table so the user picks with eyes open — then choose the attention triggers (why-now signals, observable gaps, problem signals) that will earn the first seconds for each segment. Run the generator whenever the user's intake answer for the free gift is missing, vague, or weak ("maybe an ebook?") — a mediocre magnet caps the whole campaign and no copy can rescue it. If the best magnet is hand-made (e.g. a personal video teardown), don't discard it — tier it: hand-made for the highest-value or already-engaged leads, a templated/automated version for everyone else. Where possible, feed the chosen attention triggers back into the list plan and build the list *from* the trigger, so personalization scales for free. Finally, before any copy gets written, do the Part 2.5 value inventory: think deeply about this exact ICP and list what a stranger could hand them that's usable *the moment they read it* — the number they don't know, the mistake they can check in a minute, the fix they can apply today. The playbook's whole engine is value, delivered immediately, in the message itself — not offered, not scheduled, not gated behind a reply.
-- **Capacity math**: the user's daily send capacity covers *all* touches, not just first touches. With a 10-touch cadence, steady-state total sends ≈ new-leads/day × average touches consumed (usually 5–7). So "30 sends/day" supports roughly 5–6 *new* leads/day, not 30. Size the new-lead intake so follow-ups never get skipped — follow-ups convert better than first touches and get cut first when capacity is oversubscribed.
+The user told you who the ICP is. Everything else about that person is your job to find out. This phase is the foundation the hook stands on, so give it real effort before touching strategy or copy.
 
-### Phase 3: Write the campaign
+**This is a gate, not a suggestion: no hook gets drafted until this research has run.** Whenever a hook is about to be created — a full campaign, or even a quick "give me some hooks" request — go online first and learn who this person actually is. Run Part 0 of `references/lead-magnet-generator.md`. With web access, spend 10–15 minutes where these people actually talk, with searches like:
 
-Read `references/hooks-and-copy.md` before writing copy — it has the hook formulas, channel templates, and the banned-phrases list.
+- `site:reddit.com [their trade] [the problem]` and the trade's main subreddit sorted by top posts
+- their industry forums and Facebook/LinkedIn groups (search the problem space, read the complaint threads)
+- reviews they receive (Google/Yelp/G2 — read the angry ones) and reviews they write about tools/vendors
+- their job postings (what they're hiring for is what's breaking)
+- what they post and celebrate on LinkedIn/X
 
-**Draft all copy with the ai-copywriter sub-skill.** This skill ships with it at `skills/ai-copywriter/SKILL.md`; a separately installed `ai-copywriter` skill works too, and if neither file is reachable in your environment, hold the same bar using the copy rules below — they encode its core. Read it and apply its copywriting mode — name the feeling of the person on the other end, simplest possible explanation — when writing subject lines, openers, and body copy, and run every finished piece through its humanizer audit. Cold outreach lives or dies on not sounding like a robot or a template blast; the sub-skill's AI-pattern checks are the quality gate before any copy ships.
+Come back with:
 
-Then produce, for each channel in play:
+- **Their motivation**: what gets them out of bed, what they're afraid of, what they're proud of.
+- **What they care about right now**: the two or three things competing for their attention this week.
+- **The problem, in their words**: exact phrases from real threads and reviews — these go into hooks nearly verbatim.
+- **What the offer actually fixes for them**: the outcome translated into their motivation, not the user's category language.
+- **Their default skepticism**: what they auto-delete, what they've been burned by.
+- **The reading moment**: where and when the message lands, which sets tone and length.
 
-- **Hooks**: 5–10 per primary channel, each a **grab + gift pair** (attention trigger + free-value offer — assembled per Part 3 of `references/lead-magnet-generator.md`), spanning different hook types (personalized observation, specific claim + proof, problem callout, give-first). Score them against the ICP profile (their words, their motivation, their skepticism, their reading moment) and mark ONE recommended winner per segment with a one-sentence reason tied to the profile — the rest are the A/B alternates. Never hand the user ten hooks and make them guess which to send.
-- **First-touch copy**: full message per channel, respecting hard limits — DM: 2–3 sentences; email: half a page max; phone script: 1–2 pages; SMS: 1–2 sentences. Treat SMS as a follow-up channel for leads who have already engaged or consented, never a cold first touch — cold SMS to strangers is high-risk under TCPA (details in the compliance section of `references/scaling-and-metrics.md`).
-- **Follow-up sequence**: a dated, multi-channel cadence (default: 8–12 touches over ~3 weeks) with actual copy for every touch, not just "follow up here." Most conversions happen in follow-up, so this section is not optional. See `references/follow-up-cadence.md` for cadence patterns and per-touch copy angles.
+Without web access, infer the profile from what you know and ask the user for two or three real customer quotes. Either way, write the profile into the campaign document — every gift, grab, hook, and touch downstream is chosen and judged against it. If the hook doesn't trace back to something in this profile, the research wasn't used.
+
+### Phase 3: Design the hook — the heart of the skill
+
+The hook is a **grab + gift pair**: the reason this person stops (grab) and the value they receive (gift). Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
+
+- **Value inventory (Part 2.5)**: from the profile, list what a stranger could hand this exact person that's usable the moment they read it — the number they don't know, the mistake they can check in a minute, the fix they can apply today.
+- **The gift**: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the rubric, present the table. Run this whenever the user's free-gift answer is missing or weak — a mediocre gift caps the campaign and no copy rescues it. Hand-made gifts get tiered, not discarded.
+- **The grab**: pick attention triggers per segment — problem signals, why-now events, observable gaps — strongest tier the list can support.
+- **The best hook**: draft candidates, score each against the ICP profile (their words? their motivation? survives their skepticism? fits their reading moment?), and mark ONE recommended winner per segment with a one-sentence reason tied to the profile. The rest are A/B alternates. Never hand the user ten hooks and make them guess.
+
+### Phase 4: Write the sequence — value first, value always
+
+Read `references/hooks-and-copy.md` before writing copy — hook formulas, channel templates, banned phrases. **Draft all copy with the ai-copywriter sub-skill** (bundled at `skills/ai-copywriter/SKILL.md`; a separately installed copy works too; if neither is reachable, hold the same bar via the copy rules below). Run every finished piece through its humanizer audit — outreach dies the moment it smells like a template blast.
+
+The sequence lives or dies on its first two messages, so build them deliberately:
+
+- **Message 1 = the most valuable thing in their inbox that day.** The winning hook, with a real insight delivered in plain text (cover the CTA — did they receive something? if not, rewrite) and the full gift linked where the platform allows.
+- **Message 2 = even more value, unprompted.** Don't nudge — deliver. The full teardown sent without permission, the second finding, the piece of the work already done. By the end of message 2 the prospect should have received what others in the user's market charge for, with zero commitment. That imbalance — "this stranger has already helped me twice" — is what turns cold into warm.
+- **Every later touch earns its place with value too**: new proof, a new angle on the pain, something genuinely useful and unrelated, down to the warm breakup. A touch whose only content is "bumping this" gets cut. Default cadence: 8–12 touches over ~3 weeks with real copy for every touch — see `references/follow-up-cadence.md`.
+- **Channel limits**: DM 2–3 sentences; email half a page; phone script 1–2 pages; SMS 1–2 sentences and only after engagement or consent (TCPA — see the compliance section of `references/scaling-and-metrics.md`).
 
 Copy rules that always apply (rationale in the references):
 - **Third-grade reading level.** Complex language is friction; friction kills replies. Short words, short sentences.
@@ -83,15 +108,14 @@ Copy rules that always apply (rationale in the references):
 - **No deception.** No fake "Re:" subject lines, no fake forwarded threads, no pretending a prior relationship exists. Deception poisons the trust the whole campaign is trying to build — and violates CAN-SPAM.
 - **Sound like a person.** Read the copy aloud; if it sounds like a marketing robot or an AI, rewrite it. The banned-phrases list in the references catches the worst offenders.
 
-### Phase 4: Scaling and measurement plan
+### Phase 5: The supporting system — keep it lean
 
-Close the deliverable with the operating system around the copy:
-- Volume ramp (start manual, automate what's proven), delegation to VAs/tools, lead magnet delivery automation.
-- The metrics funnel to track (sent → delivered → opened → replied → booked → closed) with realistic benchmarks and a diagnostic table: which number being low means which part of the campaign is broken.
-- Testing protocol: test lead sources in small batches (a few hundred) before scaling; change one variable at a time.
-- Compliance checklist matched to their region and channels.
+The hook and the sequence are the product; this phase exists so they can run. Cover each item in a compact section, not an essay:
 
-Details and benchmark numbers: `references/scaling-and-metrics.md`.
+- **Where to find them**: name the 2–4 best sources for this specific ICP (communities, directories, a scraper, trigger-based searches) and the sample-test rule (verify a few hundred before scaling). Where possible, build the list *from* the chosen attention trigger so the grab comes attached to every lead. Full method detail lives in `references/list-building.md` — point to it rather than reproducing it.
+- **Capacity math**: daily send capacity covers *all* touches, not just first touches; with a 10-touch cadence, "30 sends/day" supports roughly 5–6 new leads/day. Size intake so follow-ups never get skipped.
+- **Metrics + diagnostics**: the funnel (sent → opened → replied → booked), realistic benchmarks, and which low number means which fix. First three A/B tests, one variable at a time — and the first thing to test is always the hook.
+- **Scaling + compliance**: manual proof first, automate what's proven; compliance checklist matched to region and channels. Numbers and details: `references/scaling-and-metrics.md`.
 
 ## Output format and definition of done
 
@@ -99,16 +123,16 @@ Deliver the campaign as a single markdown document following the skeleton in `as
 
 The job is not done until the user holds the **entire lead generation strategy end-to-end** for their specific ICP, whatever the channel mix (email, LinkedIn, SMS, phone, DMs). Check every box before delivering:
 
-- [ ] ICP defined sharply enough to build a list from (titles, industry, size, geography, qualifying signals)
 - [ ] ICP psychology profile written from research: motivation, what they care about, the problem in their words, what the offer fixes for them, their skepticism, their reading moment
-- [ ] List plan with named sources and a testing protocol — the user knows where lead #1 comes from
 - [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
 - [ ] Attention triggers/segments defined, each with its personalization angle
-- [ ] 5–10 hooks as grab + gift pairs, ready to A/B test
-- [ ] Every first touch passes the cover-the-CTA test: the message delivers usable value inline, immediately — not a promise of value on reply
+- [ ] ONE recommended hook per segment with a profile-tied reason, plus 5–10 A/B alternates as grab + gift pairs
+- [ ] Message 1 passes the cover-the-CTA test: usable value delivered inline, immediately — not a promise of value on reply
+- [ ] Message 2 delivers the full gift unprompted — by its end the prospect has received what others charge for
+- [ ] Every touch in the sequence carries value (no "just bumping" anywhere), with real copy for every single touch, breakup included, dated
 - [ ] Complete first-touch copy for every channel in play — no placeholders except `{{merge_fields}}` with research instructions
-- [ ] Full dated follow-up sequence with real copy for every single touch, breakup included
-- [ ] Scaling plan, metrics scorecard with benchmarks, and first three A/B tests named
+- [ ] A lean "where to find them" section: 2–4 named sources for this ICP + the sample-test rule
+- [ ] Metrics scorecard with benchmarks, first three A/B tests named (hook first), scaling notes
 - [ ] Compliance checklist matched to region and channels
 - [ ] A launch checklist the user can start executing today
 
