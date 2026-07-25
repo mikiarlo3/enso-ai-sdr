@@ -7,6 +7,31 @@ A hook is not just a clever first line. A hook is two things working together:
 
 Copy (subject lines, openers) is just the wrapper around these two. If the user doesn't have a strong gift and a real grab, no amount of copywriting fixes the campaign — so when the intake's free-gift question ("what could you give away free?") gets a weak or uncertain answer, run this generator instead of accepting a mediocre magnet.
 
+And neither the gift nor the grab can be chosen well for a person you haven't studied. Do Part 0 first, always.
+
+## Part 0: Research the ICP before hooking them
+
+A hook engages when it reads like it was written by someone who knows this person. That knowledge has to be earned before anything else in this file happens. The output of this step is a short **ICP psychology profile** that everything downstream pulls from — the gift is chosen because *they'd* value it, the grab is chosen because *they'd* stop for it, and every hook gets judged against the profile.
+
+**With web access (do this — 10–15 minutes, not an afternoon):** go where the ICP actually talks and read their own words.
+- Subreddits, industry forums, and Facebook/LinkedIn groups for their trade — search for the problem space and read complaint threads.
+- Reviews they write and reviews they receive (Google, G2, Yelp, app stores) — what they praise and what enrages them.
+- Job postings they publish — what they're hiring for reveals what's breaking.
+- What they post and share on LinkedIn/X — what earns their respect, what they brag about.
+- Competitors' comment sections and case studies — what this audience was promised before and how it went.
+
+**Without web access:** build the profile from what you know of the industry, mark it as inferred, and ask the user for one thing only: two or three real quotes from customers or prospects (a review, a sales-call complaint, an email). Real phrasing beats a page of demographics.
+
+**The profile (keep it under a page, write it into the campaign doc):**
+- **Motivation:** what gets them out of bed and what they're afraid of. Owner-operators usually run on autonomy, cash stability, and pride in the trade; executives on targets, internal optics, and not being blindsided. Name the specific version for this ICP.
+- **What they care about day-to-day:** the three things competing for their attention this week. A hook that touches none of them loses.
+- **The problem, in their words:** how they'd describe it to a friend — not your category language. "The website's embarrassing" not "suboptimal conversion funnel." Pull exact phrases from the research; these go into hooks nearly verbatim.
+- **What your offer actually fixes for them:** translate the offer's outcome into their motivation ("more booked jobs without hiring a front desk," not "workflow automation").
+- **Default skepticism:** what they assume about people who message them cold, what they've been burned by, which claims trip their scam filter. Hooks must not resemble the thing they already delete.
+- **The reading moment:** where and when the message lands — phone between jobs, inbox triage at 7am, DMs full of spam. This sets tone and length.
+
+**How the profile picks the winning hook:** after drafting hook candidates (Parts 1–3), score each against the profile — does it use their words? does it touch a live motivation? does it survive their skepticism filter? does it deliver value in their reading moment? Then mark ONE recommended hook per segment and say why in one sentence tied to the profile ("she's drowning in agency pitches; this is the only one that opens with her own review quote instead of a claim"). Deliver the alternates for A/B testing, but never make the user guess which one you'd send.
+
 ## Part 1: Generating the GIFT (lead magnet)
 
 ### The core logic

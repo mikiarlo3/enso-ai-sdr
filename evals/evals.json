@@ -14,7 +14,8 @@
         "Includes a list-building plan that references testing a sample before scaling",
         "Includes metrics/benchmarks and a CAN-SPAM-relevant compliance note",
         "Copy avoids banned phrases like 'I hope this email finds you well' and 'I wanted to reach out'",
-        "The first-touch email delivers a usable insight inline (a finding, number, or fix readable in the message itself), not just an offer to send something on reply"
+        "The first-touch email delivers a usable insight inline (a finding, number, or fix readable in the message itself), not just an offer to send something on reply",
+        "Includes an ICP psychology profile (motivation, what they care about, problem in their words, skepticism, reading moment) and marks one recommended hook per segment with a reason tied to that profile"
       ]
     },
     {

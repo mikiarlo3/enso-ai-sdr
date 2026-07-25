@@ -14,7 +14,7 @@ description: >-
   sequence.
 license: MIT
 metadata:
-  version: "0.6.0"
+  version: "0.7.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
@@ -57,6 +57,7 @@ Ask a follow-up only when an answer is unusable — "everyone" for Q2 gets one p
 ### Phase 2: Diagnose and choose the strategy
 
 From the answers, decide and briefly justify:
+- **Research the ICP first — the hook depends on it.** Before choosing anything, run Part 0 of `references/lead-magnet-generator.md`: study who this person actually is. With web access, spend 10–15 minutes where they talk (their subreddits, forums, groups, the reviews they write and receive, their job postings) and capture their motivation, what they care about this week, the problem in their own words, what the offer really fixes *for them*, their default skepticism toward cold messages, and the moment the message will reach them. Without web access, infer the profile and ask the user for two or three real customer quotes. Write the resulting ICP psychology profile into the campaign document — every gift, grab, and hook downstream is chosen and judged against it.
 - **List-building method(s)**: software scraping, list brokers, or manual "elbow grease" — usually a mix. High-ticket + niche audience → lean manual (higher-quality, less fatigued leads). High-volume + broad audience → lean software. See `references/list-building.md` for the selection logic, testing protocol, and per-method action steps.
 - **Primary channel + support channels**: pick where the audience actually pays attention, then use the other channels for follow-up variety.
 - **The hook: gift + grab.** This is the heart of the campaign, so treat it as a design step, not a copy step. Read `references/lead-magnet-generator.md` and run its process: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the five-criterion rubric, and present the table so the user picks with eyes open — then choose the attention triggers (why-now signals, observable gaps, problem signals) that will earn the first seconds for each segment. Run the generator whenever the user's intake answer for the free gift is missing, vague, or weak ("maybe an ebook?") — a mediocre magnet caps the whole campaign and no copy can rescue it. If the best magnet is hand-made (e.g. a personal video teardown), don't discard it — tier it: hand-made for the highest-value or already-engaged leads, a templated/automated version for everyone else. Where possible, feed the chosen attention triggers back into the list plan and build the list *from* the trigger, so personalization scales for free. Finally, before any copy gets written, do the Part 2.5 value inventory: think deeply about this exact ICP and list what a stranger could hand them that's usable *the moment they read it* — the number they don't know, the mistake they can check in a minute, the fix they can apply today. The playbook's whole engine is value, delivered immediately, in the message itself — not offered, not scheduled, not gated behind a reply.
@@ -70,7 +71,7 @@ Read `references/hooks-and-copy.md` before writing copy — it has the hook form
 
 Then produce, for each channel in play:
 
-- **Hooks**: 5–10 per primary channel, each a **grab + gift pair** (attention trigger + free-value offer — assembled per Part 3 of `references/lead-magnet-generator.md`), spanning different hook types (personalized observation, specific claim + proof, problem callout, give-first). The user should be able to A/B test them.
+- **Hooks**: 5–10 per primary channel, each a **grab + gift pair** (attention trigger + free-value offer — assembled per Part 3 of `references/lead-magnet-generator.md`), spanning different hook types (personalized observation, specific claim + proof, problem callout, give-first). Score them against the ICP profile (their words, their motivation, their skepticism, their reading moment) and mark ONE recommended winner per segment with a one-sentence reason tied to the profile — the rest are the A/B alternates. Never hand the user ten hooks and make them guess which to send.
 - **First-touch copy**: full message per channel, respecting hard limits — DM: 2–3 sentences; email: half a page max; phone script: 1–2 pages; SMS: 1–2 sentences. Treat SMS as a follow-up channel for leads who have already engaged or consented, never a cold first touch — cold SMS to strangers is high-risk under TCPA (details in the compliance section of `references/scaling-and-metrics.md`).
 - **Follow-up sequence**: a dated, multi-channel cadence (default: 8–12 touches over ~3 weeks) with actual copy for every touch, not just "follow up here." Most conversions happen in follow-up, so this section is not optional. See `references/follow-up-cadence.md` for cadence patterns and per-touch copy angles.
 
@@ -99,6 +100,7 @@ Deliver the campaign as a single markdown document following the skeleton in `as
 The job is not done until the user holds the **entire lead generation strategy end-to-end** for their specific ICP, whatever the channel mix (email, LinkedIn, SMS, phone, DMs). Check every box before delivering:
 
 - [ ] ICP defined sharply enough to build a list from (titles, industry, size, geography, qualifying signals)
+- [ ] ICP psychology profile written from research: motivation, what they care about, the problem in their words, what the offer fixes for them, their skepticism, their reading moment
 - [ ] List plan with named sources and a testing protocol — the user knows where lead #1 comes from
 - [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
 - [ ] Attention triggers/segments defined, each with its personalization angle
