@@ -1,8 +1,10 @@
 ![Cold outreach. Copy & hooks. More replies. More meetings. Done. An AI skill by enso](assets/banner.svg)
 
-# Cold outreach playbook, as a Claude plugin
+# Cold outreach playbook
 
-Cold outreach fails for one reason: the person on the other end doesn't know you. This plugin teaches Claude a complete system for earning a stranger's trust, so instead of a generic "here's a cold email" answer, you get an entire campaign built around your offer and the people you actually sell to.
+An agent skill, portable to any AI that reads Markdown. `SKILL.md` at the root of this repo is the whole product — same layout as [ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) — and the Claude Code plugin manifest is just one of several ways to install it.
+
+Cold outreach fails for one reason: the person on the other end doesn't know you. This skill teaches your AI a complete system for earning a stranger's trust, so instead of a generic "here's a cold email" answer, you get an entire campaign built around your offer and the people you actually sell to.
 
 Tell Claude what you sell, or just paste your website URL and let it work that out itself. The intake is five one-line questions in one message (what you sell, who buys it, your best proof, your channels, and what you could give away free — and a URL answers the first three for you), sensible defaults cover everything else, and then you get one document with everything in it:
 
@@ -72,40 +74,30 @@ Claude asks whatever it still needs to know, then writes the campaign.
 ## What's inside
 
 ```
-├── .claude-plugin/
-│   ├── plugin.json               # plugin manifest
-│   └── marketplace.json          # lets this repo act as a marketplace
-├── AGENTS.md                     # guidance for AGENTS.md-aware harnesses
+├── SKILL.md                      # THE SKILL — workflow, five-question intake, definition of done
+├── references/
+│   ├── lead-magnet-generator.md  # gift + grab: magnet ideation, scoring, value-in-message rule
+│   ├── list-building.md          # the 3 list methods + testing protocol
+│   ├── hooks-and-copy.md         # hook formulas, channel templates, banned phrases
+│   ├── follow-up-cadence.md      # cadence tables + copy angles per touch
+│   └── scaling-and-metrics.md    # scaling ramp, benchmarks, diagnostics, compliance
 ├── assets/
+│   ├── playbook-template.md      # output document skeleton
 │   └── banner.svg
-├── commands/
-│   └── outreach-campaign.md      # /outreach-campaign slash command
+├── evals/
+│   └── evals.json                # test prompts for skill iteration
+├── skills/
+│   └── ai-copywriter/            # bundled copy sub-skill (mikiarlo3/ai-copywriter)
+├── AGENTS.md                     # guidance + self-install protocol for agents
+├── install.sh                    # one-line installer (curl | bash)
 ├── dist/
-│   ├── cold-outreach-playbook-bundle.md   # whole plugin as one file (ChatGPT, Manus, Gems, APIs)
+│   ├── cold-outreach-playbook-bundle.md   # whole skill as one file (ChatGPT, Manus, Gems, APIs)
 │   ├── cold-outreach-playbook-skill.zip   # uploadable skill for claude.ai Settings → Skills
 │   └── ai-copywriter-skill.zip
-├── docs/
-│   └── install/                  # per-agent install tutorials
-├── install.sh                    # one-line installer (curl | bash)
-├── scripts/
-│   └── build-bundle.sh           # regenerates dist/ after skill edits
-└── skills/
-    ├── ai-copywriter/            # bundled copy sub-skill (mikiarlo3/ai-copywriter)
-    │   ├── SKILL.md
-    │   └── references/
-    │       └── linkedin-virality.md
-    └── cold-outreach-playbook/
-        ├── SKILL.md                          # workflow + intake interview + definition of done
-        ├── references/
-        │   ├── list-building.md              # the 3 list methods + testing protocol
-        │   ├── lead-magnet-generator.md      # gift + grab: magnet ideation, scoring, attention triggers
-        │   ├── hooks-and-copy.md             # hook formulas, channel templates, banned phrases
-        │   ├── follow-up-cadence.md          # cadence tables + copy angles per touch
-        │   └── scaling-and-metrics.md        # scaling ramp, benchmarks, diagnostics, compliance
-        ├── assets/
-        │   └── playbook-template.md          # output document skeleton
-        └── evals/
-            └── evals.json                    # test prompts for skill iteration
+├── docs/install/                 # per-agent install tutorials
+├── scripts/build-bundle.sh       # regenerates dist/ after skill edits
+├── commands/outreach-campaign.md # /outreach-campaign (Claude Code plugin users)
+└── .claude-plugin/               # optional: Claude Code plugin + marketplace manifests
 ```
 
 ## The method

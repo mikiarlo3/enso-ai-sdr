@@ -64,7 +64,7 @@ From the answers, decide and briefly justify:
 
 Read `references/hooks-and-copy.md` before writing copy — it has the hook formulas, channel templates, and the banned-phrases list.
 
-**Draft all copy with the ai-copywriter sub-skill.** This plugin bundles it at `skills/ai-copywriter/SKILL.md` (if a standalone `ai-copywriter` skill is installed, that works too). Read it and apply its copywriting mode — name the feeling of the person on the other end, simplest possible explanation — when writing subject lines, openers, and body copy, and run every finished piece through its humanizer audit. Cold outreach lives or dies on not sounding like a robot or a template blast; the sub-skill's AI-pattern checks are the quality gate before any copy ships.
+**Draft all copy with the ai-copywriter sub-skill.** This skill ships with it at `skills/ai-copywriter/SKILL.md`; a separately installed `ai-copywriter` skill works too, and if neither file is reachable in your environment, hold the same bar using the copy rules below — they encode its core. Read it and apply its copywriting mode — name the feeling of the person on the other end, simplest possible explanation — when writing subject lines, openers, and body copy, and run every finished piece through its humanizer audit. Cold outreach lives or dies on not sounding like a robot or a template blast; the sub-skill's AI-pattern checks are the quality gate before any copy ships.
 
 Then produce, for each channel in play:
 

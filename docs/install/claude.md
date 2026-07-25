@@ -49,10 +49,11 @@ Two ways, no Claude Code needed:
 
 ## Manual copy (any machine running Claude Code)
 
+The repo root is the skill (SKILL.md at the top level), so a clone into your skills directory is the whole install:
+
 ```bash
-git clone https://github.com/mikiarlo3/enso-ai-sdr.git
-cp -r enso-ai-sdr/skills/cold-outreach-playbook ~/.claude/skills/
-cp -r enso-ai-sdr/skills/ai-copywriter ~/.claude/skills/
+git clone https://github.com/mikiarlo3/enso-ai-sdr.git ~/.claude/skills/cold-outreach-playbook
+cp -r ~/.claude/skills/cold-outreach-playbook/skills/ai-copywriter ~/.claude/skills/ai-copywriter
 ```
 
 Use a repo's `.claude/skills/` directory instead of `~/.claude/skills/` to install for a single project.

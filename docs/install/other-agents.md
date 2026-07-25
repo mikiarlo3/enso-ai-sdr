@@ -10,7 +10,7 @@ Codex, OpenCode, Cursor, Amp, and a growing list of coding agents read `SKILL.md
 npx skills add mikiarlo3/enso-ai-sdr --global --agent '*'
 ```
 
-`--agent '*'` installs into every harness the CLI detects on your machine. Run `npx skills add mikiarlo3/enso-ai-sdr --list` first to see what it found. Manual equivalent: copy `skills/cold-outreach-playbook/` and `skills/ai-copywriter/` into wherever your harness keeps skills.
+`--agent '*'` installs into every harness the CLI detects on your machine. Run `npx skills add mikiarlo3/enso-ai-sdr --list` first to see what it found. Manual equivalent: the repo root IS the skill (SKILL.md at the top level), so clone the repo into your harness's skills directory as `cold-outreach-playbook/`, and copy `skills/ai-copywriter/` alongside it.
 
 Repos where agents work also pick up [`AGENTS.md`](../../AGENTS.md) at the root, which tells any AGENTS.md-aware tool (Codex, Cursor, and others) that these skills exist and when to use them.
 

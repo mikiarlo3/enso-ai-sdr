@@ -59,12 +59,24 @@ if [ "$FETCHED" = 0 ]; then
   exit 1
 fi
 
+# Stage the root skill as a named folder (SKILL.md lives at the repo root).
+stage_skills() {
+  STAGED="$TMP/_staged"
+  mkdir -p "$STAGED/cold-outreach-playbook/assets" "$STAGED/cold-outreach-playbook/skills"
+  cp "$TMP/SKILL.md" "$STAGED/cold-outreach-playbook/"
+  cp -r "$TMP/references" "$STAGED/cold-outreach-playbook/references"
+  cp "$TMP/assets/playbook-template.md" "$STAGED/cold-outreach-playbook/assets/"
+  cp -r "$TMP/skills/ai-copywriter" "$STAGED/cold-outreach-playbook/skills/ai-copywriter"
+  cp -r "$TMP/skills/ai-copywriter" "$STAGED/ai-copywriter"
+}
+
 copy_into() { # $1 = dest skills dir, $2 = label
+  [ -d "${STAGED:-}" ] || stage_skills
   mkdir -p "$1"
   local s
   for s in "${SKILLS[@]}"; do
     rm -rf "${1:?}/$s"
-    cp -r "$TMP/skills/$s" "$1/$s"
+    cp -r "$STAGED/$s" "$1/$s"
   done
   echo "+ $2: copied skills into $1"
   INSTALLED=1

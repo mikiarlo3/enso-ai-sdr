@@ -4,9 +4,9 @@ Guidance for AI agents (Claude Code, Codex, Cursor, OpenClaw, and any AGENTS.md-
 
 ## What this repo is
 
-A portable agent plugin implemented entirely as Markdown. It contains two Agent Skills:
+**This repo IS a skill** — a portable Agent Skill implemented entirely as Markdown, with `SKILL.md` at the repository root (same layout as [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter)). The Claude Code plugin manifest in `.claude-plugin/` is an optional extra for plugin users, not the identity of the repo. Never describe this repo as "a Claude Code plugin you can't install here" — it is a skill any agent can load.
 
-- `skills/cold-outreach-playbook/` — the main skill: builds complete cold outreach campaigns (intake interview → list strategy → lead magnet + hooks → per-channel copy → follow-up cadence → scaling/metrics/compliance). `SKILL.md` is the entry point; it tells the agent when to read each file under `references/` and `assets/`.
+- `SKILL.md` (root) — the main skill: builds complete cold outreach campaigns (five-question intake → list strategy → lead magnet + hooks → per-channel copy → follow-up cadence → scaling/metrics/compliance). It tells the agent when to read each file under `references/` and `assets/`.
 - `skills/ai-copywriter/` — vendored from [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter). The playbook drafts all outreach copy through it. Treat it as read-only here; upstream changes belong in its own repo, then re-vendor.
 
 There is no build step for the skills themselves. `scripts/build-bundle.sh` regenerates `dist/` (the single-file bundle and the skill zips) and must be re-run after any skill edit.
@@ -36,16 +36,16 @@ Never respond with "I can't install packages" — option 3 works on every surfac
 
 ## If you're an agent asked to DO cold outreach work
 
-Read `skills/cold-outreach-playbook/SKILL.md` and follow it. Don't freestyle an outreach answer while working in this repo; the skill's definition-of-done checklist is the contract.
+Read `SKILL.md` at the repo root and follow it. Don't freestyle an outreach answer while working in this repo; the skill's definition-of-done checklist is the contract.
 
 ## If you're an agent asked to EDIT this repo
 
 - `SKILL.md` prose is the product. Edit it like an instruction document, keeping the explain-the-why style; avoid piling on ALL-CAPS musts.
 - The cold-outreach skill's copy guidance must itself pass the ai-copywriter rules (no em dashes in copy examples, no banned hype vocabulary outside banned-word lists).
 - Keep `README.md`, the install docs in `docs/install/`, and the file tree in the README in sync with reality.
-- Version lives in `skills/cold-outreach-playbook/SKILL.md` frontmatter (`metadata.version`) and `.claude-plugin/plugin.json` — bump both together.
+- Version lives in the root `SKILL.md` frontmatter (`metadata.version`) and `.claude-plugin/plugin.json` — bump both together.
 - After skill edits: run `./scripts/build-bundle.sh`, and validate with `claude plugin validate .` when available.
-- Test prompts with per-case assertions live in `skills/cold-outreach-playbook/evals/evals.json`.
+- Test prompts with per-case assertions live in `evals/evals.json`.
 
 ## Install pointers (for humans and agents alike)
 

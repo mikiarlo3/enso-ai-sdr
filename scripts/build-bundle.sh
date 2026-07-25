@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# Builds dist/cold-outreach-playbook-bundle.md: the entire plugin as one
-# Markdown file, for platforms that accept a single document (ChatGPT
-# custom GPTs and Projects, Manus knowledge, Gemini Gems, Hermes system
-# prompts, or any plain LLM chat).
+# Builds dist/: the single-file bundle plus uploadable skill zips.
+# - cold-outreach-playbook-bundle.md: the entire skill as one Markdown file,
+#   for platforms that accept a single document (ChatGPT custom GPTs and
+#   Projects, Manus knowledge, Gemini Gems, Hermes system prompts, any chat).
+# - cold-outreach-playbook-skill.zip / ai-copywriter-skill.zip: skill folders
+#   for surfaces that accept skill uploads (claude.ai Settings -> Skills).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -33,27 +35,36 @@ Parts 2-8 — use those instead of looking for files.
 ## Part 1: The skill (SKILL.md)
 
 HEADER
-  strip_frontmatter skills/cold-outreach-playbook/SKILL.md
+  strip_frontmatter SKILL.md
   printf '\n---\n\n## Part 2: references/lead-magnet-generator.md\n\n'
-  cat skills/cold-outreach-playbook/references/lead-magnet-generator.md
+  cat references/lead-magnet-generator.md
   printf '\n---\n\n## Part 3: references/list-building.md\n\n'
-  cat skills/cold-outreach-playbook/references/list-building.md
+  cat references/list-building.md
   printf '\n---\n\n## Part 4: references/hooks-and-copy.md\n\n'
-  cat skills/cold-outreach-playbook/references/hooks-and-copy.md
+  cat references/hooks-and-copy.md
   printf '\n---\n\n## Part 5: references/follow-up-cadence.md\n\n'
-  cat skills/cold-outreach-playbook/references/follow-up-cadence.md
+  cat references/follow-up-cadence.md
   printf '\n---\n\n## Part 6: references/scaling-and-metrics.md\n\n'
-  cat skills/cold-outreach-playbook/references/scaling-and-metrics.md
+  cat references/scaling-and-metrics.md
   printf '\n---\n\n## Part 7: assets/playbook-template.md (output skeleton)\n\n'
-  cat skills/cold-outreach-playbook/assets/playbook-template.md
+  cat assets/playbook-template.md
   printf '\n---\n\n## Part 8: The ai-copywriter sub-skill (write all copy with this)\n\n'
   strip_frontmatter skills/ai-copywriter/SKILL.md
 } > "$OUT"
 
 echo "Wrote $OUT ($(wc -l < "$OUT") lines)"
 
-# Zip each skill folder for surfaces that accept skill uploads
-# (claude.ai Settings -> Capabilities -> Skills, and compatible harnesses).
-(cd skills && zip -qr ../dist/cold-outreach-playbook-skill.zip cold-outreach-playbook)
-(cd skills && zip -qr ../dist/ai-copywriter-skill.zip ai-copywriter)
+# Stage the root skill into a named folder so the zip carries a proper
+# skill directory (SKILL.md at cold-outreach-playbook/SKILL.md).
+STAGE="$(mktemp -d)"
+trap 'rm -rf "$STAGE"' EXIT
+mkdir -p "$STAGE/cold-outreach-playbook/assets"
+cp SKILL.md LICENSE "$STAGE/cold-outreach-playbook/"
+cp -r references "$STAGE/cold-outreach-playbook/references"
+cp assets/playbook-template.md "$STAGE/cold-outreach-playbook/assets/"
+mkdir -p "$STAGE/cold-outreach-playbook/skills"
+cp -r skills/ai-copywriter "$STAGE/cold-outreach-playbook/skills/ai-copywriter"
+rm -f dist/cold-outreach-playbook-skill.zip dist/ai-copywriter-skill.zip
+(cd "$STAGE" && zip -qr - cold-outreach-playbook) > dist/cold-outreach-playbook-skill.zip
+(cd skills && zip -qr - ai-copywriter) > dist/ai-copywriter-skill.zip
 echo "Wrote dist/cold-outreach-playbook-skill.zip and dist/ai-copywriter-skill.zip"
