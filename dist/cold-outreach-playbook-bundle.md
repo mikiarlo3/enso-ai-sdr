@@ -1,11 +1,11 @@
-# Cold Outreach Playbook (single-file bundle, v1.5.0)
+# Cold Outreach Playbook (single-file bundle, v1.6.0)
 
 This is the complete cold-outreach-playbook agent skill in one file, bundled
 for platforms that accept a single document. It contains the main skill, all
 of its reference files, the output template, and the ai-copywriter skill used
 for drafting copy.
 
-This copy is frozen at version 1.5.0. The live version number is at
+This copy is frozen at version 1.6.0. The live version number is at
 https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/VERSION and the
 changelog at https://github.com/mikiarlo3/enso-ai-sdr/blob/main/CHANGELOG.md —
 if the live version is newer, tell the user once (after the deliverable) to
@@ -90,7 +90,7 @@ Without web access, infer the profile from what you know and ask the user for tw
 Every first message follows the four-beat architecture: **Verified Trigger → Useful Implication → Small Asset → Micro-Ask.** The trigger is a public, dated, work-relevant fact ("why you, why now"); the implication is one role-relevant inference naming the specific cost or risk that fact creates — the beat that proves competence and delivers value before anything is offered; the asset is the concrete gift; the micro-ask is one yes/no question, and **never a meeting request in message 1**. Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
 
 - **Value inventory + the enormity bar (Part 2.5)**: from the profile, list what a stranger could hand this exact person that's usable the moment they read it — then raise the bar from useful to *disproportionate*. Reason deeply and in writing (3–5 sentences in the campaign doc): what would make THIS person stop and think "why is a stranger giving me this free?" — would they forward it to a peer, would they feel a twinge of guilt taking it? The answer must trace to the ICP research, never to "it was easy to make."
-- **Scan the full 360° hook palette (Part 4)**: seven families — triggers, market signals, big ideas, relationship touches, give-them-a-stage plays (podcast invites, industry-report quotes, webinars, rankings), ecosystem plays, and FOMO/tension hooks (competitor motion, peer-benchmark gaps, left-out-of-the-report, closing windows, honest scarcity with its reason stated — never fake urgency). Don't default to trigger hooks just because they're the reflex.
+- **Scan the full 360° hook palette (Part 4)**: eight families — triggers, market signals, big ideas, relationship touches, give-them-a-stage plays (podcast invites, industry-report quotes, webinars, rankings), ecosystem plays, and FOMO/tension hooks (competitor motion, peer-benchmark gaps, left-out-of-the-report, closing windows, honest scarcity with its reason stated — never fake urgency), and identity/tribe hooks (genuine shared membership, insider language, the shared enemy they already resent, identity labels — true only). Don't default to trigger hooks just because they're the reflex.
 - **Apply the psychology of free value deliberately**: read `references/free-value-psychology.md` and pick one or two mechanisms per message — reciprocity's amplifiers (unexpected, personalized, delivered-not-promised), the zero-price effect with a value anchor, the labor illusion (show the work in one sentence), a closable information gap, endowment naming ("your report is ready"), a but-you-are-free exit line, or a contribution ask on stage plays. The reference maps each technique to its beat in the four-beat architecture — and draws the line: these ride on real value or they backfire.
 - **The gift**: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the rubric, present the table. Run this whenever the user's free-gift answer is missing or weak — a mediocre gift caps the campaign and no copy rescues it. Hand-made gifts get tiered, not discarded.
 - **The trigger + implication**: pick verified, source-logged attention triggers per segment, matched to buyer type (executives → company-level triggers like initiatives and earnings; practitioners → workflow triggers like job posts and visible process friction). Then write the implication — the non-obvious consequence, with a mechanism or number you can defend, never invented. No valid trigger → peer-benchmark grab or leave the prospect out; never force personalization.
@@ -327,9 +327,9 @@ Score every candidate first message, one point per line. **8 of 10 or it doesn't
 
 **Instant rejections, regardless of score:** a compliment with no insight; a meeting request in message 1; "increase ROI / save time / drive growth" with no mechanism; any invented statistic, peer outcome, or manufactured urgency; more than one core value proposition; a question that makes the prospect explain their business before receiving value; a sales pitch wearing a free-audit costume.
 
-## Part 4: The 360° hook palette — seven families
+## Part 4: The 360° hook palette — eight families
 
-The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Scan all seven for every campaign. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. 
+The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Scan all eight for every campaign. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. 
 
 **1. Trigger hooks (the classic).** Why-now events, observable gaps, problem signals — everything in Part 2. The workhorse: fastest to run, fully scalable, and the default when nothing below fits better.
 
@@ -358,6 +358,12 @@ Stage hooks flip the trust equation — a stranger *giving* status instead of re
 - **Honest scarcity**: true capacity limits, stated with the reason. "I do three of these audits a week by hand — Thursday's slot is open if you want it." Never invent limits, never fake countdowns; if the constraint isn't real, this subtype is off the table.
 
 FOMO earns the glance; it never replaces the gift. A tension hook with no enormous value behind it is just anxiety marketing — pair every FOMO grab with a delivered asset, and keep the exit free ("either way, the benchmark table is yours").
+
+**8. Identity and tribe hooks.** The grab is *who they are*, not what they need. People process in-group signals faster, trust them more, and remember them better — and the tribal boundary can be surprisingly small (independent vs. chain, bootstrapped vs. funded, trade vs. desk):
+- **Genuine shared membership**: "fellow bootstrapper," "I ran a two-chair practice for six years" — real membership only; a faked tribe claim is the most unforgivable lie in outreach because it impersonates belonging.
+- **Insider language**: using the term only members use (the word their subreddit uses for the problem, the metric only operators track) signals in-group without claiming it. This comes straight from the Part 0 research — their words ARE the membership card.
+- **The shared enemy**: nothing binds a tribe faster than a common adversary — independent dentists vs. the DSO roll-ups, restaurants vs. delivery-app fees, local shops vs. the algorithm change. "The delivery apps took 30% last year. Here's the playbook 12 restaurants used to move a third of orders direct" is an identity hook, a market signal, and a gift in two sentences. Punch up at systems and giants, never at people, and never invent a villain the ICP doesn't already resent — the research tells you who the real enemy is.
+- **Identity labeling**: address them as the operator they're proud to be ("you clearly run the kind of practice that answers its own reviews") — people act consistently with labels they accept, and the label doubles as evidence of homework.
 
 **How to choose — and when to recommend the bigger plays.** Families 1–3 are message-speed: run them this week. Families 4–6 are build-speed: they take weeks and produce an asset. The skill's job is to ALWAYS put at least two build-speed plays on the table when the economics support them — high LTV, narrow ICP (a few hundred names, not fifty thousand), relationship-driven buying, or a user with content ambitions — because users don't ask for what they haven't imagined. Present each recommended play with: why it fits THIS ICP (from the profile), the first-touch script, the effort honestly stated, and the payoff horizon. A campaign can and usually should run both tracks at once: trigger hooks for volume today, one stage play compounding in the background.
 
@@ -771,6 +777,30 @@ Worchel's cookie-jar experiment: identical cookies were rated more desirable fro
 
 **Application (Part 4, family 7):** competitor motion, peer-benchmark gaps, left-out-of-the-report, closing windows, honest capacity limits — always with the real reason stated ("I do three of these a week by hand"), because scarcity-with-a-reason is both more effective and true. **The hard line:** artificial scarcity is detectable and, once detected, destroys everything the gift built. No fake countdowns, no invented slots, no "spots filling fast" that aren't. If the constraint isn't real, use a different family.
 
+## 9. Self-reference — the cocktail-party effect in an inbox
+
+The brain grants pre-attentive priority to self-relevant signals: roughly a third of people hear their own name even in a conversation they're actively ignoring, and self-referenced information is remembered better than anything else. An inbox is a noisy party; their name, their company's name, their own words are the signals that cut through it.
+
+**Application:** the prospect's company name or their own quoted phrase in the subject line and first sentence — "found 3 things on {{clinic_name}}'s site," "your line about 'chart-chasing' stuck with me." This is why the Part 0 research captures their exact words: self-reference isn't `Hi {{first_name}}` (everyone does that; it's wallpaper now) — it's their *world* reflected back accurately.
+
+## 10. The "because" effect — every ask carries a reason
+
+Langer's copy-machine study: adding a reason to a small request raised compliance from 60% to ~94% — and for small asks, even a circular reason worked, because "because" itself signals justification. For larger asks, only real reasons moved people.
+
+**Application:** the micro-ask is a small ask, so it always travels with its reason — and the best reason is the trigger itself: "Worth a look? — asking because you're clearly redoing the funnel this quarter." Never use an empty reason: the real trigger is sitting right there in the message, so the honest "because" is also the strongest one.
+
+## 11. Unity and the shared enemy — Cialdini's seventh principle
+
+Unity goes beyond liking or similarity: it's shared *identity* — "one of us." Tajfel's minimal-group experiments showed how little it takes to create in-group loyalty, and nothing activates a tribe faster than its common adversary. In-group messages get processed faster, trusted more, and defended.
+
+**Application (Part 4, family 8):** genuine shared membership, insider language from the research, the shared enemy the ICP already resents (the roll-ups, the platform fees, the algorithm), identity labels they'd be proud to accept. **The line:** membership claims must be true, and enemies must be systems, not people. Faking belonging is impersonation, and it reads that way the moment they probe.
+
+## 12. Open loops — the Zeigarnik effect across the sequence
+
+Unfinished things occupy the mind: interrupted tasks are remembered roughly twice as well as completed ones. A sequence is a chain of open-and-close: each touch closes the last loop and honestly opens the next.
+
+**Application:** use loops across the *sequence*, not to gate the first gift (the immediacy rule wins every conflict): message 1 delivers the finding AND mentions what the full teardown covers; message 2 delivers the teardown and notes the benchmark table exists; message 3 delivers the table. Every loop opened must close in the next touch — an open loop that never closes is a broken promise with a psychology citation.
+
 ## Mapping techniques to the four beats
 
 | Beat | Techniques that live there |
@@ -780,6 +810,10 @@ Worchel's cookie-jar experiment: identical cookies were rated more desirable fro
 | Asset | Reciprocity (delivered, not promised), zero-price + value anchor, endowment naming, labor illusion |
 | Micro-ask | But-you-are-free line, contribution ask (stage plays), zero pressure |
 | Any beat, honest only | Scarcity with its reason stated, peer social proof, FOMO (family 7) |
+| Subject + first line | Self-reference (their name, their company, their words) |
+| Micro-ask, again | The "because" reason (the trigger doubles as the reason) |
+| Across the sequence | Open loops that always close in the next touch |
+| Whole-message frame | Unity / shared enemy / identity labels (family 8, true only) |
 
 ## The line not to cross
 
@@ -795,6 +829,10 @@ Every mechanism above works because it rides on something true: real effort, rea
 - Carpenter (2013), BYAF meta-analysis — [abstract](https://www.tandfonline.com/doi/full/10.1080/10510974.2012.727941); later re-examination with reproducibility caveats — [meta-psychology](https://open.lnu.se/index.php/metapsychology/article/view/2640/3402)
 - White et al. (2008), reactance to over-personalization — cited in the agent operating playbook's guardrails
 - Worchel, Lee & Adewole (1975), the cookie-jar scarcity experiment; Cialdini's scarcity principle — [overview](https://www.explorepsychology.com/scarcity-principle/), [scarcity psychology](https://www.coglode.com/nuggets/scarcity)
+- Langer, Blank & Chanowitz (1978), the copy-machine "because" study — [summary](https://jamesclear.com/copy-machine-study)
+- The cocktail-party effect and own-name attention — [overview](https://en.wikipedia.org/wiki/Cocktail_party_effect); self-reference effect in marketing — [overview](https://www.choicehacking.com/2020/08/14/self-reference-effect/)
+- Cialdini's seventh principle, Unity — [overview](https://cxl.com/blog/cialdini-unity/); Tajfel's minimal-group experiments (in-group formation)
+- Zeigarnik effect (unfinished-task memory) — [overview](https://en.wikipedia.org/wiki/Zeigarnik_effect)
 
 ---
 

@@ -54,6 +54,30 @@ Worchel's cookie-jar experiment: identical cookies were rated more desirable fro
 
 **Application (Part 4, family 7):** competitor motion, peer-benchmark gaps, left-out-of-the-report, closing windows, honest capacity limits — always with the real reason stated ("I do three of these a week by hand"), because scarcity-with-a-reason is both more effective and true. **The hard line:** artificial scarcity is detectable and, once detected, destroys everything the gift built. No fake countdowns, no invented slots, no "spots filling fast" that aren't. If the constraint isn't real, use a different family.
 
+## 9. Self-reference — the cocktail-party effect in an inbox
+
+The brain grants pre-attentive priority to self-relevant signals: roughly a third of people hear their own name even in a conversation they're actively ignoring, and self-referenced information is remembered better than anything else. An inbox is a noisy party; their name, their company's name, their own words are the signals that cut through it.
+
+**Application:** the prospect's company name or their own quoted phrase in the subject line and first sentence — "found 3 things on {{clinic_name}}'s site," "your line about 'chart-chasing' stuck with me." This is why the Part 0 research captures their exact words: self-reference isn't `Hi {{first_name}}` (everyone does that; it's wallpaper now) — it's their *world* reflected back accurately.
+
+## 10. The "because" effect — every ask carries a reason
+
+Langer's copy-machine study: adding a reason to a small request raised compliance from 60% to ~94% — and for small asks, even a circular reason worked, because "because" itself signals justification. For larger asks, only real reasons moved people.
+
+**Application:** the micro-ask is a small ask, so it always travels with its reason — and the best reason is the trigger itself: "Worth a look? — asking because you're clearly redoing the funnel this quarter." Never use an empty reason: the real trigger is sitting right there in the message, so the honest "because" is also the strongest one.
+
+## 11. Unity and the shared enemy — Cialdini's seventh principle
+
+Unity goes beyond liking or similarity: it's shared *identity* — "one of us." Tajfel's minimal-group experiments showed how little it takes to create in-group loyalty, and nothing activates a tribe faster than its common adversary. In-group messages get processed faster, trusted more, and defended.
+
+**Application (Part 4, family 8):** genuine shared membership, insider language from the research, the shared enemy the ICP already resents (the roll-ups, the platform fees, the algorithm), identity labels they'd be proud to accept. **The line:** membership claims must be true, and enemies must be systems, not people. Faking belonging is impersonation, and it reads that way the moment they probe.
+
+## 12. Open loops — the Zeigarnik effect across the sequence
+
+Unfinished things occupy the mind: interrupted tasks are remembered roughly twice as well as completed ones. A sequence is a chain of open-and-close: each touch closes the last loop and honestly opens the next.
+
+**Application:** use loops across the *sequence*, not to gate the first gift (the immediacy rule wins every conflict): message 1 delivers the finding AND mentions what the full teardown covers; message 2 delivers the teardown and notes the benchmark table exists; message 3 delivers the table. Every loop opened must close in the next touch — an open loop that never closes is a broken promise with a psychology citation.
+
 ## Mapping techniques to the four beats
 
 | Beat | Techniques that live there |
@@ -63,6 +87,10 @@ Worchel's cookie-jar experiment: identical cookies were rated more desirable fro
 | Asset | Reciprocity (delivered, not promised), zero-price + value anchor, endowment naming, labor illusion |
 | Micro-ask | But-you-are-free line, contribution ask (stage plays), zero pressure |
 | Any beat, honest only | Scarcity with its reason stated, peer social proof, FOMO (family 7) |
+| Subject + first line | Self-reference (their name, their company, their words) |
+| Micro-ask, again | The "because" reason (the trigger doubles as the reason) |
+| Across the sequence | Open loops that always close in the next touch |
+| Whole-message frame | Unity / shared enemy / identity labels (family 8, true only) |
 
 ## The line not to cross
 
@@ -78,3 +106,7 @@ Every mechanism above works because it rides on something true: real effort, rea
 - Carpenter (2013), BYAF meta-analysis — [abstract](https://www.tandfonline.com/doi/full/10.1080/10510974.2012.727941); later re-examination with reproducibility caveats — [meta-psychology](https://open.lnu.se/index.php/metapsychology/article/view/2640/3402)
 - White et al. (2008), reactance to over-personalization — cited in the agent operating playbook's guardrails
 - Worchel, Lee & Adewole (1975), the cookie-jar scarcity experiment; Cialdini's scarcity principle — [overview](https://www.explorepsychology.com/scarcity-principle/), [scarcity psychology](https://www.coglode.com/nuggets/scarcity)
+- Langer, Blank & Chanowitz (1978), the copy-machine "because" study — [summary](https://jamesclear.com/copy-machine-study)
+- The cocktail-party effect and own-name attention — [overview](https://en.wikipedia.org/wiki/Cocktail_party_effect); self-reference effect in marketing — [overview](https://www.choicehacking.com/2020/08/14/self-reference-effect/)
+- Cialdini's seventh principle, Unity — [overview](https://cxl.com/blog/cialdini-unity/); Tajfel's minimal-group experiments (in-group formation)
+- Zeigarnik effect (unfinished-task memory) — [overview](https://en.wikipedia.org/wiki/Zeigarnik_effect)

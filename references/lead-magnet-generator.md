@@ -157,9 +157,9 @@ Score every candidate first message, one point per line. **8 of 10 or it doesn't
 
 **Instant rejections, regardless of score:** a compliment with no insight; a meeting request in message 1; "increase ROI / save time / drive growth" with no mechanism; any invented statistic, peer outcome, or manufactured urgency; more than one core value proposition; a question that makes the prospect explain their business before receiving value; a sales pitch wearing a free-audit costume.
 
-## Part 4: The 360° hook palette — seven families
+## Part 4: The 360° hook palette — eight families
 
-The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Scan all seven for every campaign. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. 
+The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Scan all eight for every campaign. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. 
 
 **1. Trigger hooks (the classic).** Why-now events, observable gaps, problem signals — everything in Part 2. The workhorse: fastest to run, fully scalable, and the default when nothing below fits better.
 
@@ -188,5 +188,11 @@ Stage hooks flip the trust equation — a stranger *giving* status instead of re
 - **Honest scarcity**: true capacity limits, stated with the reason. "I do three of these audits a week by hand — Thursday's slot is open if you want it." Never invent limits, never fake countdowns; if the constraint isn't real, this subtype is off the table.
 
 FOMO earns the glance; it never replaces the gift. A tension hook with no enormous value behind it is just anxiety marketing — pair every FOMO grab with a delivered asset, and keep the exit free ("either way, the benchmark table is yours").
+
+**8. Identity and tribe hooks.** The grab is *who they are*, not what they need. People process in-group signals faster, trust them more, and remember them better — and the tribal boundary can be surprisingly small (independent vs. chain, bootstrapped vs. funded, trade vs. desk):
+- **Genuine shared membership**: "fellow bootstrapper," "I ran a two-chair practice for six years" — real membership only; a faked tribe claim is the most unforgivable lie in outreach because it impersonates belonging.
+- **Insider language**: using the term only members use (the word their subreddit uses for the problem, the metric only operators track) signals in-group without claiming it. This comes straight from the Part 0 research — their words ARE the membership card.
+- **The shared enemy**: nothing binds a tribe faster than a common adversary — independent dentists vs. the DSO roll-ups, restaurants vs. delivery-app fees, local shops vs. the algorithm change. "The delivery apps took 30% last year. Here's the playbook 12 restaurants used to move a third of orders direct" is an identity hook, a market signal, and a gift in two sentences. Punch up at systems and giants, never at people, and never invent a villain the ICP doesn't already resent — the research tells you who the real enemy is.
+- **Identity labeling**: address them as the operator they're proud to be ("you clearly run the kind of practice that answers its own reviews") — people act consistently with labels they accept, and the label doubles as evidence of homework.
 
 **How to choose — and when to recommend the bigger plays.** Families 1–3 are message-speed: run them this week. Families 4–6 are build-speed: they take weeks and produce an asset. The skill's job is to ALWAYS put at least two build-speed plays on the table when the economics support them — high LTV, narrow ICP (a few hundred names, not fifty thousand), relationship-driven buying, or a user with content ambitions — because users don't ask for what they haven't imagined. Present each recommended play with: why it fits THIS ICP (from the profile), the first-touch script, the effort honestly stated, and the payoff horizon. A campaign can and usually should run both tracks at once: trigger hooks for volume today, one stage play compounding in the background.

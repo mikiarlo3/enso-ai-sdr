@@ -4,6 +4,17 @@ All notable changes to the cold-outreach-playbook skill. Users on any
 platform can check their installed version against `VERSION` at the repo
 root (the skill does this itself when it has web access).
 
+## 1.6.0 — 2026-07-25
+- Eighth hook family: identity and tribe hooks — genuine shared
+  membership, insider language from the ICP research, the shared enemy
+  they already resent (systems, never people), and identity labels.
+- Four new psychology mechanisms, research-backed: self-reference (the
+  cocktail-party effect — their name/company/words in subject and first
+  line), the Langer "because" effect (every micro-ask carries its
+  reason; the trigger IS the reason), Cialdini's unity principle with
+  Tajfel's minimal groups, and Zeigarnik open loops across the sequence
+  (every loop opened must close in the next touch).
+
 ## 1.5.0 — 2026-07-25
 - Seventh hook family: FOMO and tension hooks — competitor motion,
   peer-benchmark gaps, left-out-of-the-report, closing windows, and
