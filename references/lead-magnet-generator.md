@@ -121,6 +121,12 @@ The gift is not enough. Where the gift lives decides whether it works. There are
 
 The failure mode to design out: a message that only *describes* value ("I made you a video that shows 3 fixes") delivers nothing until the prospect acts. Describe less, hand over more. Test for it explicitly: **cover the CTA and read the message — did the prospect receive anything? If not, it's a tease, not a gift. Rewrite.**
 
+**The enormity bar.** "Useful" is not the target — *disproportionate* is. A first touch grabs attention when the value feels almost mispriced: "why is a stranger giving me this for free?" Before settling on any gift, reason it out explicitly, in writing, from the profile — not from what's convenient to produce:
+
+1. Start from their world, not the user's product: what does this person lose sleep over, measure themselves by, or wish someone would just hand them? (It may sit next to the offer rather than on it.)
+2. For each candidate, ask the two enormity tests: **would they forward it to a peer?** and **would they feel a twinge of guilt getting it free?** A checklist rarely passes; the finished analysis of *their* business, the data nobody will give them, the stage they've wanted — those pass.
+3. Write the reasoning into the campaign doc (3–5 sentences per chosen gift): what this ICP finds enormous, why, and which research finding says so. If the reasoning traces back to "it was easy to make" instead of "the profile says they crave this," start over.
+
 This is why deep ICP thinking is mandatory before writing hooks: to put real value *inside* two sentences, you must know what this exact person can use off the shelf. For each segment, list what a stranger could hand them that's instantly usable: the number they don't know (benchmark, cost-of-problem math), the mistake they can check in 60 seconds, the fix they can apply today, the resource that took you hours and them zero. Pick the ones that need no trust and no context — those go in the message; the deeper asset backs them up.
 
 ## Part 3: Assembling the hook — the four-beat architecture
@@ -150,3 +156,28 @@ Score every candidate first message, one point per line. **8 of 10 or it doesn't
 10. Readable in under 30 seconds.
 
 **Instant rejections, regardless of score:** a compliment with no insight; a meeting request in message 1; "increase ROI / save time / drive growth" with no mechanism; any invented statistic, peer outcome, or manufactured urgency; more than one core value proposition; a question that makes the prospect explain their business before receiving value; a sales pitch wearing a free-audit costume.
+
+## Part 4: The 360° hook palette — six families
+
+The four-beat architecture is the skeleton of every first message, but the hook itself can come from very different places. Most campaigns default to family 1 and never consider the others — which is exactly why the others work. Scan all six for every campaign and recommend from the full palette, not just the reflex.
+
+**1. Trigger hooks (the classic).** Why-now events, observable gaps, problem signals — everything in Part 2. The workhorse: fastest to run, fully scalable, and the default when nothing below fits better.
+
+**2. Market-signal hooks.** The grab is intelligence about *their market*, not about them: a benchmark they can rank themselves against, a competitor's visible move, a regulatory or platform change that hits their business, original data nobody else has. Wins when the ICP is data-starved (most SMB niches are — nobody benchmarks med spas for free). The asset and the grab collapse into one: "We measured average response times for 40 Austin clinics. You're not in the data, but the range will interest you: fastest converts 3x more. Full breakdown: [link]."
+
+**3. Big-idea hooks.** The pitch IS the value: a contrarian, specific point of view worth reading even with zero interest in buying. "Most practices are solving no-shows backwards — deposits don't work below $200 tickets, and here's the math." Wins when the user has genuine expertise and the market runs on received wisdom. Riskiest family (an opinion invites disagreement) — which is also the engine: disagreement is a reply.
+
+**4. Relationship hooks.** The grab is a genuine human touch with zero pitch in it: a substantive reaction to something they made ("your point about X changed how I explain it to clients"), a meaningful congratulation that shows you understood what the win took, help offered in a thread they posted. The sale is deferred by design — the first touch builds the relationship, the second or third introduces the work. Wins for small, high-value target lists where burning a lead is expensive. Cannot be faked at scale, and shouldn't be: one real comment beats fifty "loved your post!"s.
+
+**5. Give-them-a-stage hooks (the inversion).** Instead of asking for their attention, offer them an audience — the first touch makes THEM the star:
+- **Podcast or interview series**: start one about their industry and invite ICP members as guests. The cold message becomes "I run [show] on [their industry] — your take on [specific thing they said/did] deserves a bigger audience. 25 minutes, we promote it everywhere." Almost nobody declines a well-aimed stage, and an hour of conversation does what no sequence can.
+- **Industry report with collected quotes**: "We're publishing the 2026 [niche] report — 30 operators are contributing. Want your perspective on [specific question] included, with credit and a link?" Every contributor becomes a warm relationship AND promotes the report when it ships.
+- **Webinar or panel invitation**: co-host a session for the user's (or a partner's) audience — "your no-show system is the best I've seen; teach it with me."
+- **Feature/quote them first, tell them after**: quote their post in the user's newsletter or article, then reach out: "quoted you in this — wanted you to see the context."
+- **Rankings and awards**: publish "Top 25 [ICP] in [region]" with real criteria. The people on it share it; the people near it want on it next year.
+
+Stage hooks flip the trust equation — a stranger *giving* status instead of requesting attention — and they compound: every episode, quote, and panel produces content, social proof, and warm intros for the next wave. The cost is real: they're slower, they require actually building the thing, and a stage with no audience is a weak gift (be honest about this — a brand-new podcast's value is the conversation and the association, not the reach; say so in the invite). Truthfulness rules still apply: never invent listenership, never fake an award, never run a report you won't publish.
+
+**6. Ecosystem hooks.** Reach them through something they already trust: a genuinely useful contribution in the community where they live (answer the hard question, publish the resource the group keeps asking for), a shared partner or vendor who'd make a warm-ish intro, sponsoring the small thing they love. Slowest family, strongest trust transfer.
+
+**How to choose — and when to recommend the bigger plays.** Families 1–3 are message-speed: run them this week. Families 4–6 are build-speed: they take weeks and produce an asset. The skill's job is to ALWAYS put at least two build-speed plays on the table when the economics support them — high LTV, narrow ICP (a few hundred names, not fifty thousand), relationship-driven buying, or a user with content ambitions — because users don't ask for what they haven't imagined. Present each recommended play with: why it fits THIS ICP (from the profile), the first-touch script, the effort honestly stated, and the payoff horizon. A campaign can and usually should run both tracks at once: trigger hooks for volume today, one stage play compounding in the background.

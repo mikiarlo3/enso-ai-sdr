@@ -17,7 +17,7 @@ description: >-
   sequence.
 license: MIT
 metadata:
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
@@ -88,10 +88,12 @@ Without web access, infer the profile from what you know and ask the user for tw
 
 Every first message follows the four-beat architecture: **Verified Trigger → Useful Implication → Small Asset → Micro-Ask.** The trigger is a public, dated, work-relevant fact ("why you, why now"); the implication is one role-relevant inference naming the specific cost or risk that fact creates — the beat that proves competence and delivers value before anything is offered; the asset is the concrete gift; the micro-ask is one yes/no question, and **never a meeting request in message 1**. Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
 
-- **Value inventory (Part 2.5)**: from the profile, list what a stranger could hand this exact person that's usable the moment they read it — the number they don't know, the mistake they can check in a minute, the fix they can apply today.
+- **Value inventory + the enormity bar (Part 2.5)**: from the profile, list what a stranger could hand this exact person that's usable the moment they read it — then raise the bar from useful to *disproportionate*. Reason deeply and in writing (3–5 sentences in the campaign doc): what would make THIS person stop and think "why is a stranger giving me this free?" — would they forward it to a peer, would they feel a twinge of guilt taking it? The answer must trace to the ICP research, never to "it was easy to make."
+- **Scan the full 360° hook palette (Part 4)**: six families — triggers, market signals, big ideas, relationship touches, give-them-a-stage plays (podcast invites, industry-report quotes, webinars, rankings), ecosystem plays. Don't default to trigger hooks just because they're the reflex.
 - **The gift**: generate 5–8 lead magnet candidates across the three types (reveal-the-problem, free sample, one-step-of-many), score them on the rubric, present the table. Run this whenever the user's free-gift answer is missing or weak — a mediocre gift caps the campaign and no copy rescues it. Hand-made gifts get tiered, not discarded.
 - **The trigger + implication**: pick verified, source-logged attention triggers per segment, matched to buyer type (executives → company-level triggers like initiatives and earnings; practitioners → workflow triggers like job posts and visible process friction). Then write the implication — the non-obvious consequence, with a mechanism or number you can defend, never invented. No valid trigger → peer-benchmark grab or leave the prospect out; never force personalization.
 - **The best hook**: draft candidates as full four-beat messages, score each against the ICP profile (their words? their motivation? survives their skepticism?) AND the 10-point quality score in Part 3.5 — **8 of 10 minimum or it doesn't ship**. Mark ONE recommended winner per segment with a one-sentence reason tied to the profile. The rest are A/B alternates. Never hand the user ten hooks and make them guess.
+- **The bigger plays**: whenever the economics support it (high LTV, narrow ICP, relationship-driven buying, or a user with content ambitions), ALWAYS put 2–3 build-speed plays from the palette on the table — start the podcast and invite ICP guests, run the industry report and collect their quotes, co-host the webinar, publish the ranking. Users don't ask for what they haven't imagined; offering these is part of the job. For each: why it fits this ICP (from the profile), the first-touch script, the honest effort level, and the payoff horizon. Recommend running both tracks at once — trigger hooks for replies this week, one stage play compounding in the background.
 
 ### Phase 4: Write the sequence — value first, value always
 
@@ -132,6 +134,8 @@ The job is not done until the user holds the **entire lead generation strategy e
 - [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
 - [ ] Attention triggers/segments defined, each with its personalization angle
 - [ ] ONE recommended hook per segment with a profile-tied reason, plus 5–10 A/B alternates — each built as Verified Trigger → Useful Implication → Small Asset → Micro-Ask, scoring ≥8/10 on the Part 3.5 quality check, with trigger sources logged
+- [ ] The gift passes the enormity bar, with written reasoning (would they forward it? feel guilty it's free?) traced to the ICP research
+- [ ] Full hook palette scanned; 2–3 bigger plays (podcast, report, webinar, ranking) offered with first-touch scripts wherever the economics support them
 - [ ] Message 1 passes the cover-the-CTA test: usable value delivered inline, immediately — not a promise of value on reply
 - [ ] Message 2 delivers the full gift unprompted — by its end the prospect has received what others charge for
 - [ ] Every touch in the sequence carries value (no "just bumping" anywhere), with real copy for every single touch, breakup included, dated

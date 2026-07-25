@@ -4,6 +4,16 @@ All notable changes to the cold-outreach-playbook skill. Users on any
 platform can check their installed version against `VERSION` at the repo
 root (the skill does this itself when it has web access).
 
+## 1.3.0 — 2026-07-25
+- New 360-degree hook palette (six families): trigger hooks, market
+  signals, big ideas, relationship touches, give-them-a-stage plays
+  (podcast invites, industry reports with collected quotes, webinars,
+  rankings), and ecosystem plays. The skill proactively offers 2-3
+  build-speed plays whenever the economics support them.
+- The enormity bar: first-touch gifts must be disproportionate, not
+  merely useful, with written reasoning from the ICP research
+  (forward-to-a-peer and guilty-it's-free tests).
+
 ## 1.2.0 — 2026-07-25
 - The skill now checks for newer versions at the start of a campaign
   build (silent, non-blocking) and tells the user how to update on

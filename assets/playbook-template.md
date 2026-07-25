@@ -29,6 +29,7 @@
 - *Micro-ask:* [one yes/no question — never a meeting]
 
 *Why it wins for this ICP:* [one sentence tied to the profile — their words, their motivation, their skepticism, their reading moment]
+*Why the gift is enormous to THEM:* [3–5 sentences of reasoning from the research — the forward-to-a-peer / guilty-it's-free tests]
 *Quality score:* [n/10 per the Part 3.5 checklist]
 
 **A/B alternates:**
@@ -38,6 +39,12 @@
 4. [hook] — *(type: give-first)*
 5. [hook] — *(type: honest cold open)*
 [5–10 total per primary channel; repeat block per segment]
+
+### Bigger plays (give them the stage — run alongside the message track)
+| Play | Why it fits this ICP | First-touch script | Effort | Payoff horizon |
+|---|---|---|---|---|
+| [e.g. podcast / industry report with quotes / webinar / ranking] | [from the profile] | [the actual invite message] | [honest hours/weeks] | [when it compounds] |
+[2–3 plays whenever LTV, list size, or the user's ambitions support them]
 
 ## 4. The first two messages (where the campaign is won)
 ### Message 1 — [primary channel]
