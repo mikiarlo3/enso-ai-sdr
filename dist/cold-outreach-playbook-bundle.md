@@ -1,11 +1,11 @@
-# Cold Outreach Playbook (single-file bundle, v1.7.0)
+# Cold Outreach Playbook (single-file bundle, v1.8.0)
 
 This is the complete cold-outreach-playbook agent skill in one file, bundled
 for platforms that accept a single document. It contains the main skill, all
 of its reference files, the output template, and the ai-copywriter reference
 used for drafting copy.
 
-This copy is frozen at version 1.7.0. The live version number is at
+This copy is frozen at version 1.8.0. The live version number is at
 https://raw.githubusercontent.com/mikiarlo3/enso-ai-sdr/HEAD/VERSION and the
 changelog at https://github.com/mikiarlo3/enso-ai-sdr/blob/main/CHANGELOG.md —
 if the live version is newer, tell the user once (after the deliverable) to
@@ -13,7 +13,7 @@ re-download the bundle from the repo's dist/ folder.
 
 Instructions for the AI agent reading this: follow Part 1 as your operating
 instructions. When Part 1 tells you to read a file under `references/` or
-`assets/`, that content is included below as Parts 2-8 — use those instead
+`assets/`, that content is included in the numbered parts below — use those instead
 of looking for files.
 
 ---
@@ -85,6 +85,8 @@ Come back with:
 
 Without web access, infer the profile from what you know and ask the user for two or three real customer quotes. Either way, write the profile into the campaign document — every gift, grab, hook, and touch downstream is chosen and judged against it. If the hook doesn't trace back to something in this profile, the research wasn't used.
 
+**For a full campaign build, go deeper — become the industry insider.** The quick scan above is the floor; the campaign standard is the two-track protocol in `references/icp-deep-research.md` (30–45 minutes, the highest-ROI time in the campaign): Track A learns the *business* like an operator — unit economics (revenue per unit of capacity, margins, LTV, derived from benchmark reports and franchise disclosure documents), a pain dossier per pain (root cause → cost formula with the arithmetic shown → what they've already tried → why it failed → the insider insight), the trade's vocabulary, metrics, live debates, and calendar; Track B deepens the person — day-in-the-life, the decision unit, identity markers. The output is an **Industry Expertise Brief** in the campaign doc, and it must pass the depth gate before any reach-out is drafted: three derived economic numbers with arithmetic, three insider insights, five vocabulary terms, and each pain's tried-and-failed list. The test: would a 20-year veteran of the trade nod at your expertise proofs — or shrug? Reach-outs written before this gate passes are generic no matter how good the copy is.
+
 ### Phase 3: Design the hook — the heart of the skill
 
 Every first message follows the four-beat architecture: **Verified Trigger → Useful Implication → Small Asset → Micro-Ask.** The trigger is a public, dated, work-relevant fact ("why you, why now"); the implication is one role-relevant inference naming the specific cost or risk that fact creates — the beat that proves competence and delivers value before anything is offered; the asset is the concrete gift; the micro-ask is one yes/no question, and **never a meeting request in message 1**. Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
@@ -133,6 +135,7 @@ Deliver the campaign as a single markdown document following the skeleton in `as
 The job is not done until the user holds the **entire lead generation strategy end-to-end** for their specific ICP, whatever the channel mix (email, LinkedIn, SMS, phone, DMs). Check every box before delivering:
 
 - [ ] ICP psychology profile written from research: motivation, what they care about, the problem in their words, what the offer fixes for them, their skepticism, their reading moment
+- [ ] Industry Expertise Brief passes the depth gate: 3+ derived economic numbers (arithmetic shown), 3+ insider insights, 5+ trade vocabulary terms, tried-and-failed list per pain, and a value map from product feature → their unit economics → what it means for them personally
 - [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
 - [ ] Attention triggers/segments defined, each with its personalization angle
 - [ ] ONE recommended hook per segment with a profile-tied reason, plus 5–10 A/B alternates — each built as Verified Trigger → Useful Implication → Small Asset → Micro-Ask, scoring ≥8/10 on the Part 3.5 quality check, with trigger sources logged
@@ -182,6 +185,8 @@ And neither the gift nor the grab can be chosen well for a person you haven't st
 ## Part 0: Research the ICP before hooking them
 
 A hook engages when it reads like it was written by someone who knows this person. That knowledge has to be earned before anything else in this file happens — treat this as a hard gate: **if a hook is about to be written and this research hasn't run yet, stop and run it first**, even when the user only asked for "a few hooks." The output is a short **ICP psychology profile** that everything downstream pulls from — the gift is chosen because *they'd* value it, the grab is chosen because *they'd* stop for it, and every hook gets judged against the profile.
+
+This quick scan is the floor, good for fast hook-only requests. A full campaign build runs the two-track deep protocol in `references/icp-deep-research.md` on top of it — unit economics, pain mechanics, trade vocabulary, and the depth gate — before any reach-out is written.
 
 **With web access (do this — 10–15 minutes, not an afternoon):** go where the ICP actually talks and read their own words.
 - Subreddits, industry forums, and Facebook/LinkedIn groups for their trade — search for the problem space and read complaint threads.
@@ -366,6 +371,70 @@ FOMO earns the glance; it never replaces the gift. A tension hook with no enormo
 - **Identity labeling**: address them as the operator they're proud to be ("you clearly run the kind of practice that answers its own reviews") — people act consistently with labels they accept, and the label doubles as evidence of homework.
 
 **How to choose — and when to recommend the bigger plays.** Families 1–3 are message-speed: run them this week. Families 4–6 are build-speed: they take weeks and produce an asset. The skill's job is to ALWAYS put at least two build-speed plays on the table when the economics support them — high LTV, narrow ICP (a few hundred names, not fifty thousand), relationship-driven buying, or a user with content ambitions — because users don't ask for what they haven't imagined. Present each recommended play with: why it fits THIS ICP (from the profile), the first-touch script, the effort honestly stated, and the payoff horizon. A campaign can and usually should run both tracks at once: trigger hooks for volume today, one stage play compounding in the background.
+
+---
+
+## Part 2b: references/icp-deep-research.md
+
+# ICP Deep Research: Become the Industry Insider Before You Write a Word
+
+The difference between a good reach-out and a great one is not the copy — it's that the great one could only have been written by someone who understands the prospect's business from the inside. Amateurs write about the pain ("no-shows are frustrating!"); insiders write about the *mechanics* of the pain ("Tuesday-afternoon no-shows are the expensive ones, because that's when you staff for injectables"). This protocol produces that insider knowledge deliberately.
+
+**When to run which depth:** the quick scan in Part 0 of `lead-magnet-generator.md` (10–15 minutes) is the floor — acceptable for a fast hook-only request. A full campaign build runs THIS protocol: 30–45 minutes of research across two tracks, producing the Industry Expertise Brief that goes into the campaign document. The extra half hour is the highest-ROI time in the entire campaign: every implication, number, and vocabulary choice downstream draws from it.
+
+## Track A: The industry brief — learn the business like an operator
+
+### A1. Unit economics — how this ICP actually makes money
+
+Find or derive: what they sell, at what margin, through what capacity constraint. Revenue per unit of capacity (chair-hour, truck-day, seat, billable hour), the high-margin vs. low-margin mix, customer LTV *for them*, acquisition cost norms, the fixed costs that make volume swings hurt.
+
+Sources: industry benchmark reports (trade associations publish them), franchise disclosure documents (public, and a goldmine — real P&Ls for the exact business), "how much does a X make" operator threads, earnings calls of the public roll-ups in the space, pricing pages across 10 competitors.
+
+**Why this matters:** every implication beat needs a defensible number, and the credible numbers are *derived from their economics*, not asserted. "Every 1% of no-shows ≈ $900/month" is only writable after you know appointments/day × average ticket × margin. Show the arithmetic in the campaign doc so the user can defend it live.
+
+### A2. The pain dossier — mechanics, not sympathy
+
+For each of the top 2–3 pains (from the quick scan), build the full chain:
+
+1. **Root cause**: what actually produces the pain operationally. Not "their website is old" but "solo owners buy a site once at opening, then nobody owns it; the booking plugin breaks on updates and nobody notices for months."
+2. **Cost, derived**: the formula in their economics (from A1), with the number computed. This is the implication beat's ammunition.
+3. **What they've already tried**: the DIY fix, the cheap tool, the nephew who knows computers, the agency that burned them. Forum threads and review sites tell you exactly which attempts are common.
+4. **Why those attempts failed**: the mechanism of failure — this is where insider credibility lives. A reach-out that names the failed fix and why it failed ("the deposit plugin didn't die because deposits don't work — it died because it asked for the card before showing available times") cannot be written by an outsider.
+5. **The insider insight**: the one non-obvious thing a veteran knows about this pain that the prospect may not have articulated. This seeds big-idea hooks and makes implications sting.
+
+### A3. Vocabulary and belief system
+
+- **Terms of art**: what they call things (patients vs. clients vs. guests; jobs vs. projects vs. tickets). Using the wrong one marks you as an outsider in three words.
+- **Metrics they track**: the numbers on their dashboard (production per hour, food cost %, utilization). Frame value in THEIR metric, not yours.
+- **Received wisdom and live debates**: what the trade currently believes, what it argues about (in their forums and at their conferences). Big-idea hooks come from taking a defensible side.
+- **Authorities they trust**: the podcasts, consultants, and operator-celebrities of the niche. Useful for ecosystem plays and for knowing whose language they already speak.
+
+### A4. Calendar and cycles
+
+Seasonality of demand, buying windows (when budgets unlock), regulatory and platform dates, conference season. This feeds the closing-window FOMO family with real dates and tells the user WHEN to run which segment.
+
+## Track B: The person — deepen the psychology profile
+
+Beyond the Part 0 profile (motivation, cares-about, words, skepticism, reading moment), add:
+
+- **A day in their life, hour by hour**: when they're at the desk vs. on the floor, when email gets triaged, who guards the phone. This picks send times and channel per segment for real reasons.
+- **The decision unit**: who else touches a $X purchase — spouse/partner in owner-operator businesses, office manager as gatekeeper, regional manager in small chains. Message 1 may need to arm your reader to convince someone else; give them the forwardable line.
+- **Identity and status markers**: what they brag about, what embarrasses them in front of peers, what "being a good operator" means in this trade. Identity hooks and stage plays aim here.
+
+## The Industry Expertise Brief (output — goes in the campaign doc)
+
+1. **Unit economics summary** with the derived numbers used anywhere in the campaign (arithmetic shown).
+2. **Pain dossier** per pain: cause → cost formula + number → tried-and-failed list → why they failed → insider insight.
+3. **Vocabulary card**: 5+ terms to use, the terms that expose outsiders, the metrics to frame value in.
+4. **Calendar**: the 2–3 real dates/windows the campaign can honestly use.
+5. **Expertise proofs**: 3–5 statements only an insider would make — these become implication beats and big-idea hooks nearly verbatim.
+6. **Value map**: for the promoted product, the chain from feature → operational change → economic outcome in THEIR unit economics → what it means for them personally ("fewer Saturday call-backs" is worth more than "18% efficiency"). Every hook's gift and implication should sit on one link of this chain.
+
+## The depth gate — "would a veteran nod?"
+
+Before any reach-out is drafted, the brief must contain at least: **three derived economic numbers** specific to this ICP (arithmetic shown), **three insider insights** that go beyond what the prospect would say themselves, **five vocabulary terms** actually in use, and **each top pain's tried-and-failed list**. Read the expertise proofs aloud: if a 20-year veteran of the trade would shrug ("everyone knows that") or wince ("that's wrong"), keep researching. Reach-outs written before this gate passes will be generic no matter how good the copy is — that's the whole reason this file exists.
+
+**Without web access:** derive what you can from knowledge, mark every inferred number and insight clearly, and ask the user — who often IS the industry expert — to confirm or correct the brief before copy gets written. Their corrections are better research than any forum thread; fold them in verbatim.
 
 ---
 
@@ -859,6 +928,14 @@ Every mechanism above works because it rides on something true: real effort, rea
 - **Default skepticism:** [what they auto-delete; what they've been burned by]
 - **The reading moment:** [where/when the message lands; what tone survives it]
 - **Research sources:** [threads/reviews/postings read, or "inferred — validate with real quotes"]
+
+### Industry Expertise Brief (the depth gate — see icp-deep-research reference)
+- **Unit economics:** [revenue per unit of capacity, margin mix, LTV — with the arithmetic for every derived number used below]
+- **Pain dossier:** [per pain: root cause → cost formula + number → what they've tried → why it failed → the insider insight]
+- **Vocabulary card:** [5+ terms of art to use; outsider terms to avoid; the metrics they track — frame value in these]
+- **Calendar:** [real seasonal/regulatory/budget dates the campaign can honestly use]
+- **Expertise proofs:** [3–5 statements only an insider would make — these feed implications and big-idea hooks]
+- **Value map:** [product feature → operational change → outcome in THEIR unit economics → what it means for them personally]
 
 ## 3. Hooks (recommended winner per segment + A/B alternates)
 ### [Segment name]

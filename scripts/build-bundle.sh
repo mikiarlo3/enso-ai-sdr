@@ -39,7 +39,7 @@ HEADER
 
 Instructions for the AI agent reading this: follow Part 1 as your operating
 instructions. When Part 1 tells you to read a file under `references/` or
-`assets/`, that content is included below as Parts 2-8 — use those instead
+`assets/`, that content is included in the numbered parts below — use those instead
 of looking for files.
 
 ---
@@ -50,6 +50,8 @@ HEADER
   strip_frontmatter SKILL.md
   printf '\n---\n\n## Part 2: references/lead-magnet-generator.md\n\n'
   cat references/lead-magnet-generator.md
+  printf '\n---\n\n## Part 2b: references/icp-deep-research.md\n\n'
+  cat references/icp-deep-research.md
   printf '\n---\n\n## Part 3: references/list-building.md\n\n'
   cat references/list-building.md
   printf '\n---\n\n## Part 4: references/hooks-and-copy.md\n\n'

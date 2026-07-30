@@ -17,7 +17,7 @@ description: >-
   sequence.
 license: MIT
 metadata:
-  version: "1.7.0"
+  version: "1.8.0"
 ---
 
 # Cold Outreach Playbook: From Strangers to Customers
@@ -84,6 +84,8 @@ Come back with:
 
 Without web access, infer the profile from what you know and ask the user for two or three real customer quotes. Either way, write the profile into the campaign document — every gift, grab, hook, and touch downstream is chosen and judged against it. If the hook doesn't trace back to something in this profile, the research wasn't used.
 
+**For a full campaign build, go deeper — become the industry insider.** The quick scan above is the floor; the campaign standard is the two-track protocol in `references/icp-deep-research.md` (30–45 minutes, the highest-ROI time in the campaign): Track A learns the *business* like an operator — unit economics (revenue per unit of capacity, margins, LTV, derived from benchmark reports and franchise disclosure documents), a pain dossier per pain (root cause → cost formula with the arithmetic shown → what they've already tried → why it failed → the insider insight), the trade's vocabulary, metrics, live debates, and calendar; Track B deepens the person — day-in-the-life, the decision unit, identity markers. The output is an **Industry Expertise Brief** in the campaign doc, and it must pass the depth gate before any reach-out is drafted: three derived economic numbers with arithmetic, three insider insights, five vocabulary terms, and each pain's tried-and-failed list. The test: would a 20-year veteran of the trade nod at your expertise proofs — or shrug? Reach-outs written before this gate passes are generic no matter how good the copy is.
+
 ### Phase 3: Design the hook — the heart of the skill
 
 Every first message follows the four-beat architecture: **Verified Trigger → Useful Implication → Small Asset → Micro-Ask.** The trigger is a public, dated, work-relevant fact ("why you, why now"); the implication is one role-relevant inference naming the specific cost or risk that fact creates — the beat that proves competence and delivers value before anything is offered; the asset is the concrete gift; the micro-ask is one yes/no question, and **never a meeting request in message 1**. Spend more of your effort here than anywhere else. Work through `references/lead-magnet-generator.md` end to end:
@@ -132,6 +134,7 @@ Deliver the campaign as a single markdown document following the skeleton in `as
 The job is not done until the user holds the **entire lead generation strategy end-to-end** for their specific ICP, whatever the channel mix (email, LinkedIn, SMS, phone, DMs). Check every box before delivering:
 
 - [ ] ICP psychology profile written from research: motivation, what they care about, the problem in their words, what the offer fixes for them, their skepticism, their reading moment
+- [ ] Industry Expertise Brief passes the depth gate: 3+ derived economic numbers (arithmetic shown), 3+ insider insights, 5+ trade vocabulary terms, tried-and-failed list per pain, and a value map from product feature → their unit economics → what it means for them personally
 - [ ] Lead magnet chosen (via the generator if needed), with value anchor and delivery plan
 - [ ] Attention triggers/segments defined, each with its personalization angle
 - [ ] ONE recommended hook per segment with a profile-tied reason, plus 5–10 A/B alternates — each built as Verified Trigger → Useful Implication → Small Asset → Micro-Ask, scoring ≥8/10 on the Part 3.5 quality check, with trigger sources logged

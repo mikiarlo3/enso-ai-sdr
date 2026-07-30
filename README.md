@@ -8,7 +8,7 @@ Cold outreach fails for one reason: the person on the other end doesn't know you
 
 Tell Claude which product you're promoting, or just paste the product page URL and let it work that out itself. The intake is five one-line questions in one message (which product this campaign sells — companies with several pick one — who buys it, your best proof, your channels, and what you could give away free; a URL answers the first three for you), sensible defaults cover everything else, and then you get one document with everything in it:
 
-- An ICP psychology profile, researched for you. Before writing a single hook, the skill goes online and studies who you're selling to — the forums and groups where they complain, the reviews they write and receive, their job postings — and comes back with their motivation, what they care about right now, the problem in their own words, and what your offer actually fixes for them.
+- An ICP researched to industry-insider depth. Before writing a single hook, the skill goes online and studies who you're selling to — the forums where they complain, the reviews they write and receive, their job postings, their trade's benchmark reports — and comes back with their motivation, the problem in their own words, their unit economics (with the arithmetic), what they've already tried and why it failed, and the vocabulary that separates insiders from outsiders. There's a depth gate: no reach-out gets written until the brief would make a 20-year veteran of the trade nod.
 - The best attention hook, chosen and defended. Hooks are grab + gift pairs: the reason this person stops now, and the value they receive for reading. You get one recommended winner per segment with the reasoning tied to the profile, plus 5 to 10 alternates to A/B test.
 - A lead magnet, invented for you if you don't have one: 5 to 8 candidates scored on a rubric, with the bar set at "so useful the prospect feels silly saying no."
 - The first two messages, built to win the campaign. Message 1 delivers a real insight in the message text itself — the prospect gains something even if they never reply. Message 2 hands over the full gift unprompted. By then they've received what your competitors charge for, and that's what turns cold into warm.
@@ -90,6 +90,7 @@ Claude asks whatever it still needs to know, then writes the campaign.
 ├── SKILL.md                      # THE SKILL — workflow, five-question intake, definition of done
 ├── references/
 │   ├── lead-magnet-generator.md  # the hook engine: ICP research, gift + grab, 8 hook families
+│   ├── icp-deep-research.md      # industry-insider protocol: unit economics, pain dossiers, depth gate
 │   ├── free-value-psychology.md  # 12 research-backed attention mechanisms
 │   ├── hooks-and-copy.md         # hook formulas, channel templates, banned phrases
 │   ├── follow-up-cadence.md      # cadence tables + copy angles per touch

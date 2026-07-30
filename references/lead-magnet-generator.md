@@ -13,6 +13,8 @@ And neither the gift nor the grab can be chosen well for a person you haven't st
 
 A hook engages when it reads like it was written by someone who knows this person. That knowledge has to be earned before anything else in this file happens — treat this as a hard gate: **if a hook is about to be written and this research hasn't run yet, stop and run it first**, even when the user only asked for "a few hooks." The output is a short **ICP psychology profile** that everything downstream pulls from — the gift is chosen because *they'd* value it, the grab is chosen because *they'd* stop for it, and every hook gets judged against the profile.
 
+This quick scan is the floor, good for fast hook-only requests. A full campaign build runs the two-track deep protocol in `references/icp-deep-research.md` on top of it — unit economics, pain mechanics, trade vocabulary, and the depth gate — before any reach-out is written.
+
 **With web access (do this — 10–15 minutes, not an afternoon):** go where the ICP actually talks and read their own words.
 - Subreddits, industry forums, and Facebook/LinkedIn groups for their trade — search for the problem space and read complaint threads.
 - Reviews they write and reviews they receive (Google, G2, Yelp, app stores) — what they praise and what enrages them.

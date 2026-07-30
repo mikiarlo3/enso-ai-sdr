@@ -20,6 +20,14 @@
 - **The reading moment:** [where/when the message lands; what tone survives it]
 - **Research sources:** [threads/reviews/postings read, or "inferred — validate with real quotes"]
 
+### Industry Expertise Brief (the depth gate — see icp-deep-research reference)
+- **Unit economics:** [revenue per unit of capacity, margin mix, LTV — with the arithmetic for every derived number used below]
+- **Pain dossier:** [per pain: root cause → cost formula + number → what they've tried → why it failed → the insider insight]
+- **Vocabulary card:** [5+ terms of art to use; outsider terms to avoid; the metrics they track — frame value in these]
+- **Calendar:** [real seasonal/regulatory/budget dates the campaign can honestly use]
+- **Expertise proofs:** [3–5 statements only an insider would make — these feed implications and big-idea hooks]
+- **Value map:** [product feature → operational change → outcome in THEIR unit economics → what it means for them personally]
+
 ## 3. Hooks (recommended winner per segment + A/B alternates)
 ### [Segment name]
 **Send this one:**
